@@ -18,32 +18,40 @@ entity divider is
     );
 end entity divider;
 architecture structural_combinational of divider is
-  type remMemory is array(0 to DIVIDEND_WIDTH - 1) of std_logic_vector(DIVISOR_WIDTH downto 0);
-  variable remMem: remMemory;
+  type remMemory is array(0 to DIVIDEND_WIDTH-1) of std_logic_vector(DIVISOR_WIDTH downto 0);
+  signal remMem: remMemory;
   signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
   signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
 
   COMPONENT comparator is
     port(
-        DINL : in std_logic_vector (DATA_WIDTH downto 0); -- current portion of dividend
-        DINR : in std_logic_vector (DATA_WIDTH - 1 downto 0); -- divisor
-        DOUT : out std_logic_vector (DATA_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
+        DINL : in std_logic_vector (DIVISOR_WIDTH downto 0); -- current portion of dividend
+        DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
+        DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
         isGreaterEq : out std_logic;
         overflow: out std_logic
       );
   end COMPONENT;
 
   begin
-    intDivisor <= divisor when start = '1';
+    intDivisor <= divisor when start = '1'; --potential issues with no default values
     intDividend <= dividend when start = '1';
-    map: process(start, dividend, divisor)
-      loop: FOR i in 0 to DIVIDEND_WIDTH - 1 GENERATE begin
-          FirstSlice: if i = 0 GENERATE begin
-            remMem(i) := remMem(i) OR
-            firstComp: comparator
-              port map();
-          end GENERATE;
-      end GENERATE;
-    end process map;
+    Slice: FOR i in 0 to DIVIDEND_WIDTH - 1 GENERATE begin
+        FirstSlice: if i = 0 GENERATE begin
+          remMem(i) <= (0 => intDividend((DIVIDEND_WIDTH-1) - i), others => '0');
+          firstComp: comparator
+            port map(remMem(i), intDivisor, remMem(i+1)(DIVISOR_WIDTH downto 1), quotient((DIVIDEND_WIDTH-1)-i), overflow);
+        end GENERATE;
+        MiddleSlice: if i > 0 AND i < DIVIDEND_WIDTH - 1 GENERATE begin
+          remMem(i) <= (0 => intDividend((DIVIDEND_WIDTH-1) - i));
+          middleComp: comparator
+            port map(remMem(i), intDivisor, remMem(i+1)(DIVISOR_WIDTH downto 1), quotient((DIVIDEND_WIDTH-1)-i), overflow);
+        end GENERATE;
+        EndSlice: if i = DIVIDEND_WIDTH - 1 GENERATE begin
+          remMem(i) <= (0 => intDividend((DIVIDEND_WIDTH-1) - i));
+          middleComp: comparator
+            port map(remMem(i), intDivisor, remainder, quotient((DIVIDEND_WIDTH-1)-i), overflow);
+        end GENERATE;
+    end GENERATE;
 end architecture structural_combinational;
 -----------------------------------------------------------------------------

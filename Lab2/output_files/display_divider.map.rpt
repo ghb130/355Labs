@@ -1,5 +1,5 @@
 Analysis & Synthesis report for display_divider
-Sun Oct 08 13:52:27 2017
+Sun Oct 08 15:55:05 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 08 13:52:26 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 08 15:55:05 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; display_divider                             ;
 ; Top-level Entity Name              ; display_divider                             ;
@@ -247,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -257,16 +257,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 13:52:15 2017
+    Info: Processing started: Sun Oct 08 15:54:53 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off display_divider -c display_divider
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file divider.vhd
+    Info (12022): Found design unit 1: divider-structural_combinational File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 20
+    Info (12023): Found entity 1: divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 6
+Info (12021): Found 2 design units, including 0 entities, in source file divider_const.vhd
+    Info (12022): Found design unit 1: divider_const File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd Line: 4
+    Info (12022): Found design unit 2: divider_const-body File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file display_divider.vhd
     Info (12022): Found design unit 1: display_divider-structural File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 11
     Info (12023): Found entity 1: display_divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: comparator-behavioral File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd Line: 20
-    Info (12023): Found entity 1: comparator File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd Line: 5
+    Info (12022): Found design unit 1: comparator-behavioral File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd Line: 18
+    Info (12023): Found entity 1: comparator File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd Line: 6
 Info (12127): Elaborating entity "display_divider" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at display_divider.vhd(8): used implicit default value for signal "outputs" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
@@ -279,8 +285,8 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 1 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 686 megabytes
-    Info: Processing ended: Sun Oct 08 13:52:27 2017
+    Info: Peak virtual memory: 677 megabytes
+    Info: Processing ended: Sun Oct 08 15:55:05 2017
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:17
 
