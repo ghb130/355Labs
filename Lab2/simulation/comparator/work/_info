@@ -48,49 +48,51 @@ R10
 R11
 R12
 Ecomparator
-Z13 w1507492982
-Z14 DPx4 work 13 divider_const 0 22 mlg@KVz1Ee;^1?lXjJRJL0
+Z13 w1507495535
+Z14 DPx4 work 13 divider_const 0 22 fW]0izO6=;WD0MXMUW3U<3
 Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R0
 R1
 R3
-Z16 8C:/Users/drew0/github/355Labs/Lab2/comparator.vhd
-Z17 FC:/Users/drew0/github/355Labs/Lab2/comparator.vhd
+Z16 8C:\Users\drew0\github\355Labs\Lab2\comparator.vhd
+Z17 FC:\Users\drew0\github\355Labs\Lab2\comparator.vhd
 l0
 L6
 VRTAf34[a3LFf17GW0:X271
 !s100 =A_O8jWTXc_XUHBch>=QR1
 R6
 32
-Z18 !s110 1507493379
+Z18 !s110 1507495918
 !i10b 1
-Z19 !s108 1507493379.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/drew0/github/355Labs/Lab2/comparator.vhd|
-Z21 !s107 C:/Users/drew0/github/355Labs/Lab2/comparator.vhd|
+Z19 !s108 1507495918.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\drew0\github\355Labs\Lab2\comparator.vhd|
+Z21 !s107 C:\Users\drew0\github\355Labs\Lab2\comparator.vhd|
 !i113 1
 R11
 R12
 Abehavioral
+R14
 R15
 R0
 R1
-DEx4 work 10 comparator 0 22 38[Z6WCFSoL1h1mQ=_PSc1
-l22
-L20
-V_R:bJLFE=L2HC^6k2=Tn[3
-!s100 SUK`f5iK1PYmoamllRd=d3
+DEx4 work 10 comparator 0 22 RTAf34[a3LFf17GW0:X271
+l20
+L18
+VE]W:m=Ai[08Q0D^dF=_X03
+!s100 PM:RQHW5=8cS`MVgkYj?A1
 R6
 32
-!s110 1507492647
+R18
 !i10b 1
-!s108 1507492647.000000
+R19
 R20
 R21
 !i113 1
 R11
 R12
 Ecomparator_tb
-Z22 w1507492642
+Z22 w1507495913
+R14
 R15
 R0
 R1
@@ -98,49 +100,50 @@ R3
 Z23 8C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd
 Z24 FC:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd
 l0
-L5
-Vni8K:21VWDh8nWWWR9Rb90
-!s100 @e2in2C1:KYNc^_KAJFb^1
+L6
+V_bPbRj?OV;lNbI62o`U_52
+!s100 SnD0E_I5O[KoGDe3;EDR<2
 R6
 32
-Z25 !s110 1507493380
+R18
 !i10b 1
-Z26 !s108 1507493380.000000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd|
-Z28 !s107 C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd|
+R19
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd|
+Z26 !s107 C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd|
 !i113 1
 R11
 R12
 Abehave
+R14
 R15
 R0
 R1
-Z29 DEx4 work 13 comparator_tb 0 22 ni8K:21VWDh8nWWWR9Rb90
+DEx4 work 13 comparator_tb 0 22 _bPbRj?OV;lNbI62o`U_52
 l28
-L8
-Z30 VDGa::fDG`k<AHYkfLGi3e1
-Z31 !s100 01CLZMUNP]0B8iambfU_E0
+L9
+V^G2_7_ObmY]HGB8gBIUQc2
+!s100 49zMZ?8Hj<RA_ULPbHiED2
 R6
 32
-R25
+R18
 !i10b 1
+R19
+R25
 R26
-R27
-R28
 !i113 1
 R11
 R12
 Pdivider_const
 R0
 R1
-Z32 w1507493377
+Z27 w1507493677
 R3
 R4
 R5
 l0
 L4
-Vmlg@KVz1Ee;^1?lXjJRJL0
-!s100 0]G1kQO_3a58?KHzlm0jZ2
+VfW]0izO6=;WD0MXMUW3U<3
+!s100 cfLAzWM_SOOHN^g<n<R613
 R6
 32
 R18
