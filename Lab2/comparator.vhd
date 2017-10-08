@@ -24,14 +24,14 @@ architecture behavioral of comparator is
       begin
         DINL_u := unsigned(DINL);
         DINR_u := unsigned(DINR);
+        if DINR_u = 0 then
+          DINR_u := resize("01", DIVISOR_WIDTH);
+        end if;
         if DINL_u < DINR_u then
           DOUT <=  std_logic_vector(resize(DINL_u, DIVISOR_WIDTH));
           isGreaterEq <= '0';
         else
           -- MIGHT NEED TO CHECK FOR OVERFLOW
-          if DINR_u = 0 then
-            DINR_u := to_unsigned(1, DIVISOR_WIDTH);
-          end if;
           DOUT <= std_logic_vector(resize(DINL_u-('0' & DINR_u), DIVISOR_WIDTH));
           isGreaterEq <= '1';
         end if;

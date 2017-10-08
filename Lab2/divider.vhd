@@ -35,8 +35,8 @@ architecture structural_combinational of divider is
 
   begin
     overflow <= '1' when unsigned(divisor) = 0 else '0';
-    intDivisor <= divisor when start = '1'; --potential issues with no default values
-    intDividend <= dividend when start = '1';
+    intDivisor <= divisor when start = '0'; --potential issues with no default values
+    intDividend <= dividend when start = '0';
     Slice: FOR i in 0 to DIVIDEND_WIDTH - 1 GENERATE begin
         FirstSlice: if i = 0 GENERATE begin
           remMem(i) <= (0 => intDividend((DIVIDEND_WIDTH-1) - i), others => '0');

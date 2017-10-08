@@ -1,5 +1,5 @@
 Analysis & Synthesis report for display_divider
-Sun Oct 08 17:59:15 2017
+Sun Oct 08 18:45:51 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -45,16 +45,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 08 17:59:15 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 08 18:45:51 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; display_divider                             ;
 ; Top-level Entity Name              ; display_divider                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 496                                         ;
-;     Total combinational functions  ; 496                                         ;
+; Total logic elements               ; 142                                         ;
+;     Total combinational functions  ; 142                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 110                                         ;
+; Total pins                         ; 56                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -164,17 +164,17 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------+---------+
-; divider.vhd                      ; yes             ; User VHDL File        ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd         ;         ;
-; divider_const.vhd                ; yes             ; User VHDL File        ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd   ;         ;
-; display_divider.vhd              ; yes             ; User VHDL File        ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd ;         ;
-; comparator.vhd                   ; yes             ; User VHDL File        ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd      ;         ;
-; leddcd.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd          ;         ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; leddcd.vhd                       ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd          ;         ;
+; divider.vhd                      ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd         ;         ;
+; divider_const.vhd                ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd   ;         ;
+; display_divider.vhd              ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd ;         ;
+; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd      ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------+
@@ -182,69 +182,55 @@ agreement for further details.
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Estimated Total logic elements              ; 496                       ;
+; Estimated Total logic elements              ; 142                       ;
 ;                                             ;                           ;
-; Total combinational functions               ; 496                       ;
+; Total combinational functions               ; 142                       ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 157                       ;
-;     -- 3 input functions                    ; 296                       ;
-;     -- <=2 input functions                  ; 43                        ;
+;     -- 4 input functions                    ; 63                        ;
+;     -- 3 input functions                    ; 66                        ;
+;     -- <=2 input functions                  ; 13                        ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 279                       ;
-;     -- arithmetic mode                      ; 217                       ;
+;     -- normal mode                          ; 118                       ;
+;     -- arithmetic mode                      ; 24                        ;
 ;                                             ;                           ;
 ; Total registers                             ; 0                         ;
 ;     -- Dedicated logic registers            ; 0                         ;
 ;     -- I/O registers                        ; 0                         ;
 ;                                             ;                           ;
-; I/O pins                                    ; 110                       ;
+; I/O pins                                    ; 56                        ;
 ;                                             ;                           ;
 ; Embedded Multiplier 9-bit elements          ; 0                         ;
 ;                                             ;                           ;
-; Maximum fan-out node                        ; divider:div|intDivisor[5] ;
-; Maximum fan-out                             ; 34                        ;
-; Total fan-out                               ; 1795                      ;
-; Average fan-out                             ; 2.51                      ;
+; Maximum fan-out node                        ; divider:div|intDivisor[3] ;
+; Maximum fan-out                             ; 20                        ;
+; Total fan-out                               ; 574                       ;
+; Average fan-out                             ; 2.26                      ;
 +---------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                        ;
-+-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name     ; Library Name ;
-+-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-----------------+--------------+
-; |display_divider                                    ; 496 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 110  ; 0            ; |display_divider                                                         ; display_divider ; work         ;
-;    |divider:div|                                    ; 412 (24)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div                                             ; divider         ; work         ;
-;       |comparator:\Slice:0:FirstSlice:firstComp|    ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:0:FirstSlice:firstComp    ; comparator      ; work         ;
-;       |comparator:\Slice:10:MiddleSlice:middleComp| ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:10:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:11:MiddleSlice:middleComp| ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:11:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:12:MiddleSlice:middleComp| ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:12:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:13:MiddleSlice:middleComp| ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:13:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:14:MiddleSlice:middleComp| ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:14:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:15:EndSlice:middleComp|    ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:15:EndSlice:middleComp    ; comparator      ; work         ;
-;       |comparator:\Slice:1:MiddleSlice:middleComp|  ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:1:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:2:MiddleSlice:middleComp|  ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:2:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:3:MiddleSlice:middleComp|  ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:3:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:4:MiddleSlice:middleComp|  ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:4:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:5:MiddleSlice:middleComp|  ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:5:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:6:MiddleSlice:middleComp|  ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:6:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:7:MiddleSlice:middleComp|  ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:7:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:8:MiddleSlice:middleComp|  ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:8:MiddleSlice:middleComp  ; comparator      ; work         ;
-;       |comparator:\Slice:9:MiddleSlice:middleComp|  ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:9:MiddleSlice:middleComp  ; comparator      ; work         ;
-;    |leddcd:\dividendLoop:0:dividendDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:0:dividendDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\dividendLoop:1:dividendDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:1:dividendDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\dividendLoop:2:dividendDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:2:dividendDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\dividendLoop:3:dividendDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:3:dividendDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\divisorLoop:0:divisorDecoder|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\divisorLoop:0:divisorDecoder                    ; leddcd          ; work         ;
-;    |leddcd:\divisorLoop:1:divisorDecoder|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\divisorLoop:1:divisorDecoder                    ; leddcd          ; work         ;
-;    |leddcd:\quotientLoop:0:quotientDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:0:quotientDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\quotientLoop:1:quotientDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:1:quotientDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\quotientLoop:2:quotientDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:2:quotientDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\quotientLoop:3:quotientDecoder|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:3:quotientDecoder                  ; leddcd          ; work         ;
-;    |leddcd:\remainderLoop:0:remainderDecoder|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\remainderLoop:0:remainderDecoder                ; leddcd          ; work         ;
-;    |leddcd:\remainderLoop:1:remainderDecoder|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\remainderLoop:1:remainderDecoder                ; leddcd          ; work         ;
-+-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name     ; Library Name ;
++----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+; |display_divider                                   ; 142 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |display_divider                                                        ; display_divider ; work         ;
+;    |divider:div|                                   ; 100 (13)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div                                            ; divider         ; work         ;
+;       |comparator:\Slice:0:FirstSlice:firstComp|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:0:FirstSlice:firstComp   ; comparator      ; work         ;
+;       |comparator:\Slice:1:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:1:MiddleSlice:middleComp ; comparator      ; work         ;
+;       |comparator:\Slice:2:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:2:MiddleSlice:middleComp ; comparator      ; work         ;
+;       |comparator:\Slice:3:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:3:MiddleSlice:middleComp ; comparator      ; work         ;
+;       |comparator:\Slice:4:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:4:MiddleSlice:middleComp ; comparator      ; work         ;
+;       |comparator:\Slice:5:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:5:MiddleSlice:middleComp ; comparator      ; work         ;
+;       |comparator:\Slice:6:MiddleSlice:middleComp| ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:6:MiddleSlice:middleComp ; comparator      ; work         ;
+;       |comparator:\Slice:7:EndSlice:middleComp|    ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:7:EndSlice:middleComp    ; comparator      ; work         ;
+;    |leddcd:\dividendLoop:0:dividendDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:0:dividendDecoder                 ; leddcd          ; work         ;
+;    |leddcd:\dividendLoop:1:dividendDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:1:dividendDecoder                 ; leddcd          ; work         ;
+;    |leddcd:\divisorLoop:0:divisorDecoder|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\divisorLoop:0:divisorDecoder                   ; leddcd          ; work         ;
+;    |leddcd:\quotientLoop:0:quotientDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:0:quotientDecoder                 ; leddcd          ; work         ;
+;    |leddcd:\quotientLoop:1:quotientDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:1:quotientDecoder                 ; leddcd          ; work         ;
+;    |leddcd:\remainderLoop:0:remainderDecoder|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\remainderLoop:0:remainderDecoder               ; leddcd          ; work         ;
++----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -253,31 +239,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
+; divider:div|intDivisor[3]                           ; start               ; yes                    ;
 ; divider:div|intDivisor[0]                           ; start               ; yes                    ;
 ; divider:div|intDivisor[1]                           ; start               ; yes                    ;
 ; divider:div|intDivisor[2]                           ; start               ; yes                    ;
-; divider:div|intDivisor[3]                           ; start               ; yes                    ;
-; divider:div|intDivisor[4]                           ; start               ; yes                    ;
-; divider:div|intDivisor[5]                           ; start               ; yes                    ;
-; divider:div|intDivisor[6]                           ; start               ; yes                    ;
-; divider:div|intDivisor[7]                           ; start               ; yes                    ;
-; divider:div|intDividend[11]                         ; start               ; yes                    ;
-; divider:div|intDividend[15]                         ; start               ; yes                    ;
-; divider:div|intDividend[14]                         ; start               ; yes                    ;
-; divider:div|intDividend[13]                         ; start               ; yes                    ;
-; divider:div|intDividend[12]                         ; start               ; yes                    ;
-; divider:div|intDividend[10]                         ; start               ; yes                    ;
-; divider:div|intDividend[9]                          ; start               ; yes                    ;
-; divider:div|intDividend[8]                          ; start               ; yes                    ;
-; divider:div|intDividend[7]                          ; start               ; yes                    ;
 ; divider:div|intDividend[6]                          ; start               ; yes                    ;
+; divider:div|intDividend[7]                          ; start               ; yes                    ;
 ; divider:div|intDividend[5]                          ; start               ; yes                    ;
 ; divider:div|intDividend[4]                          ; start               ; yes                    ;
 ; divider:div|intDividend[3]                          ; start               ; yes                    ;
 ; divider:div|intDividend[2]                          ; start               ; yes                    ;
 ; divider:div|intDividend[1]                          ; start               ; yes                    ;
 ; divider:div|intDividend[0]                          ; start               ; yes                    ;
-; Number of user-specified and inferred latches = 24  ;                     ;                        ;
+; Number of user-specified and inferred latches = 12  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -302,7 +276,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +------------+-------+----------+--------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                          ;
 +------------+-------+----------+--------------------------------------------------+
-; dinl[8..1] ; Input ; Info     ; Stuck at GND                                     ;
+; dinl[4..1] ; Input ; Info     ; Stuck at GND                                     ;
 +------------+-------+----------+--------------------------------------------------+
 
 
@@ -311,20 +285,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 110                         ;
-; cycloneiii_lcell_comb ; 515                         ;
-;     arith             ; 217                         ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 211                         ;
-;     normal            ; 298                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 19                          ;
-;         2 data inputs ; 36                          ;
-;         3 data inputs ; 85                          ;
-;         4 data inputs ; 157                         ;
+; boundary_port         ; 56                          ;
+; cycloneiii_lcell_comb ; 150                         ;
+;     arith             ; 24                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 22                          ;
+;     normal            ; 126                         ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 44                          ;
+;         4 data inputs ; 63                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 53.00                       ;
-; Average LUT depth     ; 41.15                       ;
+; Max LUT depth         ; 32.30                       ;
+; Average LUT depth     ; 21.08                       ;
 +-----------------------+-----------------------------+
 
 
@@ -333,7 +306,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -343,10 +316,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 17:59:04 2017
+    Info: Processing started: Sun Oct 08 18:45:43 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off display_divider -c display_divider
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file leddcd.vhd
+    Info (12022): Found design unit 1: leddcd-data_flow File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd Line: 11
+    Info (12023): Found entity 1: leddcd File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divider.vhd
     Info (12022): Found design unit 1: divider-structural_combinational File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 21
     Info (12023): Found entity 1: divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 7
@@ -369,41 +345,23 @@ Info (10041): Inferred latch for "intDividend[4]" at divider.vhd(39) File: C:/Us
 Info (10041): Inferred latch for "intDividend[5]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
 Info (10041): Inferred latch for "intDividend[6]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
 Info (10041): Inferred latch for "intDividend[7]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[8]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[9]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[10]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[11]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[12]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[13]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[14]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[15]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
 Info (10041): Inferred latch for "intDivisor[0]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
 Info (10041): Inferred latch for "intDivisor[1]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
 Info (10041): Inferred latch for "intDivisor[2]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
 Info (10041): Inferred latch for "intDivisor[3]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[4]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[5]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[6]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[7]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "overflow" at divider.vhd(37) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 37
 Info (12128): Elaborating entity "comparator" for hierarchy "divider:div|comparator:\Slice:0:FirstSlice:firstComp" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 43
-Warning (12125): Using design file leddcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: leddcd-data_flow File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd Line: 11
-    Info (12023): Found entity 1: leddcd File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd Line: 5
 Info (12128): Elaborating entity "leddcd" for hierarchy "leddcd:\dividendLoop:0:dividendDecoder" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 44
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "overflow" is stuck at GND File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 606 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 25 input pins
-    Info (21059): Implemented 85 output pins
-    Info (21061): Implemented 496 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 679 megabytes
-    Info: Processing ended: Sun Oct 08 17:59:15 2017
-    Info: Elapsed time: 00:00:11
+Info (21057): Implemented 198 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 43 output pins
+    Info (21061): Implemented 142 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 687 megabytes
+    Info: Processing ended: Sun Oct 08 18:45:51 2017
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:19
 
 
