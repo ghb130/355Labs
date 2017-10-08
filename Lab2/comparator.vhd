@@ -8,11 +8,12 @@ DATA_WIDTH : natural := 4
 );                                      -- Should make smallerwidth + 1
 port(
 --Inputs
-    DINL : in std_logic_vector (DATA_WIDTH downto 0);
-    DINR : in std_logic_vector (DATA_WIDTH - 1 downto 0);
+    DINL : in std_logic_vector (DATA_WIDTH downto 0); -- current portion of dividend
+    DINR : in std_logic_vector (DATA_WIDTH - 1 downto 0); -- divisor
 --Outputs
     DOUT : out std_logic_vector (DATA_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
-    isGreaterEq : out std_logic
+    isGreaterEq : out std_logic;
+    overflow: out std_logic
     );
 end entity comparator;
 
@@ -31,6 +32,10 @@ architecture behavioral of comparator is
           isGreaterEq <= '0';
         else
           -- MIGHT NEED TO CHECK FOR OVERFLOW
+          if DINR_u = 0 then
+            overflow <= '1';
+            DINR_u := to_unsigned(1, DATA_WIDTH-1);
+          end if;
           DOUT <= std_logic_vector(resize(DINL_u-('0' & DINR_u), DATA_WIDTH-1));
           isGreaterEq <= '1';
         end if;
