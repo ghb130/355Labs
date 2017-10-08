@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+--Additional standard or custom libraries go here
+entity display_calc is
+  port(
+    inputs : in std_logic;
+    outputs : out std_logic
+    );
+end entity display_calc;
+
+architecture structural of display_calc is
+begin
+end architecture structural;

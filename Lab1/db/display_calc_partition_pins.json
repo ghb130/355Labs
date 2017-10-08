@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sign",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "segments_out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[1]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIN1[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

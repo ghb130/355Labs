@@ -1,0 +1,59 @@
+{C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/leddcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/leddcd.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity leddcd
+-- Compiling architecture data_flow of leddcd
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/display_calc.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Graehme\Documents\College\EECS 355\Projects\Lab1\display_calc.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package calc_const
+-- Loading package decoder
+-- Compiling entity display_calc
+-- Compiling architecture structural of display_calc
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/calc_const.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Graehme\Documents\College\EECS 355\Projects\Lab1\calc_const.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package calc_const
+-- Compiling package body calc_const
+-- Loading package calc_const
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/calculator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Graehme\Documents\College\EECS 355\Projects\Lab1\calculator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package calc_const
+-- Compiling entity calculator
+-- Compiling architecture behavioral of calculator
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package decoder
+-- Compiling package body decoder
+-- Loading package decoder
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/Projects/Lab1/Sim/calculator_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Graehme\Documents\College\EECS 355\Projects\Lab1\Sim\calculator_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Loading package calc_const
+-- Compiling entity calculator_tb
+-- Compiling architecture behave of calculator_tb
+
+} {} {}}
