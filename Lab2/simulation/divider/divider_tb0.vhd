@@ -5,9 +5,9 @@ use ieee.numeric_std.all;
 use std.textio.all;
 use work.divider_const.all;
 --Additional standard or custom libraries go here
-entity divider_tb is
-end entity divider_tb;
-architecture behavioral of divider_tb is
+entity divider_tb0 is
+end entity divider_tb0;
+architecture behavioral of divider_tb0 is
   component divider is
       port(
         --Inputs
@@ -41,39 +41,11 @@ begin
                     overflow => overflow_tb
                  );
     process is
-        variable my_line : line;
-        file infile: text open read_mode is "divider16.in";
-        file outfile: text open write_mode is "divider16.out";
-
-        variable dividend_int : integer;
-        variable divisor_int : integer;
-
-       begin
-         while not (endfile(infile)) loop
-           readline(infile, my_line);
-           read(my_line, dividend_int);
-           readline(infile, my_line);
-           read(my_line, divisor_int);
-           start_tb <= '1';
-           dividend_tb <= std_logic_vector(to_unsigned(dividend_int, DIVIDEND_WIDTH));
-           divisor_tb <= std_logic_vector(to_unsigned(divisor_int, DIVISOR_WIDTH));
-           wait for 10 ns;
-           write(my_line, dividend_int);
-           write(my_line, ' ');
-           write(my_line, '/');
-           write(my_line, ' ');
-           write(my_line, divisor_int);
-           write(my_line, ' ');
-           write(my_line, '=');
-           write(my_line, ' ');
-           write(my_line, to_integer(signed(quotient_tb)));
-           write(my_line, ' ');
-           write(my_line, string'("--"));
-           write(my_line, ' ');
-           write(my_line, to_integer(signed(remainder_tb)));
-           writeline(outfile, my_line);
-         end loop;
-     wait;
+      begin
+        start_tb <= '1';
+        dividend_tb <= "0000000000000001";
+        divisor_tb <= "00000001";
+        wait for 10 ns;
      end process;
 
 end architecture behavioral;
