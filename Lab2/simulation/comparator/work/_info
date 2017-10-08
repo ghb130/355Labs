@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/17.0
+Pcalc_const
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z2 w1507493131
+Z3 dC:/Users/drew0/github/355Labs/Lab2/simulation/comparator
+Z4 8C:/Users/drew0/github/355Labs/Lab2/divider_const.vhd
+Z5 FC:/Users/drew0/github/355Labs/Lab2/divider_const.vhd
+l0
+L4
+ViBHh1?:66NAGcPDa]8dg>0
+!s100 DLT8=Zik4h[B_zo`g=Cl@2
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1507493160
+!i10b 1
+Z8 !s108 1507493160.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/drew0/github/355Labs/Lab2/divider_const.vhd|
+Z10 !s107 C:/Users/drew0/github/355Labs/Lab2/divider_const.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 10 calc_const 0 22 iBHh1?:66NAGcPDa]8dg>0
+R0
+R1
+l0
+L9
+VHNIFi_;MlR`dB@nBNRGE91
+!s100 I7XWA2Ld00L3E_1NPW5[=3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecomparator
+Z13 w1507492982
+Z14 DPx4 work 13 divider_const 0 22 mlg@KVz1Ee;^1?lXjJRJL0
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R0
+R1
+R3
+Z16 8C:/Users/drew0/github/355Labs/Lab2/comparator.vhd
+Z17 FC:/Users/drew0/github/355Labs/Lab2/comparator.vhd
+l0
+L6
+VRTAf34[a3LFf17GW0:X271
+!s100 =A_O8jWTXc_XUHBch>=QR1
+R6
+32
+Z18 !s110 1507493379
+!i10b 1
+Z19 !s108 1507493379.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/drew0/github/355Labs/Lab2/comparator.vhd|
+Z21 !s107 C:/Users/drew0/github/355Labs/Lab2/comparator.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R0
+R1
+DEx4 work 10 comparator 0 22 38[Z6WCFSoL1h1mQ=_PSc1
+l22
+L20
+V_R:bJLFE=L2HC^6k2=Tn[3
+!s100 SUK`f5iK1PYmoamllRd=d3
+R6
+32
+!s110 1507492647
+!i10b 1
+!s108 1507492647.000000
+R20
+R21
+!i113 1
+R11
+R12
+Ecomparator_tb
+Z22 w1507492642
+R15
+R0
+R1
+R3
+Z23 8C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd
+Z24 FC:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd
+l0
+L5
+Vni8K:21VWDh8nWWWR9Rb90
+!s100 @e2in2C1:KYNc^_KAJFb^1
+R6
+32
+Z25 !s110 1507493380
+!i10b 1
+Z26 !s108 1507493380.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd|
+Z28 !s107 C:/Users/drew0/github/355Labs/Lab2/simulation/comparator/comparator_tb.vhd|
+!i113 1
+R11
+R12
+Abehave
+R15
+R0
+R1
+Z29 DEx4 work 13 comparator_tb 0 22 ni8K:21VWDh8nWWWR9Rb90
+l28
+L8
+Z30 VDGa::fDG`k<AHYkfLGi3e1
+Z31 !s100 01CLZMUNP]0B8iambfU_E0
+R6
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R11
+R12
+Pdivider_const
+R0
+R1
+Z32 w1507493377
+R3
+R4
+R5
+l0
+L4
+Vmlg@KVz1Ee;^1?lXjJRJL0
+!s100 0]G1kQO_3a58?KHzlm0jZ2
+R6
+32
+R18
+!i10b 1
+R19
+R9
+R10
+!i113 1
+R11
+R12
+Bbody
+R14
+R0
+R1
+l0
+L9
+Vz6Wj;GTbKa=3jE@Tb7BzE1
+!s100 RP2o^2R3X6m6RT=dQ12W;3
+R6
+32
+R18
+!i10b 1
+R19
+R9
+R10
+!i113 1
+R11
+R12
