@@ -10,8 +10,7 @@ port(
     DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
 --Outputs
     DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
-    isGreaterEq : out std_logic;
-    overflow: out std_logic
+    isGreaterEq : out std_logic
   );
 end entity comparator;
 
@@ -25,14 +24,12 @@ architecture behavioral of comparator is
       begin
         DINL_u := unsigned(DINL);
         DINR_u := unsigned(DINR);
-        overflow <= '0';
         if DINL_u < DINR_u then
           DOUT <=  std_logic_vector(resize(DINL_u, DIVISOR_WIDTH));
           isGreaterEq <= '0';
         else
           -- MIGHT NEED TO CHECK FOR OVERFLOW
           if DINR_u = 0 then
-            overflow <= '1';
             DINR_u := to_unsigned(1, DIVISOR_WIDTH);
           end if;
           DOUT <= std_logic_vector(resize(DINL_u-('0' & DINR_u), DIVISOR_WIDTH));
