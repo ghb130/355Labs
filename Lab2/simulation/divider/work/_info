@@ -9,8 +9,8 @@ z2
 cModel Technology
 dC:/intelFPGA/17.0
 Ecomparator
-Z0 w1507503589
-Z1 DPx4 work 13 divider_const 0 22 mlg@KVz1Ee;^1?lXjJRJL0
+Z0 w1507506560
+Z1 DPx4 work 13 divider_const 0 22 :b]3;KU0MHcHV[3ZIVDE^1
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -23,9 +23,9 @@ V<6=56Jfl534Whm<OTTJ7f3
 !s100 V[dOi0=iDY9[o1ZS1f1R`0
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1507504118
+Z9 !s110 1507507459
 !i10b 1
-Z10 !s108 1507504118.000000
+Z10 !s108 1507507459.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/comparator.vhd|
 Z12 !s107 D:/github/355Labs/Lab2/comparator.vhd|
 !i113 1
@@ -39,8 +39,8 @@ R4
 DEx4 work 10 comparator 0 22 <6=56Jfl534Whm<OTTJ7f3
 l19
 L17
-VUc15@VC;SI`h7cDYhkUG11
-!s100 [c@IKWQS]Ol_=C2AJ<[Bm3
+VZQ3TH>3YZnYaW12DM69PE0
+!s100 c5Tg[TKmzod6K5Ung<<]O2
 R8
 32
 R9
@@ -52,25 +52,25 @@ R12
 R13
 R14
 Edivider
-Z15 w1507503755
+R0
 R1
 R2
 R3
 R4
 R5
-Z16 8D:/github/355Labs/Lab2/divider.vhd
-Z17 FD:/github/355Labs/Lab2/divider.vhd
+Z15 8D:\github\355Labs\Lab2\divider.vhd
+Z16 FD:\github\355Labs\Lab2\divider.vhd
 l0
 L7
 V9`LkjgjJe7IEn<^:FaHn73
 !s100 Vk?zbQd8ODnaE2mVnNAn_0
 R8
 32
-Z18 !s110 1507504119
+R9
 !i10b 1
-Z19 !s108 1507504119.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/divider.vhd|
-Z21 !s107 D:/github/355Labs/Lab2/divider.vhd|
+R10
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\github\355Labs\Lab2\divider.vhd|
+Z18 !s107 D:\github\355Labs\Lab2\divider.vhd|
 !i113 1
 R13
 R14
@@ -82,36 +82,36 @@ R4
 DEx4 work 7 divider 0 22 9`LkjgjJe7IEn<^:FaHn73
 l36
 L21
-VR<CI06I3:Vc8l;FYSb1VF2
-!s100 7`bh4=eCL5<]I8V;[VOM>0
+V0ncgKmHN2=GCaz3HHn?EJ2
+!s100 zR0zUEfN]Gg63a6QDTmid1
 R8
 32
-R18
+R9
 !i10b 1
-R19
-R20
-R21
+R10
+R17
+R18
 !i113 1
 R13
 R14
 Pdivider_const
 R3
 R4
-Z22 w1507496002
+Z19 w1507507280
 R5
-Z23 8D:/github/355Labs/Lab2/divider_const.vhd
-Z24 FD:/github/355Labs/Lab2/divider_const.vhd
+Z20 8D:\github\355Labs\Lab2\divider_const.vhd
+Z21 FD:\github\355Labs\Lab2\divider_const.vhd
 l0
 L4
-Vmlg@KVz1Ee;^1?lXjJRJL0
-!s100 0]G1kQO_3a58?KHzlm0jZ2
+V:b]3;KU0MHcHV[3ZIVDE^1
+!s100 R>l74OZ>KVk_h<Sz=:4f@2
 R8
 32
 R9
 !i10b 1
 R10
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/divider_const.vhd|
-Z26 !s107 D:/github/355Labs/Lab2/divider_const.vhd|
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\github\355Labs\Lab2\divider_const.vhd|
+Z23 !s107 D:\github\355Labs\Lab2\divider_const.vhd|
 !i113 1
 R13
 R14
@@ -128,98 +128,98 @@ R8
 R9
 !i10b 1
 R10
-R25
-R26
+R22
+R23
 !i113 1
 R13
 R14
 Edivider_tb
-Z27 w1507501983
+Z24 w1507507455
 R1
 R2
-Z28 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z25 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R3
 R4
 R5
-Z29 8D:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd
-Z30 FD:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd
+Z26 8D:\github\355Labs\Lab2\simulation\divider\divider_tb.vhd
+Z27 FD:\github\355Labs\Lab2\simulation\divider\divider_tb.vhd
 l0
 L8
 VNJT=_784=E<5;Pl9ocJ:52
 !s100 R4T0gZhI0oXT:>]_M@zf>2
 R8
 32
-R18
+R9
 !i10b 1
-R19
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd|
-Z32 !s107 D:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd|
+R10
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\github\355Labs\Lab2\simulation\divider\divider_tb.vhd|
+Z29 !s107 D:\github\355Labs\Lab2\simulation\divider\divider_tb.vhd|
 !i113 1
 R13
 R14
 Abehavioral
 R1
 R2
-R28
+R25
 R3
 R4
-DEx4 work 10 divider_tb 0 22 NJT=_784=E<5;Pl9ocJ:52
+Z30 DEx4 work 10 divider_tb 0 22 NJT=_784=E<5;Pl9ocJ:52
 l33
 L10
-VTUoM:zSWOz@ASo0n9:D8E2
-!s100 E;bjfX]Rmei90^bm_]foh2
+VXMKZadT]FiBCMHMmee8f]1
+!s100 H1b=z_g7bS2KJI6JQM4d_1
 R8
 32
-R18
+R9
 !i10b 1
-R19
-R31
-R32
+R10
+R28
+R29
 !i113 1
 R13
 R14
 Edivider_tb0
-Z33 w1507502652
-R1
+Z31 w1507502652
+Z32 DPx4 work 13 divider_const 0 22 mlg@KVz1Ee;^1?lXjJRJL0
 R2
-R28
+R25
 R3
 R4
 R5
-Z34 8D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
-Z35 FD:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
+Z33 8D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
+Z34 FD:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
 l0
 L8
 V21B48VCC0;P5OV5_ISA1d1
 !s100 n:L_lB@3d?DLSZVT<E`i10
 R8
 32
-R18
+Z35 !s110 1507504119
 !i10b 1
-R19
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
-Z37 !s107 D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
+Z36 !s108 1507504119.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
+Z38 !s107 D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
 !i113 1
 R13
 R14
 Abehavioral
-R1
+R32
 R2
-R28
+R25
 R3
 R4
-Z38 DEx4 work 11 divider_tb0 0 22 21B48VCC0;P5OV5_ISA1d1
+DEx4 work 11 divider_tb0 0 22 21B48VCC0;P5OV5_ISA1d1
 l33
 L10
-Z39 V=]7I]TAWQ:34WZB<AR4O81
-Z40 !s100 Njn4Q3DSL:gNmf4HBZUWB1
+V=]7I]TAWQ:34WZB<AR4O81
+!s100 Njn4Q3DSL:gNmf4HBZUWB1
 R8
 32
-R18
+R35
 !i10b 1
-R19
 R36
 R37
+R38
 !i113 1
 R13
 R14

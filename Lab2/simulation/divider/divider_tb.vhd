@@ -42,8 +42,8 @@ begin
                  );
     process is
         variable my_line : line;
-        file infile: text open read_mode is "divider16.in";
-        file outfile: text open write_mode is "divider16.out";
+        file infile: text open read_mode is "divider32.in";
+        file outfile: text open write_mode is "divider32.out";
 
         variable dividend_int : integer;
         variable divisor_int : integer;
@@ -54,7 +54,7 @@ begin
            read(my_line, dividend_int);
            readline(infile, my_line);
            read(my_line, divisor_int);
-           start_tb <= '1';
+           start_tb <= '0';
            dividend_tb <= std_logic_vector(to_unsigned(dividend_int, DIVIDEND_WIDTH));
            divisor_tb <= std_logic_vector(to_unsigned(divisor_int, DIVISOR_WIDTH));
            wait for 10 ns;
@@ -66,11 +66,15 @@ begin
            write(my_line, ' ');
            write(my_line, '=');
            write(my_line, ' ');
-           write(my_line, to_integer(signed(quotient_tb)));
+           write(my_line, to_integer(unsigned(quotient_tb)));
            write(my_line, ' ');
            write(my_line, string'("--"));
            write(my_line, ' ');
-           write(my_line, to_integer(signed(remainder_tb)));
+           write(my_line, to_integer(unsigned(remainder_tb)));
+           if overflow_tb = '1' then
+             write(my_line, ' ');
+             write(my_line, string'("OVERFLOW"));
+           end if;
            writeline(outfile, my_line);
          end loop;
      wait;

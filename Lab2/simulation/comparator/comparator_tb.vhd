@@ -14,8 +14,7 @@ architecture behave of comparator_tb is
       DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
   --Outputs
       DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DIVISOR_WIDTH downto 0
-      isGreaterEq : out std_logic;
-      overflow : out std_logic
+      isGreaterEq : out std_logic
       );
   end component comparator;
 
@@ -23,15 +22,13 @@ architecture behave of comparator_tb is
   signal DINR_tb : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
   signal DOUT_tb : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
   signal isGreaterEq_tb : std_logic;
-  signal overflow_tb : std_logic;
 
   begin dut : comparator port
     map(
         DINL=>DINL_tb,
         DINR=>DINR_tb,
         DOUT=>DOUT_tb,
-        isGreaterEq=>isGreaterEq_tb,
-        overflow=>overflow_tb
+        isGreaterEq=>isGreaterEq_tb
       );
 
       DINL_stimulus : process is

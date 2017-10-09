@@ -1,4 +1,14 @@
-D:/github/355Labs/Lab2/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/github/355Labs/Lab2/comparator.vhd
+D:/github/355Labs/Lab2/divider.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\github\355Labs\Lab2\divider.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package divider_const
+-- Compiling entity divider
+-- Compiling architecture structural_combinational of divider
+
+} {} {}} D:/github/355Labs/Lab2/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/github/355Labs/Lab2/comparator.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -8,27 +18,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity comparator
 -- Compiling architecture behavioral of comparator
 
-} {} {}} D:/github/355Labs/Lab2/divider_const.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/github/355Labs/Lab2/divider_const.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling package divider_const
--- Compiling package body divider_const
--- Loading package divider_const
-
-} {} {}} D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_textio
--- Loading package NUMERIC_STD
--- Loading package divider_const
--- Compiling entity divider_tb0
--- Compiling architecture behavioral of divider_tb0
-
-} {} {}} D:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd
+} {} {}} D:/github/355Labs/Lab2/simulation/divider/divider_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\github\355Labs\Lab2\simulation\divider\divider_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
