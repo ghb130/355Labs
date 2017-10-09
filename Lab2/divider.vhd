@@ -34,8 +34,8 @@ architecture structural_combinational of divider is
   end COMPONENT;
 
   begin
-    overflow <= '1' when unsigned(divisor) = 0 else '0';
     intDivisor <= divisor when start = '0'; --potential issues with no default values
+    overflow <= '1' when unsigned(intDivisor) = 0 else '0';
     intDividend <= dividend when start = '0';
     Slice: FOR i in 0 to DIVIDEND_WIDTH - 1 GENERATE begin
         FirstSlice: if i = 0 GENERATE begin
