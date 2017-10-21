@@ -6,7 +6,7 @@ use WORK.divider_const.all;
 entity comparator is
 port(
 --Inputs
-    DINL : in std_logic_vector (DIVISOR_WIDTH downto 0); -- current portion of dividend
+    DINL : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- current portion of dividend
     DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
 --Outputs
     DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0

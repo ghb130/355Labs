@@ -9,6 +9,7 @@ entity divider is
       --Inputs
       -- clk : in std_logic;
       --COMMENT OUT clk signal for Part A.
+      clk: in std_logic;
       start : in std_logic;
       dividend : in std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
       divisor : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
@@ -55,4 +56,69 @@ architecture structural_combinational of divider is
         end GENERATE;
     end GENERATE;
 end architecture structural_combinational;
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+architecture behavioral_sequential of divider is
+  variable intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0) := (others => '0');
+  variable intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0) := (others => '0');
+  variable intRegIn, intRegOut: std_logic_vector (DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto 0) := (others => '0');
+  variable we: std_logic := '0'
+  variable count: integer:= 0;
+
+  COMPONENT comparator is
+    port(
+        DINL : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- current portion of dividend
+        DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
+        DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
+        isGreaterEq : out std_logic
+      );
+  end COMPONENT;
+
+  COMPONENT reg_n is
+    port(
+      din : in std_logic_vector(n downto 0);
+      we : in std_logic;
+      clk : in std_logic;
+      dout : out std_logic_vector(n downto 0)
+    );
+  end COMPONENT;
+
+  begin
+    comp: comparator port map(
+                    DINL=>intRegOut(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH),
+                    DINR=>intDivisor,
+                    DOUT=>intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH),
+                    isGreaterEq=>intRegIn(0)
+                    );
+    reg: reg_n generic map (n=>DIVIDEND_WIDTH+DIVISOR_WIDTH)
+                    port map (
+                    din=> intRegIn,
+                    we=> we,
+                    clk=> clk,
+                    dout=> intRegOut
+                    );
+
+    overflow <= '1' when unsigned(divisor) = 0 else '0';
+    intDivisor <= divisor when start = '0'; --potential issues with no default values
+    intDividend <= dividend when start = '0';
+    count <= 0 when start = '0';
+    we <= '1' when count <= DIVIDEND_WIDTH else '0';
+    quotient <= intRegOut(DIVIDEND_WIDTH-1 downto 0);
+    remainder<= intRegOut(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH);
+
+    clocked_process: process is
+      begin
+        if(rising_edge(clk))
+          if(count=0)
+            intRegIn(DIVIDEND_WIDTH-1 downto 0)<=intDividend;
+            intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH downto DIVIDEND_WIDTH) <= (others => '0');
+            count:=count+1;
+          else
+            intRegIn <= std_logic_vector(unsigned(intRegIn) SLL 1);
+            count:=count+1;
+          end if;
+    end process clocked_process;
+
+
+end architecture behavioral_sequential;
 -----------------------------------------------------------------------------

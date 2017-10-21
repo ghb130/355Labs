@@ -13,6 +13,7 @@ architecture behavioral of divider_tb is
         --Inputs
         -- clk : in std_logic;
         --COMMENT OUT clk signal for Part A.
+        clk : in std_logic;
         start : in std_logic;
         dividend : in std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
         divisor : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
@@ -22,6 +23,7 @@ architecture behavioral of divider_tb is
         overflow : out std_logic
       );
   end component divider;
+  for all : divider use entity WORK.divider (behavioral_sequential);
 
   signal start_tb : std_logic;
   signal dividend_tb : std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
@@ -29,10 +31,12 @@ architecture behavioral of divider_tb is
   signal quotient_tb : std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
   signal remainder_tb : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
   signal overflow_tb : std_logic;
+  signal clk_tb : std_logic;
 --Entity (as component) and input ports (as signals) go here
 begin
     dut : divider
         port map (
+                    clk => clk_tb,
                     start=>start_tb,
                     dividend => dividend_tb,
                     divisor => divisor_tb,
@@ -40,6 +44,13 @@ begin
                     remainder => remainder_tb,
                     overflow => overflow_tb
                  );
+    clock_generate: process is
+      begin
+        clk_tb<='0';
+        wait for 1 ns;
+        clk_tb <= not clk_tb;
+        wait for 1 ns;
+    end process clock_generate;
     process is
         variable my_line : line;
         file infile: text open read_mode is "divider32.in";
