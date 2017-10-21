@@ -12,7 +12,7 @@ entity reg_n is
 end entity reg_n;
 
 architecture behavioral of reg_n is
-  signal mem : std_logic(n downto 0);
+  signal mem : std_logic_vector(n - 1 downto 0);
   begin
     dout <= mem;
     process(clk)

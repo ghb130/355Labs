@@ -59,11 +59,10 @@ end architecture structural_combinational;
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
 architecture behavioral_sequential of divider is
-  variable intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0) := (others => '0');
-  variable intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0) := (others => '0');
-  variable intRegIn, intRegOut: std_logic_vector (DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto 0) := (others => '0');
-  variable we: std_logic := '0'
-  variable count: integer:= 0;
+  signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0) := (others => '0');
+  signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0) := (others => '0');
+  signal intRegIn, intRegOut: std_logic_vector (DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto 0) := (others => '0');
+  signal we: std_logic := '0';
 
   COMPONENT comparator is
     port(
@@ -75,6 +74,7 @@ architecture behavioral_sequential of divider is
   end COMPONENT;
 
   COMPONENT reg_n is
+    generic(n: integer);
     port(
       din : in std_logic_vector(n downto 0);
       we : in std_logic;
@@ -101,22 +101,35 @@ architecture behavioral_sequential of divider is
     overflow <= '1' when unsigned(divisor) = 0 else '0';
     intDivisor <= divisor when start = '0'; --potential issues with no default values
     intDividend <= dividend when start = '0';
-    count <= 0 when start = '0';
-    we <= '1' when count <= DIVIDEND_WIDTH else '0';
     quotient <= intRegOut(DIVIDEND_WIDTH-1 downto 0);
     remainder<= intRegOut(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH);
 
-    clocked_process: process is
+    clocked_process: process(clk,start) is
+      variable count: integer:= 0;
+      variable flag: boolean:=false;
       begin
-        if(rising_edge(clk))
-          if(count=0)
+        if(count <= DIVIDEND_WIDTH) then
+          we <= '1';
+        else
+          we <= '0';
+          flag := false;
+        end if;
+
+        if(start = '0' and flag = false) then
+          count := 0;
+          flag := true;
+        end if;
+
+        if(rising_edge(clk)) then
+          if(count=0) then
             intRegIn(DIVIDEND_WIDTH-1 downto 0)<=intDividend;
-            intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH downto DIVIDEND_WIDTH) <= (others => '0');
+            intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH) <= (others => '0');
             count:=count+1;
           else
             intRegIn <= std_logic_vector(unsigned(intRegIn) SLL 1);
             count:=count+1;
           end if;
+        end if;
     end process clocked_process;
 
 

@@ -51,10 +51,11 @@ begin
         clk_tb <= not clk_tb;
         wait for 1 ns;
     end process clock_generate;
+
     process is
         variable my_line : line;
-        file infile: text open read_mode is "divider32.in";
-        file outfile: text open write_mode is "divider32.out";
+        file infile: text open read_mode is "divider16.in";
+        file outfile: text open write_mode is "divider16.out";
 
         variable dividend_int : integer;
         variable divisor_int : integer;
@@ -68,7 +69,9 @@ begin
            start_tb <= '0';
            dividend_tb <= std_logic_vector(to_unsigned(dividend_int, DIVIDEND_WIDTH));
            divisor_tb <= std_logic_vector(to_unsigned(divisor_int, DIVISOR_WIDTH));
-           wait for 10 ns;
+           wait for 16 ns;
+           start_tb <= '1';
+           wait for 100 ns;
            write(my_line, dividend_int);
            write(my_line, ' ');
            write(my_line, '/');

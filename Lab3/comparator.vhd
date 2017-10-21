@@ -19,7 +19,7 @@ architecture behavioral of comparator is
   begin
   --signals
     compare : process(DINL, DINR)
-    variable DINL_u : unsigned(DIVISOR_WIDTH downto 0);
+    variable DINL_u : unsigned(DIVISOR_WIDTH - 1 downto 0);
     variable DINR_u : unsigned(DIVISOR_WIDTH - 1 downto 0);
       begin
         DINL_u := unsigned(DINL);
@@ -32,7 +32,7 @@ architecture behavioral of comparator is
           isGreaterEq <= '0';
         else
           -- MIGHT NEED TO CHECK FOR OVERFLOW
-          DOUT <= std_logic_vector(resize(DINL_u-('0' & DINR_u), DIVISOR_WIDTH));
+          DOUT <= std_logic_vector(resize((DINL_u-DINR_u), DIVISOR_WIDTH));
           isGreaterEq <= '1';
         end if;
     end process compare;
