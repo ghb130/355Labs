@@ -59,10 +59,10 @@ end architecture structural_combinational;
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
 architecture behavioral_sequential of divider is
-  signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0) := (others => '0');
-  signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0) := (others => '0');
-  signal intRegIn, intRegOut: std_logic_vector (DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto 0) := (others => '0');
-  signal we: std_logic := '0';
+  signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
+  signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
+  signal intRegIn, intRegOut, intRegInter: std_logic_vector (DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto 0) := (others => '0');
+  signal we: std_logic;
 
   COMPONENT comparator is
     port(
@@ -95,7 +95,7 @@ architecture behavioral_sequential of divider is
                     din=> intRegIn,
                     we=> we,
                     clk=> clk,
-                    dout=> intRegOut
+                    dout=> intRegInter
                     );
 
     overflow <= '1' when unsigned(divisor) = 0 else '0';
@@ -126,7 +126,7 @@ architecture behavioral_sequential of divider is
             intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH) <= (others => '0');
             count:=count+1;
           else
-            intRegIn <= std_logic_vector(unsigned(intRegIn) SLL 1);
+            intRegOut <= std_logic_vector(unsigned(intRegInter) SLL 1);
             count:=count+1;
           end if;
         end if;
