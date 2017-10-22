@@ -176,22 +176,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "divisor[1]",
-					"strict" : false
-				},
-				{
-					"name" : "divisor[2]",
-					"strict" : false
-				},
-				{
-					"name" : "divisor[0]",
-					"strict" : false
-				},
-				{
-					"name" : "divisor[3]",
-					"strict" : false
-				},
-				{
 					"name" : "dividend[2]",
 					"strict" : false
 				},
@@ -221,6 +205,26 @@
 				},
 				{
 					"name" : "dividend[7]",
+					"strict" : false
+				},
+				{
+					"name" : "divisor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "divisor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "divisor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "divisor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				},
 				{

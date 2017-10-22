@@ -8,6 +8,7 @@ entity display_divider is
       dividend : in std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
       divisor : in std_logic_vector(DIVISOR_WIDTH-1 downto 0);
       start : in std_logic;
+      clk : in std_logic;
       overflow : out std_logic;
       dividend_segments_out : out std_logic_vector ((DIVIDEND_WIDTH/4)*7 - 1 downto 0);
       divisor_segments_out : out std_logic_vector ((DIVISOR_WIDTH/4)*7 - 1 downto 0);
@@ -25,7 +26,9 @@ architecture structural of display_divider is
   end COMPONENT;
 
   COMPONENT divider is
-    PORT(start : in std_logic;
+    PORT(
+        clk : in std_logic;
+        start : in std_logic;
         dividend : in std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
         divisor : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
         quotient : out std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
@@ -39,7 +42,7 @@ architecture structural of display_divider is
 
   begin
 --Structural design goes here
-  div: divider port map(start, dividend, divisor, quotient, remainder, overflow);
+  div: divider port map(clk, start, dividend, divisor, quotient, remainder, overflow);
   dividendLoop: for i in 0 to (DIVIDEND_WIDTH/4)-1 GENERATE begin
     dividendDecoder: leddcd port map (dividend(4*(i+1)-1 downto 4*i), dividend_segments_out(7*(i+1)-1 downto 7*i));
   end GENERATE;

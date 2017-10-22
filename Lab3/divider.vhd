@@ -61,74 +61,65 @@ end architecture structural_combinational;
 architecture behavioral_sequential of divider is
   signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
   signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
-  signal intRegIn, intRegOut, intRegInter: std_logic_vector (DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto 0) := (others => '0');
-  signal we: std_logic;
+  signal DINL : std_logic_vector (DIVISOR_WIDTH downto 0);
+  signal DOUT : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
+  signal isGreaterEq : std_logic;
+  signal countout : integer;
 
   COMPONENT comparator is
     port(
-        DINL : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- current portion of dividend
+        DINL : in std_logic_vector (DIVISOR_WIDTH downto 0); -- current portion of dividend
         DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
         DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
         isGreaterEq : out std_logic
       );
   end COMPONENT;
 
-  COMPONENT reg_n is
-    generic(n: integer);
-    port(
-      din : in std_logic_vector(n downto 0);
-      we : in std_logic;
-      clk : in std_logic;
-      dout : out std_logic_vector(n downto 0)
-    );
-  end COMPONENT;
-
   begin
     comp: comparator port map(
-                    DINL=>intRegOut(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH),
+                    DINL=>DINL,
                     DINR=>intDivisor,
-                    DOUT=>intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH),
-                    isGreaterEq=>intRegIn(0)
-                    );
-    reg: reg_n generic map (n=>DIVIDEND_WIDTH+DIVISOR_WIDTH)
-                    port map (
-                    din=> intRegIn,
-                    we=> we,
-                    clk=> clk,
-                    dout=> intRegInter
+                    DOUT=>DOUT,
+                    isGreaterEq=>isGreaterEq
                     );
 
-    overflow <= '1' when unsigned(divisor) = 0 else '0';
-    intDivisor <= divisor when start = '0'; --potential issues with no default values
-    intDividend <= dividend when start = '0';
-    quotient <= intRegOut(DIVIDEND_WIDTH-1 downto 0);
-    remainder<= intRegOut(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH);
-
-    clocked_process: process(clk,start) is
-      variable count: integer:= 0;
+    clocked_process: process(clk) is
+      variable count: integer:= -1;
       variable flag: boolean:=false;
+      variable varQ: std_logic_vector (DIVIDEND_WIDTH downto 0);
       begin
-        if(count <= DIVIDEND_WIDTH) then
-          we <= '1';
-        else
-          we <= '0';
-          flag := false;
-        end if;
-
-        if(start = '0' and flag = false) then
-          count := 0;
-          flag := true;
-        end if;
 
         if(rising_edge(clk)) then
-          if(count=0) then
-            intRegIn(DIVIDEND_WIDTH-1 downto 0)<=intDividend;
-            intRegIn(DIVIDEND_WIDTH+DIVISOR_WIDTH-1 downto DIVIDEND_WIDTH) <= (others => '0');
+          if(unsigned(intDivisor)=0) then
+            overflow <= '1';
+          else
+            overflow <= '0';
+          end if;
+
+          if(start = '0' and flag = false) then
+            flag := true;
+            intDivisor <= divisor;
+            intDividend <= dividend;
+            count := -1;
+            quotient <= (others => '0');
+          end if;
+
+          if(count=-1) then
+            DINL <= (others => '0');
+            count:=count+1;
+          elsif (count < DIVIDEND_WIDTH) then
+            DINL(DIVISOR_WIDTH downto 1) <= DOUT;
+            DINL(0) <= intDividend((DIVIDEND_WIDTH-1)-count);
             count:=count+1;
           else
-            intRegOut <= std_logic_vector(unsigned(intRegInter) SLL 1);
-            count:=count+1;
+            flag := false;
+            quotient <= varQ(DIVIDEND_WIDTH-1 downto 0);
           end if;
+        end if;
+
+        if(falling_edge(clk) and count >= 0) then
+          remainder <= DOUT;
+          varQ((DIVIDEND_WIDTH)-count) := isGreaterEq;
         end if;
     end process clocked_process;
 

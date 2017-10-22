@@ -1,5 +1,5 @@
 Analysis & Synthesis report for display_divider
-Sun Oct 08 18:45:51 2017
+Sat Oct 21 21:34:44 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,9 +13,9 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Port Connectivity Checks: "divider:div|comparator:\Slice:0:FirstSlice:firstComp"
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
@@ -45,16 +45,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 08 18:45:51 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 21 21:34:44 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; display_divider                             ;
 ; Top-level Entity Name              ; display_divider                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 142                                         ;
-;     Total combinational functions  ; 142                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 56                                          ;
+; Total logic elements               ; 199                                         ;
+;     Total combinational functions  ; 187                                         ;
+;     Dedicated logic registers      ; 71                                          ;
+; Total registers                    ; 71                                          ;
+; Total pins                         ; 57                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -157,10 +157,11 @@ agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -169,91 +170,62 @@ agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; leddcd.vhd                       ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd          ;         ;
-; divider.vhd                      ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd         ;         ;
-; divider_const.vhd                ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd   ;         ;
-; display_divider.vhd              ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd ;         ;
-; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd      ;         ;
+; leddcd.vhd                       ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd          ;         ;
+; divider.vhd                      ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd         ;         ;
+; divider_const.vhd                ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd   ;         ;
+; display_divider.vhd              ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd ;         ;
+; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd      ;         ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                             ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Estimated Total logic elements              ; 142                       ;
-;                                             ;                           ;
-; Total combinational functions               ; 142                       ;
-; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 63                        ;
-;     -- 3 input functions                    ; 66                        ;
-;     -- <=2 input functions                  ; 13                        ;
-;                                             ;                           ;
-; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 118                       ;
-;     -- arithmetic mode                      ; 24                        ;
-;                                             ;                           ;
-; Total registers                             ; 0                         ;
-;     -- Dedicated logic registers            ; 0                         ;
-;     -- I/O registers                        ; 0                         ;
-;                                             ;                           ;
-; I/O pins                                    ; 56                        ;
-;                                             ;                           ;
-; Embedded Multiplier 9-bit elements          ; 0                         ;
-;                                             ;                           ;
-; Maximum fan-out node                        ; divider:div|intDivisor[3] ;
-; Maximum fan-out                             ; 20                        ;
-; Total fan-out                               ; 574                       ;
-; Average fan-out                             ; 2.26                      ;
-+---------------------------------------------+---------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                 ;
++---------------------------------------------+-------------------------------+
+; Resource                                    ; Usage                         ;
++---------------------------------------------+-------------------------------+
+; Estimated Total logic elements              ; 199                           ;
+;                                             ;                               ;
+; Total combinational functions               ; 187                           ;
+; Logic element usage by number of LUT inputs ;                               ;
+;     -- 4 input functions                    ; 126                           ;
+;     -- 3 input functions                    ; 49                            ;
+;     -- <=2 input functions                  ; 12                            ;
+;                                             ;                               ;
+; Logic elements by mode                      ;                               ;
+;     -- normal mode                          ; 153                           ;
+;     -- arithmetic mode                      ; 34                            ;
+;                                             ;                               ;
+; Total registers                             ; 71                            ;
+;     -- Dedicated logic registers            ; 71                            ;
+;     -- I/O registers                        ; 0                             ;
+;                                             ;                               ;
+; I/O pins                                    ; 57                            ;
+;                                             ;                               ;
+; Embedded Multiplier 9-bit elements          ; 0                             ;
+;                                             ;                               ;
+; Maximum fan-out node                        ; divider:div|clocked_process~0 ;
+; Maximum fan-out                             ; 82                            ;
+; Total fan-out                               ; 945                           ;
+; Average fan-out                             ; 2.54                          ;
++---------------------------------------------+-------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
-+----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name     ; Library Name ;
-+----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
-; |display_divider                                   ; 142 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |display_divider                                                        ; display_divider ; work         ;
-;    |divider:div|                                   ; 100 (13)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div                                            ; divider         ; work         ;
-;       |comparator:\Slice:0:FirstSlice:firstComp|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:0:FirstSlice:firstComp   ; comparator      ; work         ;
-;       |comparator:\Slice:1:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:1:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:2:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:2:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:3:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:3:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:4:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:4:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:5:MiddleSlice:middleComp| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:5:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:6:MiddleSlice:middleComp| ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:6:MiddleSlice:middleComp ; comparator      ; work         ;
-;       |comparator:\Slice:7:EndSlice:middleComp|    ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:\Slice:7:EndSlice:middleComp    ; comparator      ; work         ;
-;    |leddcd:\dividendLoop:0:dividendDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:0:dividendDecoder                 ; leddcd          ; work         ;
-;    |leddcd:\dividendLoop:1:dividendDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:1:dividendDecoder                 ; leddcd          ; work         ;
-;    |leddcd:\divisorLoop:0:divisorDecoder|          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\divisorLoop:0:divisorDecoder                   ; leddcd          ; work         ;
-;    |leddcd:\quotientLoop:0:quotientDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:0:quotientDecoder                 ; leddcd          ; work         ;
-;    |leddcd:\quotientLoop:1:quotientDecoder|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:1:quotientDecoder                 ; leddcd          ; work         ;
-;    |leddcd:\remainderLoop:0:remainderDecoder|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\remainderLoop:0:remainderDecoder               ; leddcd          ; work         ;
-+----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                   ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name     ; Library Name ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-----------------+--------------+
+; |display_divider                              ; 187 (0)             ; 71 (0)                    ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |display_divider                                          ; display_divider ; work         ;
+;    |divider:div|                              ; 145 (133)           ; 71 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div                              ; divider         ; work         ;
+;       |comparator:comp|                       ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|divider:div|comparator:comp              ; comparator      ; work         ;
+;    |leddcd:\dividendLoop:0:dividendDecoder|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:0:dividendDecoder   ; leddcd          ; work         ;
+;    |leddcd:\dividendLoop:1:dividendDecoder|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\dividendLoop:1:dividendDecoder   ; leddcd          ; work         ;
+;    |leddcd:\divisorLoop:0:divisorDecoder|     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\divisorLoop:0:divisorDecoder     ; leddcd          ; work         ;
+;    |leddcd:\quotientLoop:0:quotientDecoder|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:0:quotientDecoder   ; leddcd          ; work         ;
+;    |leddcd:\quotientLoop:1:quotientDecoder|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\quotientLoop:1:quotientDecoder   ; leddcd          ; work         ;
+;    |leddcd:\remainderLoop:0:remainderDecoder| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display_divider|leddcd:\remainderLoop:0:remainderDecoder ; leddcd          ; work         ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; divider:div|intDivisor[3]                           ; start               ; yes                    ;
-; divider:div|intDivisor[0]                           ; start               ; yes                    ;
-; divider:div|intDivisor[1]                           ; start               ; yes                    ;
-; divider:div|intDivisor[2]                           ; start               ; yes                    ;
-; divider:div|intDividend[6]                          ; start               ; yes                    ;
-; divider:div|intDividend[7]                          ; start               ; yes                    ;
-; divider:div|intDividend[5]                          ; start               ; yes                    ;
-; divider:div|intDividend[4]                          ; start               ; yes                    ;
-; divider:div|intDividend[3]                          ; start               ; yes                    ;
-; divider:div|intDividend[2]                          ; start               ; yes                    ;
-; divider:div|intDividend[1]                          ; start               ; yes                    ;
-; divider:div|intDividend[0]                          ; start               ; yes                    ;
-; Number of user-specified and inferred latches = 12  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -261,23 +233,65 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 71    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 28    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------+
-; Port Connectivity Checks: "divider:div|comparator:\Slice:0:FirstSlice:firstComp" ;
-+------------+-------+----------+--------------------------------------------------+
-; Port       ; Type  ; Severity ; Details                                          ;
-+------------+-------+----------+--------------------------------------------------+
-; dinl[4..1] ; Input ; Info     ; Stuck at GND                                     ;
-+------------+-------+----------+--------------------------------------------------+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; divider:div|\clocked_process:count[30]  ; 6       ;
+; divider:div|\clocked_process:count[4]   ; 4       ;
+; divider:div|\clocked_process:count[6]   ; 4       ;
+; divider:div|\clocked_process:count[7]   ; 4       ;
+; divider:div|\clocked_process:count[8]   ; 4       ;
+; divider:div|\clocked_process:count[5]   ; 4       ;
+; divider:div|\clocked_process:count[3]   ; 9       ;
+; divider:div|\clocked_process:count[9]   ; 4       ;
+; divider:div|\clocked_process:count[10]  ; 4       ;
+; divider:div|\clocked_process:count[11]  ; 4       ;
+; divider:div|\clocked_process:count[12]  ; 4       ;
+; divider:div|\clocked_process:count[13]  ; 4       ;
+; divider:div|\clocked_process:count[14]  ; 4       ;
+; divider:div|\clocked_process:count[15]  ; 4       ;
+; divider:div|\clocked_process:count[16]  ; 4       ;
+; divider:div|\clocked_process:count[17]  ; 4       ;
+; divider:div|\clocked_process:count[18]  ; 4       ;
+; divider:div|\clocked_process:count[19]  ; 4       ;
+; divider:div|\clocked_process:count[20]  ; 4       ;
+; divider:div|\clocked_process:count[21]  ; 4       ;
+; divider:div|\clocked_process:count[22]  ; 4       ;
+; divider:div|\clocked_process:count[23]  ; 4       ;
+; divider:div|\clocked_process:count[24]  ; 4       ;
+; divider:div|\clocked_process:count[25]  ; 4       ;
+; divider:div|\clocked_process:count[26]  ; 4       ;
+; divider:div|\clocked_process:count[27]  ; 4       ;
+; divider:div|\clocked_process:count[28]  ; 4       ;
+; divider:div|\clocked_process:count[29]  ; 4       ;
+; divider:div|\clocked_process:count[31]  ; 13      ;
+; divider:div|\clocked_process:count[0]   ; 8       ;
+; divider:div|\clocked_process:count[1]   ; 8       ;
+; divider:div|\clocked_process:count[2]   ; 11      ;
+; Total number of inverted registers = 32 ;         ;
++-----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |display_divider|divider:div|DINL[3]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |display_divider|divider:div|quotient[5] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -285,19 +299,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 56                          ;
-; cycloneiii_lcell_comb ; 150                         ;
-;     arith             ; 24                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 22                          ;
-;     normal            ; 126                         ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 63                          ;
+; boundary_port         ; 57                          ;
+; cycloneiii_ff         ; 71                          ;
+;     ENA               ; 28                          ;
+;     plain             ; 43                          ;
+; cycloneiii_lcell_comb ; 197                         ;
+;     arith             ; 34                          ;
+;         3 data inputs ; 34                          ;
+;     normal            ; 163                         ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 126                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 32.30                       ;
-; Average LUT depth     ; 21.08                       ;
+; Max LUT depth         ; 6.10                        ;
+; Average LUT depth     ; 4.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -316,52 +332,41 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Oct 08 18:45:43 2017
+    Info: Processing started: Sat Oct 21 21:34:35 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off display_divider -c display_divider
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file leddcd.vhd
-    Info (12022): Found design unit 1: leddcd-data_flow File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd Line: 11
-    Info (12023): Found entity 1: leddcd File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/leddcd.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file divider.vhd
-    Info (12022): Found design unit 1: divider-structural_combinational File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 21
-    Info (12023): Found entity 1: divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 7
+    Info (12022): Found design unit 1: leddcd-data_flow File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd Line: 11
+    Info (12023): Found entity 1: leddcd File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd Line: 5
+Info (12021): Found 3 design units, including 1 entities, in source file divider.vhd
+    Info (12022): Found design unit 1: divider-structural_combinational File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd Line: 22
+    Info (12022): Found design unit 2: divider-behavioral_sequential File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd Line: 61
+    Info (12023): Found entity 1: divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd Line: 7
 Info (12021): Found 2 design units, including 0 entities, in source file divider_const.vhd
-    Info (12022): Found design unit 1: divider_const File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd Line: 4
-    Info (12022): Found design unit 2: divider_const-body File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider_const.vhd Line: 9
+    Info (12022): Found design unit 1: divider_const File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd Line: 4
+    Info (12022): Found design unit 2: divider_const-body File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file display_divider.vhd
-    Info (12022): Found design unit 1: display_divider-structural File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 19
-    Info (12023): Found entity 1: display_divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 5
+    Info (12022): Found design unit 1: display_divider-structural File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd Line: 20
+    Info (12023): Found entity 1: display_divider File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: comparator-behavioral File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd Line: 17
-    Info (12023): Found entity 1: comparator File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/comparator.vhd Line: 6
+    Info (12022): Found design unit 1: comparator-behavioral File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd Line: 17
+    Info (12023): Found entity 1: comparator File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd Line: 6
 Info (12127): Elaborating entity "display_divider" for the top level hierarchy
-Info (12128): Elaborating entity "divider" for hierarchy "divider:div" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 42
-Info (10041): Inferred latch for "intDividend[0]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[1]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[2]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[3]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[4]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[5]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[6]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDividend[7]" at divider.vhd(39) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 39
-Info (10041): Inferred latch for "intDivisor[0]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[1]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[2]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (10041): Inferred latch for "intDivisor[3]" at divider.vhd(38) File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 38
-Info (12128): Elaborating entity "comparator" for hierarchy "divider:div|comparator:\Slice:0:FirstSlice:firstComp" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/divider.vhd Line: 43
-Info (12128): Elaborating entity "leddcd" for hierarchy "leddcd:\dividendLoop:0:dividendDecoder" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab2/display_divider.vhd Line: 44
+Info (12128): Elaborating entity "divider" for hierarchy "divider:div" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd Line: 45
+Info (12128): Elaborating entity "comparator" for hierarchy "divider:div|comparator:comp" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd Line: 79
+Info (12128): Elaborating entity "leddcd" for hierarchy "leddcd:\dividendLoop:0:dividendDecoder" File: C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd Line: 47
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 198 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
+Info (21057): Implemented 256 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 142 logic cells
+    Info (21061): Implemented 199 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 687 megabytes
-    Info: Processing ended: Sun Oct 08 18:45:51 2017
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 704 megabytes
+    Info: Processing ended: Sat Oct 21 21:34:44 2017
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 
