@@ -32,6 +32,7 @@ architecture behavioral of divider_tb is
   signal remainder_tb : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
   signal overflow_tb : std_logic;
   signal clk_tb : std_logic;
+  signal hold : std_logic :='0';
 --Entity (as component) and input ports (as signals) go here
 begin
     dut : divider
@@ -50,6 +51,9 @@ begin
         wait for 1 ns;
         clk_tb <= not clk_tb;
         wait for 1 ns;
+	if hold = '1' then
+	  wait;
+  	end if;
     end process clock_generate;
 
     process is
@@ -91,6 +95,7 @@ begin
            end if;
            writeline(outfile, my_line);
          end loop;
+	       hold<='1';
      wait;
      end process;
 
