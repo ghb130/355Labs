@@ -9,28 +9,28 @@ z2
 cModel Technology
 dC:/intelFPGA/17.0
 Ecomparator
-Z0 w1508632883
-Z1 DPx4 work 13 divider_const 0 22 mlg@KVz1Ee;^1?lXjJRJL0
+Z0 w1509215152
+Z1 DPx4 work 13 divider_const 0 22 Sbbn2?jFH;F9@5P0_T3YX2
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/simulation/divider
-Z6 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd
-Z7 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd
+Z5 dC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/simulation/divider
+Z6 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd
+Z7 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd
 l0
 L6
 V<6=56Jfl534Whm<OTTJ7f3
 !s100 V[dOi0=iDY9[o1ZS1f1R`0
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1508638887
+!s110 1509223736
 !i10b 1
-Z10 !s108 1508638887.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd|
-Z12 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/comparator.vhd|
+Z9 !s108 1509223736.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd|
+Z11 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd|
 !i113 1
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1 CvgOpt 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
 Abehavioral
 R1
 R2
@@ -43,98 +43,120 @@ VZQ3TH>3YZnYaW12DM69PE0
 !s100 c5Tg[TKmzod6K5Ung<<]O2
 R8
 32
-R9
+Z14 !s110 1509223737
 !i10b 1
+R9
 R10
 R11
-R12
 !i113 1
+R12
 R13
-R14
 Edisplay_divider
-Z15 w1508609620
+R0
+R2
 R1
 R3
 R4
 R5
-Z16 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd
-Z17 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd
+Z15 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/display_divider.vhd
+Z16 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/display_divider.vhd
 l0
 L5
-VCfRDWiCEchJHD2E;;0Ede2
-!s100 =UCGC6]3_OPVJI_YQFzPT1
+V@GTBn0B]KHTH:an[665R70
+!s100 W?Sl=a;jRKaC0o0XnWROH3
 R8
 32
-R9
-!i10b 1
-R10
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd|
-Z19 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/display_divider.vhd|
-!i113 1
-R13
 R14
+!i10b 1
+Z17 !s108 1509223737.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/display_divider.vhd|
+Z19 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/display_divider.vhd|
+!i113 1
+R12
+R13
 Astructural
+R2
 R1
 R3
 R4
-DEx4 work 15 display_divider 0 22 CfRDWiCEchJHD2E;;0Ede2
-l40
-L19
-V8O9z_QnG;7oI=BhjMn5L]2
-!s100 hbKEbS6[Z1=LYHm@8?;g52
+DEx4 work 15 display_divider 0 22 @GTBn0B]KHTH:an[665R70
+l43
+L20
+VT7Z:WKj;o;m@5[jko@BM31
+!s100 R[nfTG]NXTj`ONjoV0M[>2
 R8
 32
-R9
+R14
 !i10b 1
-R10
+R17
 R18
 R19
 !i113 1
+R12
 R13
-R14
 Edivider
-Z20 w1508638851
+Z20 w1509223721
 R1
 R2
 R3
 R4
 R5
-Z21 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd
-Z22 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd
+Z21 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider.vhd
+Z22 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider.vhd
 l0
 L7
 VPJ:E7k<Ve_hW3:[I1m=h01
 !s100 7Ac`]Zkf49];zG2HFl2mY1
 R8
 32
-R9
-!i10b 1
-R10
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd|
-Z24 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider.vhd|
-!i113 1
-R13
 R14
-Abehavioral_sequential
+!i10b 1
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider.vhd|
+Z24 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider.vhd|
+!i113 1
+R12
+R13
+Afsm_behavior
 R1
 R2
 R3
 R4
 Z25 DEx4 work 7 divider 0 22 PJ:E7k<Ve_hW3:[I1m=h01
-l78
-L61
-VK:bn2BG53S;Xg>F::N5nd2
-!s100 <G=C?ZnYQMF?dz;MM@2j>0
+l139
+L129
+VRc<7>UL`zBgRUU3cG6G:33
+!s100 nET`5D]A`17KnaM>I07[?1
 R8
 32
-R9
+R14
 !i10b 1
-R10
+R17
 R23
 R24
 !i113 1
+R12
 R13
+Abehavioral_sequential
+R1
+R2
+R3
+R4
+R25
+l78
+L61
+V9K@`NQ6[@005=JL@85Ob:3
+!s100 [hBY:?7Izd5TD[N<Kei9C2
+R8
+32
 R14
+!i10b 1
+R17
+R23
+R24
+!i113 1
+R12
+R13
 Astructural_combinational
 R1
 R2
@@ -147,77 +169,80 @@ VFEzIIfi4A0J^NGgjFZMB82
 !s100 o:_6IO`W;A:YJ?]lnXf5V1
 R8
 32
-R9
+R14
 !i10b 1
-R10
+R17
 R23
 R24
 !i113 1
+R12
 R13
-R14
 Pdivider_const
+R2
 R3
 R4
-Z26 w1508618729
+Z26 w1509222324
 R5
-Z27 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd
-Z28 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd
+Z27 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider_const.vhd
+Z28 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider_const.vhd
 l0
-L4
-Vmlg@KVz1Ee;^1?lXjJRJL0
-!s100 0]G1kQO_3a58?KHzlm0jZ2
+L5
+VSbbn2?jFH;F9@5P0_T3YX2
+!s100 `;EEHTn=za<9al[VjG1cD2
 R8
 32
-R9
-!i10b 1
-R10
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd|
-Z30 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/divider_const.vhd|
-!i113 1
-R13
+b1
 R14
+!i10b 1
+R17
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider_const.vhd|
+Z30 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/divider_const.vhd|
+!i113 1
+R12
+R13
 Bbody
 R1
+R2
 R3
 R4
 l0
-L9
-Vz6Wj;GTbKa=3jE@Tb7BzE1
-!s100 RP2o^2R3X6m6RT=dQ12W;3
+L11
+V3I]l0DjHMhEXI[=?B7e<81
+!s100 O5MIPTU_TXhlalJB]zeF?0
 R8
 32
-R9
+R14
 !i10b 1
-R10
+R17
 R29
 R30
 !i113 1
+R12
 R13
-R14
 Edivider_tb
-Z31 w1508619296
+Z31 w1509223734
 R1
 R2
 Z32 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R3
 R4
 R5
-Z33 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/simulation/divider/divider_tb.vhd
-Z34 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/simulation/divider/divider_tb.vhd
+Z33 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/simulation/divider/divider_tb.vhd
+Z34 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/simulation/divider/divider_tb.vhd
 l0
 L8
 VNJT=_784=E<5;Pl9ocJ:52
 !s100 R4T0gZhI0oXT:>]_M@zf>2
 R8
 32
-R9
-!i10b 1
-R10
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/simulation/divider/divider_tb.vhd|
-Z36 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/simulation/divider/divider_tb.vhd|
-!i113 1
-R13
 R14
+!i10b 1
+R17
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/simulation/divider/divider_tb.vhd|
+Z36 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/simulation/divider/divider_tb.vhd|
+!i113 1
+R12
+R13
 Abehavioral
 R25
 R1
@@ -226,46 +251,46 @@ R32
 R3
 R4
 Z37 DEx4 work 10 divider_tb 0 22 NJT=_784=E<5;Pl9ocJ:52
-l36
+l38
 L10
-Z38 VFHNZElo`fBXoCc0aQ39S_3
-Z39 !s100 5?iUTeE@=UA_RTOAFMTd^2
+VY:<gK?OYJK>_6ilO:]]YU1
+!s100 D=2hN`U[O@BRQ71LaNV5X3
 R8
 32
-R9
+R14
 !i10b 1
-R10
+R17
 R35
 R36
 !i113 1
+R12
 R13
-R14
 Edivider_tb0
-Z40 w1507502652
-R1
+Z38 w1507502652
+Z39 DPx4 work 13 divider_const 0 22 mlg@KVz1Ee;^1?lXjJRJL0
 R2
 R32
 R3
 R4
-Z41 dD:/github/355Labs/Lab2/simulation/divider
-Z42 8D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
-Z43 FD:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
+Z40 dD:/github/355Labs/Lab2/simulation/divider
+Z41 8D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
+Z42 FD:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd
 l0
 L8
 V21B48VCC0;P5OV5_ISA1d1
 !s100 n:L_lB@3d?DLSZVT<E`i10
 R8
 32
-Z44 !s110 1507504119
+Z43 !s110 1507504119
 !i10b 1
-Z45 !s108 1507504119.000000
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
-Z47 !s107 D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
+Z44 !s108 1507504119.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
+Z46 !s107 D:/github/355Labs/Lab2/simulation/divider/divider_tb0.vhd|
 !i113 1
+R12
 R13
-R14
 Abehavioral
-R1
+R39
 R2
 R32
 R3
@@ -277,35 +302,35 @@ V=]7I]TAWQ:34WZB<AR4O81
 !s100 Njn4Q3DSL:gNmf4HBZUWB1
 R8
 32
-R44
+R43
 !i10b 1
+R44
 R45
 R46
-R47
 !i113 1
+R12
 R13
-R14
 Eleddcd
-R15
+R0
 R3
 R4
 R5
-Z48 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd
-Z49 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd
+Z47 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd
+Z48 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd
 l0
 L5
 VOG]2A:mU_zz]20mLnD]<J1
 !s100 U88l86QWZ?@FVelYTJRl93
 R8
 32
-R9
-!i10b 1
-R10
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd|
-Z51 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/leddcd.vhd|
-!i113 1
-R13
 R14
+!i10b 1
+R17
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd|
+Z50 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd|
+!i113 1
+R12
+R13
 Adata_flow
 R3
 R4
@@ -316,20 +341,20 @@ Va;DDmGlg_7lhm>e8>K:ZC0
 !s100 m2^3eM=F]dzI>T^C<63Le2
 R8
 32
-R9
-!i10b 1
-R10
-R50
-R51
-!i113 1
-R13
 R14
+!i10b 1
+R17
+R49
+R50
+!i113 1
+R12
+R13
 Ereg_n
-Z52 w1508617684
+Z51 w1508617684
 R2
 R3
 R4
-R5
+Z52 dC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/simulation/divider
 Z53 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/reg_n.vhd
 Z54 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/reg_n.vhd
 l0
@@ -344,8 +369,8 @@ Z56 !s108 1508638513.000000
 Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/reg_n.vhd|
 Z58 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab3/reg_n.vhd|
 !i113 1
+R12
 R13
-R14
 Abehavioral
 R2
 R3
@@ -363,5 +388,5 @@ R56
 R57
 R58
 !i113 1
+R12
 R13
-R14

@@ -139,6 +139,7 @@ architecture fsm_behavior of divider is
 begin
 
   StateReg: process (start, clk) is
+    begin
     if (start = '0') then
       current_s <= init;
     elsif (rising_edge(clk)) then
@@ -153,7 +154,7 @@ begin
     variable p : integer;
     variable a_int, b_int, q_int : integer;
     variable sign_internal : std_logic;
-  variable one : std_logic_vector(DIVIDEND_WIDTH-1 downto 0) := (0 => '1', others => '0');
+    variable one : std_logic_vector(DIVIDEND_WIDTH-1 downto 0) := (0 => '1', others => '0');
     begin
       a_c <= a;
       b_c <= b;
@@ -162,45 +163,50 @@ begin
       case(current_s) is
         ----------------------idle---------
         when idle =>
+        report "Idle State";
           if (start = '0') then
             next_s <= init;
           end if;
           ---------------------init-----------
         when init =>
-          if (b = 1) then
+        report "Init State";
+          if (to_integer(unsigned(b)) = 1) then
             next_s <= b_eq_1;
           else
-            a_c <= std_logic_vector(abs(signed(divisor)));
-            b_c <= std_logic_vector(abs(signed(dividend)));
+            a_c <= std_logic_vector(abs(signed(dividend)));
+            b_c <= std_logic_vector(abs(signed(divisor)));
             q_c <= (others=>'0');
             next_s <= main_loop;
           end if;
           ------------------beq1------------
-          when b_eq_1 =>
-            q_c <= a_c;
+        when b_eq_1 =>
+        report "BEQ State";
+          q_c <= a_c;
+          next_s <= epilogue;
+        ------------------main_loop----------
+        when main_loop =>
+        report "MAIN LOOP";
+          if (unsigned(b) /= 0 and unsigned(b) < unsigned(a)) then
+            p := get_msb_pos(a)-get_msb_pos(b);
+            if ((unsigned(b) SLL p) > unsigned(a)) then
+              p := p-1;
+            end if;
+            q_c <= std_logic_vector(unsigned(q) + (unsigned(one) SLL p));
+            a_c <= std_logic_vector(to_signed((to_integer(unsigned(a)) - to_integer((unsigned(b) SLL p))),DIVIDEND_WIDTH));
+            next_s <= main_loop;
+          else
             next_s <= epilogue;
-          ------------------main_loop----------
-          when main_loop =>
-            if (unsigned(b) /= 0 and unsigned(b) < unsigned(a)) then
-              p := get_msb_pos(a)-get_msb_pos(b);
-              if ((unsigned(b) SLL p) > unsigned(a)) then
-                p := p-1;
-              end if;
-              q_c <= unsigned(q) + (unsigned(one) SLL p);
-              a_c <= unsigned(a) - (unsigned(b) SLL p);
-              next_s <= main_loop;
-            else
-              next_s <= epilogue;
-            end if;
-          ---------------epilogue----------
-          when epilogue =>
-            sign_internal := dividend(dividend'HIGH) xor divisor(divisor'HIGH);
-            if (sign_internal = '1') then
-              q_c <= std_logic_vector(-signed(q));
-            end if;
-            if (dividend(dividend'HIGH) = '1') then
-              a_c <= std_logic_vector(-signed(a));
-            end if;
+          end if;
+        ---------------epilogue----------
+        when epilogue =>
+        report "Epilogue";
+          sign_internal := dividend(dividend'HIGH) xor divisor(divisor'HIGH);
+          if (sign_internal = '1') then
+            q_c <= std_logic_vector(-signed(q));
+          end if;
+          if (dividend(dividend'HIGH) = '1') then
+            a_c <= std_logic_vector(-signed(a));
+          end if;
       end case;
   end process CombProc;
 

@@ -12,9 +12,9 @@ package body divider_const is
  function get_msb_pos (vec : std_logic_vector)
                        return integer is
  begin
-     for i in (vec'LOW to vec'HIGH) loop
+     for i in vec'LOW to vec'HIGH loop
        if (vec(vec'HIGH - i) = '1') then
-         return i;
+         return (vec'HIGH - i);
        end if;
      end loop;
  end get_msb_pos;

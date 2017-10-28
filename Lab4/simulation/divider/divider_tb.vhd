@@ -23,13 +23,14 @@ architecture behavioral of divider_tb is
         overflow : out std_logic
       );
   end component divider;
-  for all : divider use entity WORK.divider (behavioral_sequential);
+  for all : divider use entity WORK.divider (fsm_behavior);
 
   signal start_tb : std_logic;
   signal dividend_tb : std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
   signal divisor_tb : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
   signal quotient_tb : std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
   signal remainder_tb : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
+  signal sign_tb : std_logic;
   signal overflow_tb : std_logic;
   signal clk_tb : std_logic;
   signal hold : std_logic :='0';
