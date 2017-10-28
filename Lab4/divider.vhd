@@ -125,4 +125,32 @@ architecture behavioral_sequential of divider is
 
 
 end architecture behavioral_sequential;
+
+architecture fsm_behavior of divider is
+  type state is (idle, init, b_eq_1, main_loop, epilogue);
+  signal current_s, next_s : state;
+  signal a : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
+  signal b : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
+  signal q : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
+  signal a_c : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
+  signal b_c : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
+  signal q_c : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
+
+begin
+
+  StateReg: process (start, clk) is
+    if (start = '0') then
+      current_s <= init;
+      a <= std_logic_vector(abs(signed(divisor)));
+      b <= std_logic_vector(abs(signed(dividend)));
+      q <= (others=>'0');
+    elsif (rising_edge(clk)) then
+      current_s <= next_s;
+      a <= a_c;
+      b <= b_c;
+      q <= q_c;
+    end if;
+  end process StateReg;
+
+end architecture fsm_behavior;
 -----------------------------------------------------------------------------
