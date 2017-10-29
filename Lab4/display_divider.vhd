@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 use WORK.divider_const.all;
 --Additional standard or custom libraries go here
 entity display_divider is
@@ -39,6 +40,8 @@ architecture structural of display_divider is
 
   signal quotient: std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
   signal remainder: std_logic_vector(DIVISOR_WIDTH-1 downto 0);
+  --signal absdd, absq : std_logic_vector(DIVIDEND_WIDTH -1 downto 0);
+  --signal absdv, absrm : std_logic_vector(DIVISOR_WIDTH -1 downto 0);
 
   begin
 --Structural design goes here

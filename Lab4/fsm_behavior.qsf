@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY fsm_behavior
+set_global_assignment -name TOP_LEVEL_ENTITY display_divider
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:32:15  OCTOBER 28, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
@@ -53,3 +53,68 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_H15 -to dds
+set_location_assignment PIN_F15 -to dvs
+set_location_assignment PIN_G21 -to overflow
+set_location_assignment PIN_J15 -to qs
+set_location_assignment PIN_J17 -to rms
+set_location_assignment PIN_Y23 -to dividend[7]
+set_location_assignment PIN_AA22 -to dividend[5]
+set_location_assignment PIN_Y24 -to dividend[6]
+set_location_assignment PIN_AA23 -to dividend[4]
+set_location_assignment PIN_AA24 -to dividend[3]
+set_location_assignment PIN_AB23 -to dividend[2]
+set_location_assignment PIN_AB24 -to dividend[1]
+set_location_assignment PIN_AC24 -to dividend[0]
+set_location_assignment PIN_AA14 -to dividend_segments_out[13]
+set_location_assignment PIN_AG18 -to dividend_segments_out[12]
+set_location_assignment PIN_AF17 -to dividend_segments_out[11]
+set_location_assignment PIN_AH17 -to dividend_segments_out[10]
+set_location_assignment PIN_AG17 -to dividend_segments_out[9]
+set_location_assignment PIN_AE17 -to dividend_segments_out[8]
+set_location_assignment PIN_AD17 -to dividend_segments_out[7]
+set_location_assignment PIN_AC17 -to dividend_segments_out[6]
+set_location_assignment PIN_AA15 -to dividend_segments_out[5]
+set_location_assignment PIN_AB15 -to dividend_segments_out[4]
+set_location_assignment PIN_AB17 -to dividend_segments_out[3]
+set_location_assignment PIN_AA16 -to dividend_segments_out[2]
+set_location_assignment PIN_AB16 -to dividend_segments_out[1]
+set_location_assignment PIN_AA17 -to dividend_segments_out[0]
+set_location_assignment PIN_AB25 -to divisor[3]
+set_location_assignment PIN_AC25 -to divisor[2]
+set_location_assignment PIN_AB26 -to divisor[1]
+set_location_assignment PIN_AD26 -to divisor[0]
+set_location_assignment PIN_AE18 -to divisor_segments_out[6]
+set_location_assignment PIN_AF19 -to divisor_segments_out[5]
+set_location_assignment PIN_AE19 -to divisor_segments_out[4]
+set_location_assignment PIN_AH21 -to divisor_segments_out[3]
+set_location_assignment PIN_AG21 -to divisor_segments_out[2]
+set_location_assignment PIN_AA19 -to divisor_segments_out[1]
+set_location_assignment PIN_AB19 -to divisor_segments_out[0]
+set_location_assignment PIN_Y19 -to quotient_segments_out[13]
+set_location_assignment PIN_AF23 -to quotient_segments_out[12]
+set_location_assignment PIN_AD24 -to quotient_segments_out[11]
+set_location_assignment PIN_AA21 -to quotient_segments_out[10]
+set_location_assignment PIN_AB20 -to quotient_segments_out[9]
+set_location_assignment PIN_U21 -to quotient_segments_out[8]
+set_location_assignment PIN_V21 -to quotient_segments_out[7]
+set_location_assignment PIN_W28 -to quotient_segments_out[6]
+set_location_assignment PIN_W27 -to quotient_segments_out[5]
+set_location_assignment PIN_Y26 -to quotient_segments_out[4]
+set_location_assignment PIN_W26 -to quotient_segments_out[3]
+set_location_assignment PIN_Y25 -to quotient_segments_out[2]
+set_location_assignment PIN_AA26 -to quotient_segments_out[1]
+set_location_assignment PIN_AA25 -to quotient_segments_out[0]
+set_location_assignment PIN_H22 -to remainder_segments_out[6]
+set_location_assignment PIN_J22 -to remainder_segments_out[5]
+set_location_assignment PIN_L25 -to remainder_segments_out[4]
+set_location_assignment PIN_L26 -to remainder_segments_out[3]
+set_location_assignment PIN_E17 -to remainder_segments_out[2]
+set_location_assignment PIN_F22 -to remainder_segments_out[1]
+set_location_assignment PIN_G18 -to remainder_segments_out[0]
+set_location_assignment PIN_M23 -to start
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

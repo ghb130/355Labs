@@ -23,7 +23,6 @@ architecture behavioral of divider_tb is
         overflow : out std_logic
       );
   end component divider;
-  for all : divider use entity WORK.divider (fsm_behavior);
 
   signal start_tb : std_logic;
   signal dividend_tb : std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
@@ -59,8 +58,8 @@ begin
 
     process is
         variable my_line : line;
-        file infile: text open read_mode is "divider16.in";
-        file outfile: text open write_mode is "divider16.out";
+        file infile: text open read_mode is "divider32.in";
+        file outfile: text open write_mode is "divider32.out";
 
         variable dividend_int : integer;
         variable divisor_int : integer;
@@ -72,8 +71,8 @@ begin
            readline(infile, my_line);
            read(my_line, divisor_int);
            start_tb <= '0';
-           dividend_tb <= std_logic_vector(to_unsigned(dividend_int, DIVIDEND_WIDTH));
-           divisor_tb <= std_logic_vector(to_unsigned(divisor_int, DIVISOR_WIDTH));
+           dividend_tb <= std_logic_vector(to_signed(dividend_int, DIVIDEND_WIDTH));
+           divisor_tb <= std_logic_vector(to_signed(divisor_int, DIVISOR_WIDTH));
            wait for 16 ns;
            start_tb <= '1';
            wait for 100 ns;
@@ -85,11 +84,11 @@ begin
            write(my_line, ' ');
            write(my_line, '=');
            write(my_line, ' ');
-           write(my_line, to_integer(unsigned(quotient_tb)));
+           write(my_line, to_integer(signed(quotient_tb)));
            write(my_line, ' ');
            write(my_line, string'("--"));
            write(my_line, ' ');
-           write(my_line, to_integer(unsigned(remainder_tb)));
+           write(my_line, to_integer(signed(remainder_tb)));
            if overflow_tb = '1' then
              write(my_line, ' ');
              write(my_line, string'("OVERFLOW"));

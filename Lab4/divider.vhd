@@ -19,122 +19,18 @@ entity divider is
       overflow : out std_logic
     );
 end entity divider;
-architecture structural_combinational of divider is
-  type remMemory is array(0 to DIVIDEND_WIDTH-1) of std_logic_vector(DIVISOR_WIDTH downto 0);
-  signal remMem: remMemory;
-  signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
-  signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
-
-  COMPONENT comparator is
-    port(
-        DINL : in std_logic_vector (DIVISOR_WIDTH downto 0); -- current portion of dividend
-        DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
-        DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
-        isGreaterEq : out std_logic
-      );
-  end COMPONENT;
-
-  begin
-    overflow <= '1' when unsigned(divisor) = 0 else '0';
-    intDivisor <= divisor when start = '0'; --potential issues with no default values
-    intDividend <= dividend when start = '0';
-    Slice: FOR i in 0 to DIVIDEND_WIDTH - 1 GENERATE begin
-        FirstSlice: if i = 0 GENERATE begin
-          remMem(i) <= (0 => intDividend((DIVIDEND_WIDTH-1) - i), others => '0');
-          firstComp: comparator
-            port map(remMem(i), intDivisor, remMem(i+1)(DIVISOR_WIDTH downto 1), quotient((DIVIDEND_WIDTH-1)-i));
-        end GENERATE;
-        MiddleSlice: if i > 0 AND i < DIVIDEND_WIDTH - 1 GENERATE begin
-          remMem(i)(0) <= intDividend((DIVIDEND_WIDTH-1) - i);
-          middleComp: comparator
-            port map(remMem(i), intDivisor, remMem(i+1)(DIVISOR_WIDTH downto 1), quotient((DIVIDEND_WIDTH-1)-i));
-        end GENERATE;
-        EndSlice: if i = DIVIDEND_WIDTH - 1 GENERATE begin
-          remMem(i)(0) <= intDividend((DIVIDEND_WIDTH-1) - i);
-          middleComp: comparator
-            port map(remMem(i), intDivisor, remainder, quotient((DIVIDEND_WIDTH-1)-i));
-        end GENERATE;
-    end GENERATE;
-end architecture structural_combinational;
-------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------
-architecture behavioral_sequential of divider is
-  signal intDividend: std_logic_vector (DIVIDEND_WIDTH - 1 downto 0);
-  signal intDivisor:  std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
-  signal DINL : std_logic_vector (DIVISOR_WIDTH downto 0);
-  signal DOUT : std_logic_vector (DIVISOR_WIDTH - 1 downto 0);
-  signal isGreaterEq : std_logic;
-  signal countout : integer;
-
-  COMPONENT comparator is
-    port(
-        DINL : in std_logic_vector (DIVISOR_WIDTH downto 0); -- current portion of dividend
-        DINR : in std_logic_vector (DIVISOR_WIDTH - 1 downto 0); -- divisor
-        DOUT : out std_logic_vector (DIVISOR_WIDTH - 1 downto 0);  -- This should probably be DATA_WIDTH downto 0
-        isGreaterEq : out std_logic
-      );
-  end COMPONENT;
-
-  begin
-    comp: comparator port map(
-                    DINL=>DINL,
-                    DINR=>intDivisor,
-                    DOUT=>DOUT,
-                    isGreaterEq=>isGreaterEq
-                    );
-
-    clocked_process: process(clk) is
-      variable count: integer:= -1;
-      variable flag: boolean:=false;
-      variable varQ: std_logic_vector (DIVIDEND_WIDTH downto 0);
-      begin
-
-        if(rising_edge(clk)) then
-          if(unsigned(intDivisor)=0) then
-            overflow <= '1';
-          else
-            overflow <= '0';
-          end if;
-
-          if(start = '0' and flag = false) then
-            flag := true;
-            intDivisor <= divisor;
-            intDividend <= dividend;
-            count := -1;
-            quotient <= (others => '0');
-          end if;
-
-          if(count=-1) then
-            DINL <= (others => '0');
-            count:=count+1;
-          elsif (count < DIVIDEND_WIDTH) then
-            DINL(DIVISOR_WIDTH downto 1) <= DOUT;
-            DINL(0) <= intDividend((DIVIDEND_WIDTH-1)-count);
-            count:=count+1;
-          else
-            flag := false;
-            quotient <= varQ(DIVIDEND_WIDTH-1 downto 0);
-          end if;
-        end if;
-
-        if(falling_edge(clk) and count >= 0) then
-          remainder <= DOUT;
-          varQ((DIVIDEND_WIDTH)-count) := isGreaterEq;
-        end if;
-    end process clocked_process;
-
-
-end architecture behavioral_sequential;
-
+------------------------------------------------------------------------------
 architecture fsm_behavior of divider is
   type state is (idle, init, b_eq_1, main_loop, epilogue);
   signal current_s, next_s : state;
   signal a : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
   signal b : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
   signal q : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
+  signal r : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
   signal a_c : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
   signal b_c : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
   signal q_c : std_logic_vector(DIVIDEND_WIDTH-1 downto 0);
+  signal r_c : std_logic_vector(DIVISOR_WIDTH-1 downto 0);
 
 begin
 
@@ -147,6 +43,7 @@ begin
       a <= a_c;
       b <= b_c;
       q <= q_c;
+      r <= r_c;
     end if;
   end process StateReg;
 
@@ -157,49 +54,56 @@ begin
     variable one : std_logic_vector(DIVIDEND_WIDTH-1 downto 0) := (0 => '1', others => '0');
     begin
       a_c <= a;
+      r_c <= r;
       b_c <= b;
       q_c <= q;
       next_s <= current_s;
+      quotient <= q;
+      remainder <= a(DIVISOR_WIDTH-1 downto 0);
+
       case(current_s) is
         ----------------------idle---------
         when idle =>
-        report "Idle State";
           if (start = '0') then
             next_s <= init;
           end if;
           ---------------------init-----------
         when init =>
-        report "Init State";
-          if (to_integer(unsigned(b)) = 1) then
+          overflow <='0';
+          a_c <= std_logic_vector(abs(signed(dividend)));
+          b_c <= std_logic_vector(abs(signed(divisor)));
+          q_c <= (others=>'0');
+          r_c <= std_logic_vector(abs(signed(dividend(DIVISOR_WIDTH-1 downto 0))));
+
+          if (to_integer(unsigned(divisor)) = 1) then
             next_s <= b_eq_1;
+            a_c <= (others => '0');
+          elsif (to_integer(unsigned(divisor)) = 0) then
+            next_s <= b_eq_1;
+            overflow <= '1';
+            a_c <= (others => '0');
           else
-            a_c <= std_logic_vector(abs(signed(dividend)));
-            b_c <= std_logic_vector(abs(signed(divisor)));
-            q_c <= (others=>'0');
             next_s <= main_loop;
           end if;
           ------------------beq1------------
         when b_eq_1 =>
-        report "BEQ State";
-          q_c <= a_c;
+          q_c <= dividend;
           next_s <= epilogue;
         ------------------main_loop----------
         when main_loop =>
-        report "MAIN LOOP";
           if (unsigned(b) /= 0 and unsigned(b) < unsigned(a)) then
             p := get_msb_pos(a)-get_msb_pos(b);
-            if ((unsigned(b) SLL p) > unsigned(a)) then
+            if ((resize(unsigned(b),DIVIDEND_WIDTH) SLL p) > unsigned(a)) then
               p := p-1;
             end if;
             q_c <= std_logic_vector(unsigned(q) + (unsigned(one) SLL p));
-            a_c <= std_logic_vector(to_signed((to_integer(unsigned(a)) - to_integer((unsigned(b) SLL p))),DIVIDEND_WIDTH));
+            a_c <= std_logic_vector(to_signed((to_integer(unsigned(a)) - to_integer((resize(unsigned(b),DIVIDEND_WIDTH) SLL p))),DIVIDEND_WIDTH));
             next_s <= main_loop;
           else
             next_s <= epilogue;
           end if;
         ---------------epilogue----------
         when epilogue =>
-        report "Epilogue";
           sign_internal := dividend(dividend'HIGH) xor divisor(divisor'HIGH);
           if (sign_internal = '1') then
             q_c <= std_logic_vector(-signed(q));
@@ -207,6 +111,7 @@ begin
           if (dividend(dividend'HIGH) = '1') then
             a_c <= std_logic_vector(-signed(a));
           end if;
+          next_s <= idle;
       end case;
   end process CombProc;
 
