@@ -1,0 +1,230 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/adder
+Eadd_1b
+Z0 w1509720594
+Z1 DPx4 work 13 eecs361_gates 0 22 G@G3>3naH[gM9iCRR86lk0
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/add1b
+Z5 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd
+Z6 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd
+l0
+L5
+VTj^`7;4n:[@AzJF4?9<dd0
+!s100 No7OlP6Sa`AQ?BKSW@gdk0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1509721065
+!i10b 1
+Z9 !s108 1509721065.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd|
+Z11 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+DEx4 work 6 add_1b 0 22 Tj^`7;4n:[@AzJF4?9<dd0
+l43
+L15
+V:>Gl997kj]mn>E8PAn9A83
+!s100 D^KG@?i=Zm5OQSV7174]R1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eadd_1b_tb
+Z14 w1509720566
+R1
+R2
+R3
+R4
+Z15 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/add1b/add_1b_tb.vhd
+Z16 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/add1b/add_1b_tb.vhd
+l0
+L5
+VN9SNeY5oI^9ZHSVhVFI5]2
+!s100 GZ?5dE24gz^F<ZPOg2mgN2
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/add1b/add_1b_tb.vhd|
+Z18 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/add1b/add_1b_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 9 add_1b_tb 0 22 N9SNeY5oI^9ZHSVhVFI5]2
+l26
+L8
+V5B:j:OED9DhBkMUQ;D@e53
+!s100 V30K^jbklJ`oUT4n:nC<10
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eand_gate
+Z19 w1509715425
+R2
+R3
+R4
+Z20 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
+Z21 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
+l0
+L5
+VhE_e_Rgm[N3PdZh[V=Az?1
+!s100 9zM?`;meNomBE;big9UG12
+R7
+32
+Z22 !s110 1509721066
+!i10b 1
+Z23 !s108 1509721066.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
+Z25 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
+!i113 1
+R12
+R13
+Adataflow
+R2
+R3
+DEx4 work 8 and_gate 0 22 hE_e_Rgm[N3PdZh[V=Az?1
+l14
+L13
+VC@ldnBQ6jEzl^]@212YPz1
+!s100 Wc2cnMoUL`Rn2T[ECHYDg0
+R7
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Peecs361_gates
+R2
+R3
+R19
+R4
+8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd
+FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd
+l0
+L4
+VG@G3>3naH[gM9iCRR86lk0
+!s100 EFJF``Kkcd:<4LI@jVAPI3
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd|
+!s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd|
+!i113 1
+R12
+R13
+Eor_gate
+R19
+R2
+R3
+R4
+Z26 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd
+Z27 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd
+l0
+L5
+VO1l5BHjZPQ5?]IFn9;=UE2
+!s100 P4NBKo^c]hz<z`LINQA5?3
+R7
+32
+R22
+!i10b 1
+R23
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
+Z29 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
+!i113 1
+R12
+R13
+Adataflow
+R2
+R3
+DEx4 work 7 or_gate 0 22 O1l5BHjZPQ5?]IFn9;=UE2
+l14
+L13
+VU4niXK]Pm[B5X9KH>G;F:1
+!s100 imjaYVkITBGK@1]KZ;:O?1
+R7
+32
+R22
+!i10b 1
+R23
+R28
+R29
+!i113 1
+R12
+R13
+Exor_gate
+R19
+R2
+R3
+R4
+Z30 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
+Z31 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
+l0
+L5
+V[fBJY?oh1=l=lj];5ikcY1
+!s100 K_6H3f?zAK@4`dnkC2j[K2
+R7
+32
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
+Z33 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
+!i113 1
+R12
+R13
+Adataflow
+R2
+R3
+DEx4 work 8 xor_gate 0 22 [fBJY?oh1=l=lj];5ikcY1
+l14
+L13
+VX2I>jC5Dl4K41ohhQ=lfz2
+!s100 e;mL^F4ENl;O2f_Ae@3MU2
+R7
+32
+R8
+!i10b 1
+R9
+R32
+R33
+!i113 1
+R12
+R13
