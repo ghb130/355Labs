@@ -1,12 +1,4 @@
-{D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package eecs361_gates
--- Compiling package eecs361
-
-} {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd}
+{D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,6 +7,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package eecs361
 -- Compiling entity mux
 -- Compiling architecture structural of mux
+
+} {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Compiling package eecs361
 
 } {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -33,6 +33,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity extender_n_tb
 -- Compiling architecture behavioral of extender_n_tb
 
+} {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package eecs361_gates
+
 } {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -42,12 +49,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity extender_n
 -- Compiling architecture structural of extender_n
-
-} {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling package eecs361_gates
 
 } {} {}}
