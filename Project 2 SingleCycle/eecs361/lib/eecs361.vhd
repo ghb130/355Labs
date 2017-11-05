@@ -6,6 +6,29 @@ use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
 
 package eecs361 is
+  -- Registers
+  component reg32_32
+    port (
+          clk : in std_logic;
+          rw : in std_logic_vector(4 downto 0);
+          ra : in std_logic_vector(4 downto 0);
+          rb : in std_logic_vector(4 downto 0);
+          we : in std_logic;
+          busw : in std_logic_vector(31 downto 0);
+          busa : out std_logic_vector(31 downto 0);
+          busb : out std_logic_vector(31 downto 0)
+    );
+  end component reg32_32;
+
+  component reg32
+    port (
+          clk : in std_logic;
+          din : in std_logic_vector(31 downto 0);
+          we : in std_logic;
+          dout : out std_logic_vector(31 downto 0)
+    );
+  end component reg32;
+
   -- Decoders
   component dec_n
     generic (
@@ -19,6 +42,14 @@ package eecs361 is
   end component dec_n;
 
   -- Multiplexors
+  component mux_32to1
+    port (
+      a   : in  std_logic_vector(31 downto 0);
+      sel : in std_logic_vector(4 downto 0);
+      z   : out std_logic
+    );
+  end component mux_32to1;
+
   component mux
     port (
       sel   : in  std_logic;

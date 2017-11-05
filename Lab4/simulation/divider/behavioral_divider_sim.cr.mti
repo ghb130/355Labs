@@ -29,24 +29,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity divider
 -- Compiling architecture fsm_behavior of divider
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package divider_const
--- Compiling entity comparator
--- Compiling architecture behavioral of comparator
-
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity leddcd
--- Compiling architecture data_flow of leddcd
-
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/display_divider.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/display_divider.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -56,5 +38,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package divider_const
 -- Compiling entity display_divider
 -- Compiling architecture structural of display_divider
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/leddcd.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity leddcd
+-- Compiling architecture data_flow of leddcd
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Lab4/comparator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package divider_const
+-- Compiling entity comparator
+-- Compiling architecture behavioral of comparator
 
 } {} {}}
