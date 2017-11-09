@@ -61,10 +61,38 @@ begin
                         port map (a   => imm,
                                   sel => ExtOp,
                                   z   => extend);
-                                  
+
   ALU : alu_32_bit port map(A_32      => busa,
                             B_32      => ALUsrcMux,
                             op_32     => ALUctrl,   -- left out cout and overflow
                             zero_32   => zero,
                             result_32 => ALUout);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  InstrFU : ifu port map (init => pcInit,
+                          pc_init_val => pcInitVal,
+                          clk => clk,
+                          imm16 => imm,
+                          zero => zero,
+                          branch => Branch,
+                          addr_out => IFUout);
 end architecture;
