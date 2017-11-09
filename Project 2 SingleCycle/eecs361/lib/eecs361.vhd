@@ -4,9 +4,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
+use std.textio.all;
+use ieee.std_logic_textio.all;
 
 package eecs361 is
-
+--Constants
+  constant MEMORY_SOURCE : string := 'bills_branch.dat';
 -- Instruction Fetch Unit
   component ifu is
     port (
