@@ -19,12 +19,15 @@ entity datapath is
 end entity;
 
 architecture structural of datapath is
-  signal Rd, Rt, Rs : std_logic_vector(4 downto 0);
+  signal Rd, Rt, Rs, Rw : std_logic_vector(4 downto 0);
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
   signal extend, ALUsrcMux, ALUout, dataMemOut : std_logic_vector(31 downto 0);
   signal zero : std_logic;
-
 begin
-
+  RegDstMux : mux_n generic map (n => 5)
+                    port map (sel  => RegDst,
+                              src0 => Rt,
+                              src1 => Rd,
+                              z    => Rw);
 end architecture;
