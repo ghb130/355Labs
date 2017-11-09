@@ -27,5 +27,7 @@ architecture structural of datapath is
   signal zero : std_logic;
 
 begin
+  alusrcmux: mux_n generic map(n=>32)
+                   port map(src0=>busb, src1=>extender, sel=>ALUSrc, z=>ALUsrcMux);
 
 end architecture;
