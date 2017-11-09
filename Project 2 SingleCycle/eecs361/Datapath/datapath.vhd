@@ -24,6 +24,7 @@ architecture structural of datapath is
   signal busa, busb, busw : std_logic_vector(31 downto 0);
   signal extend, ALUsrcMux, ALUout, dataMemOut : std_logic_vector(31 downto 0);
   signal zero : std_logic;
+  signal test : std_logic;
 
 begin
 
