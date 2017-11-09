@@ -19,7 +19,6 @@ entity datapath is
 end entity;
 
 architecture structural of datapath is
-
   signal Rd, Rt, Rs : std_logic_vector(4 downto 0);
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
