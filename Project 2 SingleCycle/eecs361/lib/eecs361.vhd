@@ -6,6 +6,43 @@ use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
 
 package eecs361 is
+
+-- Instruction Fetch Unit
+  component ifu is
+    port (
+          init : in std_logic;
+          pc_init_val : in std_logic_vector(29 downto 0);
+          clk : in std_logic;
+          imm16 : in std_logic_vector(15 downto 0);
+          zero : in std_logic;
+          branch : in std_logic;
+          addr_out : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+ -- n bit Extender
+  component extender_n is
+    generic (n : integer := 30);
+    port (
+          a : in std_logic_vector(15 downto 0);
+          sel : in std_logic;
+          z : out std_logic_vector(n-1 downto 0)
+    );
+  end component;
+
+-- ALU
+  component alu_32_bit is
+    port (
+          A_32 : in std_logic_vector(31 downto 0);
+          B_32 : in std_logic_vector(31 downto 0);
+          op_32 : in std_logic_vector(3 downto 0);
+          cout_32 : out std_logic;
+          overflow_32 : out std_logic;
+          zero_32 : out std_logic;
+          result_32 : out std_logic_vector(31 downto 0)
+    );
+  end component alu_32_bit;
+
   -- Registers
   component reg32_32
     port (
@@ -158,4 +195,6 @@ package eecs361 is
 	  dout	: out std_logic_vector(31 downto 0)
 	);
   end component syncram;
+
+
 end;
