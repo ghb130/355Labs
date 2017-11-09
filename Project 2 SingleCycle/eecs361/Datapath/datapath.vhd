@@ -25,7 +25,7 @@ architecture structural of datapath is
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
   signal extend, ALUsrcMux, ALUout, dataMemOut, IFUout, Instruction : std_logic_vector(31 downto 0);
-  signal zero : std_logic;
+  signal zero, brCond : std_logic;
 begin
   RegDstMux : mux_n generic map (n => 5)
                     port map (sel  => RegDst,
