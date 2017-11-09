@@ -19,7 +19,7 @@ entity datapath is
 end entity;
 
 architecture structural of datapath is
-<<<<<<< HEAD
+
   signal Rd, Rt, Rs : std_logic_vector(4 downto 0);
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
@@ -27,9 +27,5 @@ architecture structural of datapath is
   signal zero : std_logic;
 
 begin
-=======
 
-begin
-  --test
->>>>>>> 54be5c926bc79575835c3ecd76a52b47694bb8c8
 end architecture;
