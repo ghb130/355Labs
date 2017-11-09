@@ -35,4 +35,35 @@ begin
                                src0 => Rt,
                                src1 => Rd,
                                z    => Rw);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               
+  Extender : extender_n generic map (n => 32)
+                        port map (a   => imm,
+                                  sel => ExtOp,
+                                  z   => extend);
+  ALU : alu_32_bit port map(A_32      => busa,
+                            B_32      => ALUsrcMux,
+                            op_32     => ALUctrl,   -- left out cout and overflow
+                            zero_32   => zero,
+                            result_32 => ALUout);
 end architecture;
