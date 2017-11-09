@@ -27,7 +27,7 @@ architecture structural of datapath is
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
   signal extend, ALUsrcMux, ALUout, dataMemOut, IFUout, Instruction : std_logic_vector(31 downto 0);
-  signal zero, brCond : std_logic;
+  signal zero, brToIFU, brCond : std_logic;
 begin
   RegDstMux : mux_n generic map (n => 5)
                     port map (sel  => RegDst,
@@ -93,7 +93,7 @@ begin
    Rt <= Instruction(25 downto 21);
    imm <= Instruction(15 downto 0);
 -------------------------------------------------------------
-
+  -- Add branch sel mux to determine correct zero signal to IFU
 
 
 
