@@ -24,7 +24,7 @@ architecture structural of datapath is
   signal Rd, Rt, Rs, Rw : std_logic_vector(4 downto 0);
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
-  signal extend, ALUsrcMux, ALUout, dataMemOut, IFUout : std_logic_vector(31 downto 0);
+  signal extend, ALUsrcMux, ALUout, dataMemOut, IFUout, Instruction : std_logic_vector(31 downto 0);
   signal zero : std_logic;
 begin
   RegDstMux : mux_n generic map (n => 5)
@@ -61,10 +61,30 @@ begin
                         port map (a   => imm,
                                   sel => ExtOp,
                                   z   => extend);
-                                  
+
   ALU : alu_32_bit port map(A_32      => busa,
                             B_32      => ALUsrcMux,
                             op_32     => ALUctrl,   -- left out cout and overflow
                             zero_32   => zero,
                             result_32 => ALUout);
+
+  InstructionMem : syncram generic map (mem_file => MEMORY_SOURCE)
+                           port map (clk  => clk,
+                                     cs   => '1',
+                                     oe   => '1',
+                                     we   => '0',
+                                     addr => IFUout,
+                                     din  => busb,
+                                     dout => Instruction);
+
+  Rd <= Instruction(15 downto 11);
+  Rs <= Instruction(20 downto 16);
+  Rt <= Instruction(25 downto 21);
+  imm <= Instruction(15 downto 0);
+
+  MtRMux : mux_n generic map (n => 5)
+                 port map (sel  => MemtoReg,
+                           src0 => ALUout,
+                           src1 => dataMemOut,
+                           z    => busw);
 end architecture;
