@@ -22,9 +22,9 @@ VTj^`7;4n:[@AzJF4?9<dd0
 !s100 No7OlP6Sa`AQ?BKSW@gdk0
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1510189271
+Z8 !s110 1510516384
 !i10b 1
-Z9 !s108 1510189271.000000
+Z9 !s108 1510516384.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd|
 Z11 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd|
 !i113 1
@@ -63,11 +63,11 @@ V2O]PgJj0`:3M>ofb4U3_;2
 !s100 WGNXP]NIWIAAQ[QJ9Vd6H3
 R7
 32
-R8
+Z17 !s110 1510516385
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_n.vhd|
-Z18 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_n.vhd|
+Z18 !s108 1510516385.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_n.vhd|
+Z20 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_n.vhd|
 !i113 1
 R12
 R13
@@ -82,32 +82,32 @@ V>N@H=m:0o<h;khj2l=Ic<2
 !s100 HWLP[nmRES@?G=fSTUUm<1
 R7
 32
-R8
-!i10b 1
-R9
 R17
+!i10b 1
 R18
+R19
+R20
 !i113 1
 R12
 R13
 Eand_gate
-Z19 w1447354224
+Z21 w1447354224
 R2
 R3
 R4
-Z20 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
-Z21 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
+Z22 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
+Z23 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
 l0
 L5
 VhE_e_Rgm[N3PdZh[V=Az?1
 !s100 9zM?`;meNomBE;big9UG12
 R7
 32
-Z22 !s110 1510189269
+Z24 !s110 1510516382
 !i10b 1
-Z23 !s108 1510189269.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
-Z25 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
+Z25 !s108 1510516382.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
+Z27 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
 !i113 1
 R12
 R13
@@ -121,32 +121,32 @@ VC@ldnBQ6jEzl^]@212YPz1
 !s100 Wc2cnMoUL`Rn2T[ECHYDg0
 R7
 32
-R22
-!i10b 1
-R23
 R24
+!i10b 1
 R25
+R26
+R27
 !i113 1
 R12
 R13
 Eand_gate_32
-R19
+R21
 R2
 R3
 R4
-Z26 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
-Z27 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
+Z28 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
+Z29 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
 l0
 L5
 V;K@lPb^fUn5NRPE9^YUWn1
 !s100 KSRcRaLU>DVF[looI[MAB1
 R7
 32
-R22
+R24
 !i10b 1
-R23
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
-Z29 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
+R25
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
+Z31 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -160,32 +160,32 @@ V_L`Mb12In>DaA6S>F3dR_2
 !s100 7eGi4aE3j0c6RNWj8;hYn2
 R7
 32
-R22
+R24
 !i10b 1
-R23
-R28
-R29
+R25
+R30
+R31
 !i113 1
 R12
 R13
 Eand_gate_n
-R19
+R21
 R2
 R3
 R4
-Z30 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
-Z31 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
+Z32 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
+Z33 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
 l0
 L5
 V9MR1C1[7b:z414JH]o[Q72
 !s100 BgW1<b848=U4b0Fm5IB4V0
 R7
 32
-R22
+R24
 !i10b 1
-R23
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
-Z33 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
+R25
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
+Z35 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -199,33 +199,33 @@ VNZceK8zIhSAfFLMf;8WfJ0
 !s100 TlhKh<Ln2>7=AINQTiM_c3
 R7
 32
-R22
+R24
 !i10b 1
-R23
-R32
-R33
+R25
+R34
+R35
 !i113 1
 R12
 R13
 Edec_n
-R19
+R21
 R14
 R2
 R3
 R4
-Z34 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
-Z35 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
+Z36 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
+Z37 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
 l0
 L5
 V0a>XSXG3^zhkzX^i4@9Ea1
 !s100 TFYiE@E?[zcS;UYZJZ]e]0
 R7
 32
-R22
+R24
 !i10b 1
-R23
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
-Z37 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
+R25
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
+Z39 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
 !i113 1
 R12
 R13
@@ -240,32 +240,32 @@ VaL_C;f4Cnzb@MDAjLf1Ed3
 !s100 55g?PRCWKJcmYh6jzUGZ80
 R7
 32
-R22
+R24
 !i10b 1
-R23
-R36
-R37
+R25
+R38
+R39
 !i113 1
 R12
 R13
 Edff
-R19
+R21
 R2
 R3
 R4
-Z38 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd
-Z39 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd
+Z40 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd
+Z41 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd
 l0
 L4
 V?Dl0]I?oihzd6e58lnTeT3
 !s100 6RF6aKO;bLUdc^Uo1TlJA1
 R7
 32
-R22
+R24
 !i10b 1
-R23
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd|
-Z41 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd|
+R25
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd|
+Z43 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dff.vhd|
 !i113 1
 R12
 R13
@@ -279,32 +279,32 @@ Ve^^=95d6ZUNM<z0RP@Q=G0
 !s100 YQ?Mf61<mPk;FAfQWmbPe2
 R7
 32
-R22
+R24
 !i10b 1
-R23
-R40
-R41
+R25
+R42
+R43
 !i113 1
 R12
 R13
 Edffr
-R19
+R21
 R2
 R3
 R4
-Z42 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd
-Z43 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd
+Z44 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd
+Z45 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd
 l0
 L4
 V]V0nCm<P[hMQe1HJ>dK>m2
 !s100 8^h72ccPiicFMoll6;?B^1
 R7
 32
-R22
+R24
 !i10b 1
-R23
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd|
-Z45 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd|
+R25
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd|
+Z47 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd|
 !i113 1
 R12
 R13
@@ -318,32 +318,32 @@ VeUY?8[LZleUS82iiKEe5Y0
 !s100 [jSDjV[;ooEXI1fbj<kQH2
 R7
 32
-R22
+R24
 !i10b 1
-R23
-R44
-R45
+R25
+R46
+R47
 !i113 1
 R12
 R13
 Edffr_a
-R19
+R21
 R2
 R3
 R4
-Z46 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd
-Z47 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd
+Z48 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd
+Z49 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd
 l0
 L4
 V4[b^00[Ug:gIIbna]26832
 !s100 Ae06@YlEN>^ZBC[J]R^j?2
 R7
 32
-R22
+R24
 !i10b 1
-R23
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
-Z49 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
+R25
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
+Z51 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
 !i113 1
 R12
 R13
@@ -357,31 +357,32 @@ V2e``[JLG1V9mIKaN=UMS62
 !s100 18jIoW:5CWgj6bjeXK^2W3
 R7
 32
-R22
+R24
 !i10b 1
-R23
-R48
-R49
+R25
+R50
+R51
 !i113 1
 R12
 R13
 Peecs361
+Z52 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
 R3
-w1509906896
+w1510516340
 R4
 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd
 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd
 l0
-L8
-Vmnh619OMYU`;F^c40Ud]K0
-!s100 WelVU4;8]K8NTZdOhKS>P0
+L10
+VY;inmC>[d<:Y1oLRb@T`00
+!s100 OBCA@A@mbOVg^WoAfNen?3
 R7
 32
-Z50 !s110 1510189268
+R24
 !i10b 1
-Z51 !s108 1510189268.000000
+R25
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd|
 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd|
 !i113 1
@@ -390,7 +391,7 @@ R13
 Peecs361_gates
 R2
 R3
-R19
+R21
 R4
 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd
 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd
@@ -400,9 +401,9 @@ VG@G3>3naH[gM9iCRR86lk0
 !s100 EFJF``Kkcd:<4LI@jVAPI3
 R7
 32
-R50
+R24
 !i10b 1
-R51
+R25
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd|
 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd|
 !i113 1
@@ -411,7 +412,7 @@ R13
 Eextender_n
 R0
 R14
-Z52 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R52
 R2
 R3
 R4
@@ -423,9 +424,9 @@ Vl9`_;R2P5Ubli:YDEZ@n91
 !s100 >9Y=]ZgliSBHY75UfYi=]0
 R7
 32
-R8
+R17
 !i10b 1
-R9
+R18
 Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd|
 Z56 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd|
 !i113 1
@@ -443,31 +444,31 @@ V9=EcK`YZ2BA;XLeKC`EH^1
 !s100 h1DHTaE:Tc;>TX[]hXd=f3
 R7
 32
-R8
+R17
 !i10b 1
-R9
+R18
 R55
 R56
 !i113 1
 R12
 R13
 Eifu
-R0
+Z57 w1510516377
 R1
 R2
 R3
 R4
-Z57 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/ifu.vhd
-Z58 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/ifu.vhd
+Z58 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/ifu.vhd
+Z59 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/ifu.vhd
 l0
 L5
-Vbnh0UPK8;UJ4;O;QG@7TT1
-!s100 8bf1nM>g=eYI:ARVBdR072
+VLXHjYCk]@22_GGMYQjRK:0
+!s100 @b:Vf4W9W9g9Y7VG0Mj5`1
 R7
 32
-Z59 !s110 1510189272
+R17
 !i10b 1
-R9
+R18
 Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/ifu.vhd|
 Z61 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/ifu.vhd|
 !i113 1
@@ -477,25 +478,26 @@ Astructural
 R1
 R2
 R3
-DEx4 work 3 ifu 0 22 bnh0UPK8;UJ4;O;QG@7TT1
+DEx4 work 3 ifu 0 22 LXHjYCk]@22_GGMYQjRK:0
 l72
-L17
-VNRCX3zJj?AmeCQIYk3:eC1
-!s100 ]om=C[zChc=J^nT`Cg5nQ0
+L16
+V[KTk:Ca;oJ5kW3[`CP[oV0
+!s100 e8HBc;lVf0T>hecHRm4ED2
 R7
 32
-R59
+R17
 !i10b 1
-R9
+R18
 R60
 R61
 !i113 1
 R12
 R13
 Emux
-R19
+R21
+R52
 R1
-Z62 DPx4 work 7 eecs361 0 22 mnh619OMYU`;F^c40Ud]K0
+Z62 DPx4 work 7 eecs361 0 22 Y;inmC>[d<:Y1oLRb@T`00
 R2
 R3
 R4
@@ -507,15 +509,16 @@ V>oJ5U=BnI^`ag0=K]WZKO0
 !s100 R7SGh1UNzgRXkDgUzi0Dn0
 R7
 32
-R22
+R24
 !i10b 1
-R23
+R25
 Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux.vhd|
 Z66 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux.vhd|
 !i113 1
 R12
 R13
 Astructural
+R52
 R1
 R62
 R2
@@ -527,16 +530,17 @@ V9e3_f``Qg4GhTA>ag5:8o0
 !s100 TMbaX=C3aUF9Pl?TK_bl20
 R7
 32
-R22
+R24
 !i10b 1
-R23
+R25
 R65
 R66
 !i113 1
 R12
 R13
 Emux_32
-R19
+R21
+R52
 R1
 R62
 R2
@@ -550,15 +554,16 @@ V;ZJB3@XFiFdGS?g@RF1Vc3
 !s100 ciE_BzZP_7gaALUfNcf3V2
 R7
 32
-R22
+R24
 !i10b 1
-R23
+R25
 Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_32.vhd|
 Z70 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_32.vhd|
 !i113 1
 R12
 R13
 Astructural
+R52
 R1
 R62
 R2
@@ -570,9 +575,9 @@ V;ZASSMASd=3o_Ld=:eJLS1
 !s100 iiT]gRaJ0BGA@1c7lKGZ;1
 R7
 32
-R22
+R24
 !i10b 1
-R23
+R25
 R69
 R70
 !i113 1
@@ -580,6 +585,7 @@ R12
 R13
 Emux_32to1
 Z71 w1509902971
+R52
 R1
 R62
 R2
@@ -593,15 +599,16 @@ V0>:391Y1EKRbVQC<dJ3^M2
 !s100 E^ZkU:[WF`D2B<6323E7_2
 R7
 32
-R22
+R24
 !i10b 1
-R23
+R25
 Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/mux_32to1.vhd|
 Z75 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/mux_32to1.vhd|
 !i113 1
 R12
 R13
 Astructural
+R52
 R1
 R62
 R2
@@ -613,16 +620,16 @@ V6Dh[R@>V5B:X^Ub=VjQC:0
 !s100 KL`j?<WmcAVVM8M@_YDC00
 R7
 32
-R22
+R24
 !i10b 1
-R23
+R25
 R74
 R75
 !i113 1
 R12
 R13
 Emux_n
-R19
+R21
 R2
 R3
 R4
@@ -634,11 +641,11 @@ V;Rg1MaANM2BcjIoIGiMR>3
 !s100 DhH_dWUkhZScmPX0PShL>1
 R7
 32
-R22
+Z78 !s110 1510516383
 !i10b 1
-R23
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
-Z79 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
+R25
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
+Z80 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
 !i113 1
 R12
 R13
@@ -652,32 +659,32 @@ Vdbi;>X`Mj01bMajZB2?643
 !s100 VOPJAGmKhfQ>L9L:P_FXf0
 R7
 32
-R22
-!i10b 1
-R23
 R78
+!i10b 1
+R25
 R79
+R80
 !i113 1
 R12
 R13
 Enand_gate
-R19
+R21
 R2
 R3
 R4
-Z80 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
-Z81 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
+Z81 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
+Z82 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
 l0
 L5
 V=i<fNcci6gazbNoz7Zo?B0
 !s100 `;YoNjg98=RO3KEUJb?JH2
 R7
 32
-R22
+R78
 !i10b 1
-R23
-Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
-Z83 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
+Z83 !s108 1510516383.000000
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
+Z85 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
 !i113 1
 R12
 R13
@@ -691,32 +698,32 @@ Vl^zW<z;Pl8NkCT3h`m8f>3
 !s100 DdgXSJTenGYMFNYGk^j2^2
 R7
 32
-R22
+R78
 !i10b 1
-R23
-R82
 R83
+R84
+R85
 !i113 1
 R12
 R13
 Enand_gate_32
-R19
+R21
 R2
 R3
 R4
-Z84 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
-Z85 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
+Z86 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
+Z87 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
 l0
 L5
 Vm1GdlgCSaKXEezc1oQ5A53
 !s100 d7`oU3cRhD_iz]OR?aJbM0
 R7
 32
-Z86 !s110 1510189270
+R78
 !i10b 1
-R23
-Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
-Z88 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
+R83
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
+Z89 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -730,30 +737,30 @@ V?=O5i19k>6?EO?fWFWmQ33
 !s100 5L7`cY6bRPYMYkmEYAg871
 R7
 32
-R86
+R78
 !i10b 1
-R23
-R87
+R83
 R88
+R89
 !i113 1
 R12
 R13
 Enand_gate_n
-R19
+R21
 R2
 R3
 R4
-Z89 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
-Z90 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
+Z90 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
+Z91 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
 l0
 L5
 VR6;g^V_FPW0;nb=i<dJlI3
 !s100 LMidV?0i^0NCQXjDDfE0j1
 R7
 32
-R86
+R78
 !i10b 1
-Z91 !s108 1510189270.000000
+R83
 Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd|
 Z93 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd|
 !i113 1
@@ -769,16 +776,16 @@ V`S7jEGJ6CA=AG<0ak5P6D1
 !s100 5mzmEVJ8`Ol]kLAA1ADTS0
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R92
 R93
 !i113 1
 R12
 R13
 Enor_gate
-R19
+R21
 R2
 R3
 R4
@@ -790,9 +797,9 @@ V0L7S;NMz9_M@NF0N3jjl53
 !s100 Uz[KW04m>JL2N=<Ae_26A3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd|
 Z97 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd|
 !i113 1
@@ -808,16 +815,16 @@ Vg6WmIRLO`^]W8MOk44NQ02
 !s100 kE2E`N:jBl`5f7h@CAkLc3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R96
 R97
 !i113 1
 R12
 R13
 Enor_gate_32
-R19
+R21
 R2
 R3
 R4
@@ -829,9 +836,9 @@ VJYT;XbbHkkG9;BF<8bSZ[2
 !s100 3mdJRKLJ_1Z1ih<o1WC>A3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd|
 Z101 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd|
 !i113 1
@@ -847,16 +854,16 @@ V[3NO3nGH3BHP0aAz4=<U;0
 !s100 4C[N[o;dbNU?^;JAFz8P@0
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R100
 R101
 !i113 1
 R12
 R13
 Enor_gate_n
-R19
+R21
 R2
 R3
 R4
@@ -868,9 +875,9 @@ VjaFJH5UI;Xc1C=l<5c`S^1
 !s100 WOgXHNaOaa3V@ZQR9[dBF2
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate_n.vhd|
 Z105 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate_n.vhd|
 !i113 1
@@ -886,16 +893,16 @@ V9dCFzT;RnT>eMXZgOEFXh2
 !s100 LLY;[lESSHQFLXI0BM0Lk2
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R104
 R105
 !i113 1
 R12
 R13
 Enot_gate
-R19
+R21
 R2
 R3
 R4
@@ -907,9 +914,9 @@ V?REPgFkfC>l7me3_Cm;h]0
 !s100 ZFL^eh?^CT8f=9?@;fY^P1
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/not_gate.vhd|
 Z109 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/not_gate.vhd|
 !i113 1
@@ -925,16 +932,16 @@ V^N]`_cihjlkgk@GD2ifne3
 !s100 0K4o_`::YhV<`CcAlY38V3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R108
 R109
 !i113 1
 R12
 R13
 Enot_gate_32
-R19
+R21
 R2
 R3
 R4
@@ -946,9 +953,9 @@ V5z8ni8e9GEdi_1z[h3[YT3
 !s100 MlQa>L3D?j3YTME?WDA^I3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd|
 Z113 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd|
 !i113 1
@@ -964,16 +971,16 @@ VooYb<YVBcg]jka=E1Bz2U2
 !s100 SZ]KSd]7=<``cT7UO3c^32
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R112
 R113
 !i113 1
 R12
 R13
 Enot_gate_n
-R19
+R21
 R2
 R3
 R4
@@ -985,9 +992,9 @@ VL[_>1Hz4EFXGgW8O0lzPe0
 !s100 IMo29cac8Wo2jk<h1@>Y41
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd|
 Z117 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd|
 !i113 1
@@ -1003,16 +1010,16 @@ V^?aa<E?_8@T0dJRWCLiMk2
 !s100 f1R?C4QOI1W16^[L00fF`1
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R116
 R117
 !i113 1
 R12
 R13
 Eor_gate
-R19
+R21
 R2
 R3
 R4
@@ -1024,9 +1031,9 @@ VO1l5BHjZPQ5?]IFn9;=UE2
 !s100 P4NBKo^c]hz<z`LINQA5?3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
 Z121 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
 !i113 1
@@ -1042,16 +1049,16 @@ VU4niXK]Pm[B5X9KH>G;F:1
 !s100 imjaYVkITBGK@1]KZ;:O?1
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R120
 R121
 !i113 1
 R12
 R13
 Eor_gate_32
-R19
+R21
 R2
 R3
 R4
@@ -1063,9 +1070,9 @@ VR4T`[JT7zTSFAT?fEEf591
 !s100 XkkR6QF?Vl4ZJYEZjo;0l2
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd|
 Z125 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd|
 !i113 1
@@ -1081,16 +1088,16 @@ Vm<XLcN8OGfnn6foi[Re=10
 !s100 K:BE?onG;^0[1Z5dkfcRR0
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R124
 R125
 !i113 1
 R12
 R13
 Eor_gate_n
-R19
+R21
 R2
 R3
 R4
@@ -1102,9 +1109,9 @@ VhcjC8YfR[BWVL];cJhOKi1
 !s100 Y[01iFT>714d^L[KJ4VM82
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd|
 Z129 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd|
 !i113 1
@@ -1120,9 +1127,9 @@ VJC>ZhgR[jGRkBeQ>4LTHl1
 !s100 X0T0eOJ7Mi7@HZjHoZO6:3
 R7
 32
-R86
+R78
 !i10b 1
-R91
+R83
 R128
 R129
 !i113 1
@@ -1142,11 +1149,11 @@ VzdPJe=PYz6M;LUIM`m?BD2
 !s100 @mP`M@CN^5W5ZliUjLzzW1
 R7
 32
-R59
+R17
 !i10b 1
-Z132 !s108 1510189272.000000
-Z133 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
-Z134 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
+R18
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
+Z133 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
 !i113 1
 R12
 R13
@@ -1154,30 +1161,31 @@ Astructural
 R1
 R2
 R3
-DEx4 work 6 pc_reg 0 22 zdPJe=PYz6M;LUIM`m?BD2
+Z134 DEx4 work 6 pc_reg 0 22 zdPJe=PYz6M;LUIM`m?BD2
 l21
 L13
-VFQCfdXNj6@2=cn?5D0WOH3
-!s100 4ePTJ62eB[59h>cbVYSnk1
+Z135 VFQCfdXNj6@2=cn?5D0WOH3
+Z136 !s100 4ePTJ62eB[59h>cbVYSnk1
 R7
 32
-R59
+R17
 !i10b 1
+R18
 R132
 R133
-R134
 !i113 1
 R12
 R13
 Ereg32
-Z135 w1509904062
+Z137 w1509904062
+R52
 R62
 R1
 R2
 R3
 R4
-Z136 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd
-Z137 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd
+Z138 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd
+Z139 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd
 l0
 L6
 VH5nV8[QI5XB?K3Vf2KCf<3
@@ -1187,12 +1195,13 @@ R7
 R8
 !i10b 1
 R9
-Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd|
-Z139 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd|
+Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd|
+Z141 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32.vhd|
 !i113 1
 R12
 R13
 Astructural
+R52
 R62
 R1
 R2
@@ -1207,20 +1216,21 @@ R7
 R8
 !i10b 1
 R9
-R138
-R139
+R140
+R141
 !i113 1
 R12
 R13
 Ereg32_32
-Z140 w1509908095
+Z142 w1509908095
+R52
 R62
 R1
 R2
 R3
 R4
-Z141 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd
-Z142 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd
+Z143 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd
+Z144 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd
 l0
 L6
 V^nULbPLLGXBQoU]ojf^h50
@@ -1230,12 +1240,13 @@ R7
 R8
 !i10b 1
 R9
-Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd|
-Z144 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd|
+Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd|
+Z146 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd|
 !i113 1
 R12
 R13
 Astructural
+R52
 R62
 R1
 R2
@@ -1250,13 +1261,13 @@ R7
 R8
 !i10b 1
 R9
-R143
-R144
+R145
+R146
 !i113 1
 R12
 R13
 Ereg32_tb
-Z145 w1509908096
+Z147 w1509908096
 R1
 R62
 R14
@@ -1264,8 +1275,8 @@ R52
 R2
 R3
 R4
-Z146 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd
-Z147 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd
+Z148 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd
+Z149 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd
 l0
 L10
 V_6hPfo284J>YUJKM1Zb6_3
@@ -1275,8 +1286,8 @@ R7
 R8
 !i10b 1
 R9
-Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd|
-Z149 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd|
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd|
+Z151 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/sim/reg32_tb.vhd|
 !i113 1
 R12
 R13
@@ -1297,41 +1308,41 @@ R7
 R8
 !i10b 1
 R9
-R148
-R149
+R150
+R151
 !i113 1
 R12
 R13
 Esram
-R19
+R21
 R14
 R52
-Z150 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z151 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z152 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z153 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R4
-Z152 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd
-Z153 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd
+Z154 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd
+Z155 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd
 l0
 L13
 VFLG`C39Ab9GzQ=^bY]PbI0
 !s100 dFa2^0bCm0FVM`Q9B=_f60
 R7
 32
-R86
+R8
 !i10b 1
-R91
-Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd|
-Z155 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd|
+R9
+Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd|
+Z157 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/sram.vhd|
 !i113 1
 R12
 R13
 Abehavioral
 R14
 R52
-R150
-R151
+R152
+R153
 R2
 R3
 DEx4 work 4 sram 0 22 FLG`C39Ab9GzQ=^bY]PbI0
@@ -1341,25 +1352,25 @@ VLRD]SNjG8@LM@IX=zhb1z3
 !s100 ;NlLnEhi3^n7W2I^9UJ2d3
 R7
 32
-R86
+R8
 !i10b 1
-R91
-R154
-R155
+R9
+R156
+R157
 !i113 1
 R12
 R13
 Esyncram
-R19
+R21
 R14
 R52
-R150
-R151
+R152
+R153
 R2
 R3
 R4
-Z156 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd
-Z157 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd
+Z158 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd
+Z159 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd
 l0
 L12
 VD=e][Y8<;9NigS>`niT123
@@ -1368,17 +1379,17 @@ R7
 32
 R8
 !i10b 1
-R91
-Z158 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
-Z159 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
+R9
+Z160 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
+Z161 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
 !i113 1
 R12
 R13
 Abehavioral
 R14
 R52
-R150
-R151
+R152
+R153
 R2
 R3
 DEx4 work 7 syncram 0 22 D=e][Y8<;9NigS>`niT123
@@ -1390,19 +1401,19 @@ R7
 32
 R8
 !i10b 1
-R91
-R158
-R159
+R9
+R160
+R161
 !i113 1
 R12
 R13
 Exnor_gate
-R19
+R21
 R2
 R3
 R4
-Z160 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
-Z161 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
+Z162 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
+Z163 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
 l0
 L5
 V0h2SEDJmYfE@NbVLih1891
@@ -1412,8 +1423,8 @@ R7
 R8
 !i10b 1
 R9
-Z162 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
-Z163 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
+Z165 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
 !i113 1
 R12
 R13
@@ -1430,18 +1441,18 @@ R7
 R8
 !i10b 1
 R9
-R162
-R163
+R164
+R165
 !i113 1
 R12
 R13
 Exnor_gate_32
-R19
+R21
 R2
 R3
 R4
-Z164 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
-Z165 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
+Z166 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
+Z167 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
 l0
 L5
 VI^Fo_SJbE0W]UUm=ZlX691
@@ -1451,8 +1462,8 @@ R7
 R8
 !i10b 1
 R9
-Z166 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
-Z167 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
+Z168 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
+Z169 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -1469,18 +1480,18 @@ R7
 R8
 !i10b 1
 R9
-R166
-R167
+R168
+R169
 !i113 1
 R12
 R13
 Exnor_gate_n
-R19
+R21
 R2
 R3
 R4
-Z168 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
-Z169 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
+Z170 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
+Z171 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
 l0
 L5
 VR_LmOEJa:d>5N49>W0ZA?3
@@ -1490,8 +1501,8 @@ R7
 R8
 !i10b 1
 R9
-Z170 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
-Z171 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
+Z172 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
+Z173 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -1508,18 +1519,18 @@ R7
 R8
 !i10b 1
 R9
-R170
-R171
+R172
+R173
 !i113 1
 R12
 R13
 Exor_gate
-R19
+R21
 R2
 R3
 R4
-Z172 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
-Z173 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
+Z174 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
+Z175 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
 l0
 L5
 V[fBJY?oh1=l=lj];5ikcY1
@@ -1529,8 +1540,8 @@ R7
 R8
 !i10b 1
 R9
-Z174 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
-Z175 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
+Z176 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
+Z177 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
 !i113 1
 R12
 R13
@@ -1547,18 +1558,18 @@ R7
 R8
 !i10b 1
 R9
-R174
-R175
+R176
+R177
 !i113 1
 R12
 R13
 Exor_gate_32
-R19
+R21
 R2
 R3
 R4
-Z176 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
-Z177 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
+Z178 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
+Z179 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
 l0
 L5
 V:TDC7[J^<4Z0hN7K<U@nz0
@@ -1568,8 +1579,8 @@ R7
 R8
 !i10b 1
 R9
-Z178 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
-Z179 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
+Z180 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
+Z181 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -1586,18 +1597,18 @@ R7
 R8
 !i10b 1
 R9
-R178
-R179
+R180
+R181
 !i113 1
 R12
 R13
 Exor_gate_n
-R19
+R21
 R2
 R3
 R4
-Z180 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
-Z181 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
+Z182 8C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
+Z183 FC:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
 l0
 L5
 VoXcGmO7Td517G9;DAlGa]0
@@ -1607,8 +1618,8 @@ R7
 R8
 !i10b 1
 R9
-Z182 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
-Z183 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
+Z184 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
+Z185 !s107 C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -1625,8 +1636,8 @@ R7
 R8
 !i10b 1
 R9
-R182
-R183
+R184
+R185
 !i113 1
 R12
 R13

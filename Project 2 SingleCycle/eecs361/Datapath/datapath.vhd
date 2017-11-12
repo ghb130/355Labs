@@ -15,9 +15,8 @@ entity datapath is
     ALUCtrl : in std_logic_vector (3 downto 0);
     MemWr : in std_logic;
     MemtoReg : in std_logic;
-    BranchSel : in std_logic_vector (2 downto 0);
+    BranchSel : in std_logic_vector (1 downto 0);
     pcInit : in std_logic;
-    pcInitVal : in std_logic_vector (29 downto 0);
     clk : in std_logic
   );
 end entity;
@@ -26,14 +25,19 @@ architecture structural of datapath is
   signal Rd, Rt, Rs, Rw : std_logic_vector(4 downto 0);
   signal imm : std_logic_vector(15 downto 0);
   signal busa, busb, busw : std_logic_vector(31 downto 0);
-  signal extend, ALUsrcMux, ALUout, dataMemOut, IFUout, Instruction : std_logic_vector(31 downto 0);
-  signal zero, brToIFU, brCond : std_logic;
+  signal extend, ALUsrcMux, BGTZmuxOut, ALUout, dataMemOut, IFUout, Instruction : std_logic_vector(31 downto 0);
+  signal zero, notZero, notmsb, bgtzsig, interBranchSel, BranchSelOut, brToIFU, brCond : std_logic;
+  constant zeroSrc : std_logic_vector(31 downto 0) := (others => '0');
+
 begin
+  ----------------------------------------------------------
+  --Select RD or RT as RW
   RegDstMux : mux_n generic map (n => 5)
                     port map (sel  => RegDst,
                               src0 => Rt,
                               src1 => Rd,
                               z    => Rw);
+  --Access register file
   Registers : reg32_32 port map (clk  => clk,
                                  rw   => Rw,
                                  ra   => Rs,
@@ -43,29 +47,58 @@ begin
                                  busa => busa,
                                  busb => busb);
 ----------------------------------------------------------
+--Extend immediate bits
   Extender : extender_n generic map (n => 32)
                          port map (a   => imm,
                                    sel => ExtOp,
                                    z   => extend);
-  ALUsrc : mux_n generic map (n => 32)
-                         port map(src0  => busb,
-                                  src1  => extender,
-                                  sel   => ALUSrc,
+--Select ALU src based on R or I type
+  ALUsrcMuxGate : mux_n generic map (n => 32)
+                         port map(sel   => ALUSrc,
+                                  src0  => busb,
+                                  src1  => extend,
                                   z     => ALUsrcMux);
+  --Input to ALU should be zero if instruction is BGTZ
+  BGTZmux : mux_n generic map (n  => 32)
+                  port map(sel => BranchSel(1),
+                           src0 => ALUsrcMux,
+                           src1 => zeroSrc,
+                           z => BGTZmuxOut);
+  --Process Inputs
   ALU : alu_32_bit port map(A_32      => busa,
-                            B_32      => ALUsrcMux,
+                            B_32      => BGTZmuxOut,
                             op_32     => ALUctrl,-- left out cout and overflow
                             zero_32   => zero,
                             result_32 => ALUout);
+  --Branch Select Bit Logic
+  notZeroGate : not_gate port map (x => zero,
+                                   z => notZero);
+  --Beq = 0, Bne = 1
+  BranchSelmux1 : mux port map (sel => BranchSel(0),
+                                src0 => zero,
+                                src1 => notZero,
+                                z => interBranchSel);
+  --not zero and not msb logic (for bgtz)
+  notMSBgat : not_gate port map (x => ALUout(31),
+                                 z => notmsb);
+  andbgtzgate : and_gate port map (x => notZero,
+                                   y => notmsb,
+                                   z => bgtzsig);
+  --BGTZ = 2 else previous out
+  BranchSelmux2 : mux port map (sel => BranchSel(1),
+                                src0 => interBranchSel,
+                                src1 => bgtzsig,
+                                z => BranchSelOut);
   ---------------------------------------------------------
+  --Feed Branch logic bit, instruciton immediate, branch bit into IFU
   InstrFU :  ifu port map (init => pcInit,
-                           pc_init_val => pcInitVal,
                            clk         => clk,
                            imm16       => imm,
-                           zero        => zero,
+                           zero        => BranchSelOut,
                            branch      => Branch,
                            addr_out    => IFUout);
 ------------------------------------------------------------
+--Data mem access
   DataMem  : syncram generic map (mem_file => MEMORY_SOURCE)
                      port map (clk  => clk,
                               oe   => '1',
@@ -74,7 +107,7 @@ begin
                               addr => ALUout,
                               din  => busb,
                               dout => dataMemOut);
-  MtRMux : mux_n generic map (n => 5)
+  MtRMux : mux_n generic map (n => 32)
                  port map (sel  => MemtoReg,
                            src0 => ALUout,
                            src1 => dataMemOut,
@@ -93,8 +126,4 @@ begin
    Rt <= Instruction(25 downto 21);
    imm <= Instruction(15 downto 0);
 -------------------------------------------------------------
-  -- Add branch sel mux to determine correct zero signal to IFU
-
-
-
 end architecture;

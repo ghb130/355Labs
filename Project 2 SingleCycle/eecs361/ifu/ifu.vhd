@@ -5,7 +5,6 @@ use work.eecs361_gates.all;
 entity ifu is
   port (
         init : in std_logic;
-        pc_init_val : in std_logic_vector(29 downto 0);
         clk : in std_logic;
         imm16 : in std_logic_vector(15 downto 0);
         zero : in std_logic;
@@ -59,6 +58,7 @@ architecture structural of ifu is
     );
   end component;
 
+  constant pc_init_val : std_logic_vector(29 downto 0) := "000000000100000000000000001000";
   signal pc_in : std_logic_vector(29 downto 0);  --"000000000100000000000000001000"
   signal pc_in_loop : std_logic_vector(29 downto 0);
   signal pc_out : std_logic_vector(29 downto 0);  --"000000000100000000000000001000"

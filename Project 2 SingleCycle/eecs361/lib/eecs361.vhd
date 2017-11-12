@@ -9,12 +9,28 @@ use ieee.std_logic_textio.all;
 
 package eecs361 is
 --Constants
-  constant MEMORY_SOURCE : string := 'bills_branch.dat';
+  constant MEMORY_SOURCE : string := "unsigned_sum.dat";
+-- Datapath component
+  component datapath is
+    port (
+      RegDst    : in  std_logic;
+      Regwr     : in  std_logic;
+      Branch    : in  std_logic;
+      ExtOp     : in  std_logic;
+      ALUSrc    : in  std_logic;
+      ALUCtrl   : in  std_logic_vector (3 downto 0);
+      MemWr     : in  std_logic;
+      MemtoReg  : in  std_logic;
+      BranchSel : in  std_logic_vector (1 downto 0);
+      pcInit    : in  std_logic;
+      clk       : in  std_logic
+    );
+  end component;
+
 -- Instruction Fetch Unit
   component ifu is
     port (
           init : in std_logic;
-          pc_init_val : in std_logic_vector(29 downto 0);
           clk : in std_logic;
           imm16 : in std_logic_vector(15 downto 0);
           zero : in std_logic;

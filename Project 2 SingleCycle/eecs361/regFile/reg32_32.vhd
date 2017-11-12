@@ -21,18 +21,21 @@ architecture structural of reg32_32 is
   signal reg_out : array32_32;
   signal mux_in : array32_32;
   signal decoder_out : std_logic_vector(31 downto 0);
-  signal we_vector : std_logic_vector(31 downto 0);
+  signal we_vector : std_logic_vector(31 downto 1);
+  constant zeroSrc : std_logic_vector(31 downto 0) := (others => '0');
   begin
     dec_write: dec_n generic map (n => 5)
                      port map (src => rw, z => decoder_out);
 
-    we_vec : for i in 0 to 31 generate
+    we_vec : for i in 1 to 31 generate
       we_and : and_gate port map (decoder_out(i), we, we_vector(i));
     end generate;
 
-    regfile : for i in 0 to 31 generate
+    regfile : for i in 1 to 31 generate
       reg : reg32 port map (clk, busw, we_vector(i), reg_out(i));
     end generate;
+
+    reg_out(0) <= zeroSrc;
 
     mix: for i in 0 to 31 generate
       inner_mix:for j in 0 to 31 generate
