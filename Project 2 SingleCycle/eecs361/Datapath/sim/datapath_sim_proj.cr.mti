@@ -156,6 +156,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity not_gate
 -- Compiling architecture dataflow of not_gate
 
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Loading package std_logic_textio
+-- Compiling package eecs361
+
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/alu_one_bit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/alu_one_bit.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
