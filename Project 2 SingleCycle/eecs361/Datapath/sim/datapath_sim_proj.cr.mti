@@ -176,17 +176,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity and_6to1
 -- Compiling architecture structural of and_6to1
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/Datapath/datapath.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/Datapath/datapath.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_textio
--- Loading package eecs361_gates
--- Loading package eecs361
--- Compiling entity datapath
--- Compiling architecture structural of datapath
-
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_rl32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_rl32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -215,6 +204,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity syncram
 -- Compiling architecture behavioral of syncram
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/reg32_32.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Loading package std_logic_textio
+-- Loading package eecs361
+-- Compiling entity reg32_32
+-- Compiling architecture structural of reg32_32
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
