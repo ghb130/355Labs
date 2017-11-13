@@ -51,10 +51,23 @@ begin
       end if;
     end process clock_generate;
 
+    process is
+      variable init : boolean := false;
+      begin
+        if not init then
+          pcInit_tb <= '1';
+          wait for 7 ns;
+          pcInit_tb <= '0';
+          init := true;
+        else
+          wait;
+        end if;
+      end process;
+
     process(clk_tb) is
         variable my_line : line;
         file infile: text open read_mode is "control.in";
-        variable LineVector : std_logic_vector(13 downto 0);
+        variable LineVector : std_logic_vector(12 downto 0);
         -- add  : 0000
         -- sub  : 0001
         -- and  : 0010
@@ -79,7 +92,6 @@ begin
            MemWr_tb <= LineVector(3);
            MemtoReg_tb <= LineVector(2);
            BranchSel_tb <= LineVector(1 downto 0);
-           pcInit_tb <= LineVector(13);
           else
             hold <= '1';
           end if;

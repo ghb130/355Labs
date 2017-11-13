@@ -9,7 +9,7 @@ use ieee.std_logic_textio.all;
 
 package eecs361 is
 --Constants
-  constant MEMORY_SOURCE : string := "unsigned_sum.dat";
+  constant MEMORY_SOURCE : string := "sort_corrected_branch.dat";
 -- Datapath component
   component datapath is
     port (
