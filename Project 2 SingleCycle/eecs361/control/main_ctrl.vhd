@@ -127,7 +127,7 @@ begin
   invBranch1 : pla_inverter
     port map (
       din  => opcode,
-      inv  => "111100",
+      inv  => "111000",
       dout => invOut1(2)
     );
 
