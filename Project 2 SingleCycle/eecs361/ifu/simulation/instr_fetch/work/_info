@@ -22,9 +22,9 @@ VTj^`7;4n:[@AzJF4?9<dd0
 !s100 No7OlP6Sa`AQ?BKSW@gdk0
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1509832919
+Z8 !s110 1510529428
 !i10b 1
-Z9 !s108 1509832919.000000
+Z9 !s108 1510529428.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd|
 Z11 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd|
 !i113 1
@@ -82,7 +82,7 @@ V>N@H=m:0o<h;khj2l=Ic<2
 !s100 HWLP[nmRES@?G=fSTUUm<1
 R7
 32
-Z20 !s110 1509832920
+R8
 !i10b 1
 R9
 R18
@@ -91,23 +91,23 @@ R19
 R12
 R13
 Eand_gate
-Z21 w1509715425
+Z20 w1509715425
 R2
 R3
 R4
-Z22 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
-Z23 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
+Z21 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
+Z22 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd
 l0
 L5
 VhE_e_Rgm[N3PdZh[V=Az?1
 !s100 9zM?`;meNomBE;big9UG12
 R7
 32
-R20
+R8
 !i10b 1
-Z24 !s108 1509832920.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
-Z26 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
+R9
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
+Z24 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate.vhd|
 !i113 1
 R12
 R13
@@ -121,32 +121,32 @@ VC@ldnBQ6jEzl^]@212YPz1
 !s100 Wc2cnMoUL`Rn2T[ECHYDg0
 R7
 32
-R20
+R8
 !i10b 1
+R9
+R23
 R24
-R25
-R26
 !i113 1
 R12
 R13
 Eand_gate_32
-R21
+R20
 R2
 R3
 R4
-Z27 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
-Z28 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
+Z25 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
+Z26 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd
 l0
 L5
 V;K@lPb^fUn5NRPE9^YUWn1
 !s100 KSRcRaLU>DVF[looI[MAB1
 R7
 32
-R20
+R8
 !i10b 1
-R24
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
-Z30 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
+R9
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
+Z28 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -160,32 +160,32 @@ V_L`Mb12In>DaA6S>F3dR_2
 !s100 7eGi4aE3j0c6RNWj8;hYn2
 R7
 32
-R20
+R8
 !i10b 1
-R24
-R29
-R30
+R9
+R27
+R28
 !i113 1
 R12
 R13
 Eand_gate_n
-R21
+R20
 R2
 R3
 R4
-Z31 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
-Z32 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
+Z29 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
+Z30 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd
 l0
 L5
 V9MR1C1[7b:z414JH]o[Q72
 !s100 BgW1<b848=U4b0Fm5IB4V0
 R7
 32
-R20
+R8
 !i10b 1
-R24
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
-Z34 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
+R9
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
+Z32 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/and_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -199,33 +199,33 @@ VNZceK8zIhSAfFLMf;8WfJ0
 !s100 TlhKh<Ln2>7=AINQTiM_c3
 R7
 32
-R20
+R8
 !i10b 1
-R24
-R33
-R34
+R9
+R31
+R32
 !i113 1
 R12
 R13
 Edec_n
-R21
+R20
 R15
 R2
 R3
 R4
-Z35 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
-Z36 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
+Z33 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
+Z34 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd
 l0
 L5
 V0a>XSXG3^zhkzX^i4@9Ea1
 !s100 TFYiE@E?[zcS;UYZJZ]e]0
 R7
 32
-R20
+R8
 !i10b 1
-R24
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
-Z38 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
+R9
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
+Z36 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dec_n.vhd|
 !i113 1
 R12
 R13
@@ -240,30 +240,30 @@ VaL_C;f4Cnzb@MDAjLf1Ed3
 !s100 55g?PRCWKJcmYh6jzUGZ80
 R7
 32
-R20
+R8
 !i10b 1
-R24
-R37
-R38
+R9
+R35
+R36
 !i113 1
 R12
 R13
 Edff
-R21
+R20
 R2
 R3
 R4
-Z39 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dff.vhd
-Z40 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dff.vhd
+Z37 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dff.vhd
+Z38 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dff.vhd
 l0
 L4
 V?Dl0]I?oihzd6e58lnTeT3
 !s100 6RF6aKO;bLUdc^Uo1TlJA1
 R7
 32
-R20
+Z39 !s110 1510529429
 !i10b 1
-R24
+Z40 !s108 1510529429.000000
 Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dff.vhd|
 Z42 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dff.vhd|
 !i113 1
@@ -279,16 +279,16 @@ Ve^^=95d6ZUNM<z0RP@Q=G0
 !s100 YQ?Mf61<mPk;FAfQWmbPe2
 R7
 32
-R20
+R39
 !i10b 1
-R24
+R40
 R41
 R42
 !i113 1
 R12
 R13
 Edffr
-R21
+R20
 R2
 R3
 R4
@@ -300,9 +300,9 @@ V]V0nCm<P[hMQe1HJ>dK>m2
 !s100 8^h72ccPiicFMoll6;?B^1
 R7
 32
-R20
+R39
 !i10b 1
-R24
+R40
 Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr.vhd|
 Z46 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr.vhd|
 !i113 1
@@ -318,16 +318,16 @@ VeUY?8[LZleUS82iiKEe5Y0
 !s100 [jSDjV[;ooEXI1fbj<kQH2
 R7
 32
-R20
+R39
 !i10b 1
-R24
+R40
 R45
 R46
 !i113 1
 R12
 R13
 Edffr_a
-R21
+R20
 R2
 R3
 R4
@@ -339,11 +339,11 @@ V4[b^00[Ug:gIIbna]26832
 !s100 Ae06@YlEN>^ZBC[J]R^j?2
 R7
 32
-Z49 !s110 1509832921
+R39
 !i10b 1
-Z50 !s108 1509832921.000000
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
-Z52 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
+R40
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
+Z50 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd|
 !i113 1
 R12
 R13
@@ -357,31 +357,32 @@ V2e``[JLG1V9mIKaN=UMS62
 !s100 18jIoW:5CWgj6bjeXK^2W3
 R7
 32
-R49
+R39
 !i10b 1
+R40
+R49
 R50
-R51
-R52
 !i113 1
 R12
 R13
 Peecs361
+Z51 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
 R3
-R21
+Z52 w1510522361
 R4
 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd
 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd
 l0
-L8
-V`zcTLlnZVYJj07<6Bb:z[2
-!s100 8=Z1E6VmQF7PkYgUc4XzU2
+L10
+Vz>^8][eAK71c1E9Jg;GGQ3
+!s100 iE1]a@97@EgHD3BB_nnO41
 R7
 32
-R8
+Z53 !s110 1510529427
 !i10b 1
-R9
+Z54 !s108 1510529427.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd|
 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd|
 !i113 1
@@ -390,7 +391,7 @@ R13
 Peecs361_gates
 R2
 R3
-R21
+R20
 R4
 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd
 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd
@@ -400,40 +401,40 @@ VG@G3>3naH[gM9iCRR86lk0
 !s100 EFJF``Kkcd:<4LI@jVAPI3
 R7
 32
-R8
+R53
 !i10b 1
-R9
+R54
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd|
 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361_gates.vhd|
 !i113 1
 R12
 R13
 Eextender_n
-Z53 w1509766736
+Z55 w1509766736
 R15
-Z54 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R51
 R2
 R3
 R4
-Z55 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd
-Z56 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd
+Z56 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd
+Z57 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd
 l0
 L5
 Vl9`_;R2P5Ubli:YDEZ@n91
 !s100 >9Y=]ZgliSBHY75UfYi=]0
 R7
 32
-R20
+R8
 !i10b 1
-R24
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd|
-Z58 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd|
+R9
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd|
+Z59 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/extender_n.vhd|
 !i113 1
 R12
 R13
 Astructural
 R15
-R54
+R51
 R2
 R3
 DEx4 work 10 extender_n 0 22 l9`_;R2P5Ubli:YDEZ@n91
@@ -443,16 +444,16 @@ V9=EcK`YZ2BA;XLeKC`EH^1
 !s100 h1DHTaE:Tc;>TX[]hXd=f3
 R7
 32
-R20
+R8
 !i10b 1
-R24
-R57
+R9
 R58
+R59
 !i113 1
 R12
 R13
 Eifu
-Z59 w1509834565
+R52
 R1
 R2
 R3
@@ -461,13 +462,13 @@ Z60 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/ifu.vhd
 Z61 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/ifu.vhd
 l0
 L5
-Vbnh0UPK8;UJ4;O;QG@7TT1
-!s100 8bf1nM>g=eYI:ARVBdR072
+VLXHjYCk]@22_GGMYQjRK:0
+!s100 @b:Vf4W9W9g9Y7VG0Mj5`1
 R7
 32
-Z62 !s110 1509835339
+Z62 !s110 1510529432
 !i10b 1
-Z63 !s108 1509835339.000000
+Z63 !s108 1510529432.000000
 Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/ifu.vhd|
 Z65 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/ifu.vhd|
 !i113 1
@@ -477,11 +478,11 @@ Astructural
 R1
 R2
 R3
-Z66 DEx4 work 3 ifu 0 22 bnh0UPK8;UJ4;O;QG@7TT1
+DEx4 work 3 ifu 0 22 LXHjYCk]@22_GGMYQjRK:0
 l72
-L17
-Z67 VNRCX3zJj?AmeCQIYk3:eC1
-Z68 !s100 ]om=C[zChc=J^nT`Cg5nQ0
+L16
+V[KTk:Ca;oJ5kW3[`CP[oV0
+!s100 e8HBc;lVf0T>hecHRm4ED2
 R7
 32
 R62
@@ -493,25 +494,25 @@ R65
 R12
 R13
 Eifu_tb
-Z69 w1509835333
+Z66 w1509835333
 R15
 R1
 R2
 R3
 R4
-Z70 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd
-Z71 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd
+Z67 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd
+Z68 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd
 l0
 L6
 V7jQ4PD<`]U]P4d5l<QV5g2
 !s100 WYz`H?4YAV][9kNB<U_en0
 R7
 32
-R62
+Z69 !s110 1510529431
 !i10b 1
-R63
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd|
-Z73 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd|
+Z70 !s108 1510529431.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd|
+Z72 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_tb.vhd|
 !i113 1
 R12
 R13
@@ -527,40 +528,42 @@ V5<c^n75O`8IHgJd[jEC4Q0
 !s100 G_C?MF]AhgDHa=CVTBNi72
 R7
 32
-R62
+R69
 !i10b 1
-R63
+R70
+R71
 R72
-R73
 !i113 1
 R12
 R13
 Emux
-R21
+R20
+R51
 R1
-Z74 DPx4 work 7 eecs361 0 22 `zcTLlnZVYJj07<6Bb:z[2
+Z73 DPx4 work 7 eecs361 0 22 z>^8][eAK71c1E9Jg;GGQ3
 R2
 R3
 R4
-Z75 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd
-Z76 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd
+Z74 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd
+Z75 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd
 l0
 L5
 V>oJ5U=BnI^`ag0=K]WZKO0
 !s100 R7SGh1UNzgRXkDgUzi0Dn0
 R7
 32
-R49
+R39
 !i10b 1
-R50
-Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd|
-Z78 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd|
+R40
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd|
+Z77 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux.vhd|
 !i113 1
 R12
 R13
 Astructural
+R51
 R1
-R74
+R73
 R2
 R3
 DEx4 work 3 mux 0 22 >oJ5U=BnI^`ag0=K]WZKO0
@@ -570,40 +573,42 @@ V9e3_f``Qg4GhTA>ag5:8o0
 !s100 TMbaX=C3aUF9Pl?TK_bl20
 R7
 32
-R49
+R39
 !i10b 1
-R50
+R40
+R76
 R77
-R78
 !i113 1
 R12
 R13
 Emux_32
-R21
+R20
+R51
 R1
-R74
+R73
 R2
 R3
 R4
-Z79 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd
-Z80 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd
+Z78 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd
+Z79 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd
 l0
 L5
 V;ZJB3@XFiFdGS?g@RF1Vc3
 !s100 ciE_BzZP_7gaALUfNcf3V2
 R7
 32
-R49
+R39
 !i10b 1
-R50
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd|
-Z82 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd|
+R40
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd|
+Z81 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_32.vhd|
 !i113 1
 R12
 R13
 Astructural
+R51
 R1
-R74
+R73
 R2
 R3
 DEx4 work 6 mux_32 0 22 ;ZJB3@XFiFdGS?g@RF1Vc3
@@ -613,32 +618,32 @@ V;ZASSMASd=3o_Ld=:eJLS1
 !s100 iiT]gRaJ0BGA@1c7lKGZ;1
 R7
 32
-R49
+R39
 !i10b 1
-R50
+R40
+R80
 R81
-R82
 !i113 1
 R12
 R13
 Emux_n
-R21
+R20
 R2
 R3
 R4
-Z83 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd
-Z84 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd
+Z82 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd
+Z83 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd
 l0
 L4
 V;Rg1MaANM2BcjIoIGiMR>3
 !s100 DhH_dWUkhZScmPX0PShL>1
 R7
 32
-R49
+R39
 !i10b 1
-R50
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
-Z86 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
+R40
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
+Z85 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/mux_n.vhd|
 !i113 1
 R12
 R13
@@ -652,32 +657,32 @@ Vdbi;>X`Mj01bMajZB2?643
 !s100 VOPJAGmKhfQ>L9L:P_FXf0
 R7
 32
-R49
+R39
 !i10b 1
-R50
+R40
+R84
 R85
-R86
 !i113 1
 R12
 R13
 Enand_gate
-R21
+R20
 R2
 R3
 R4
-Z87 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
-Z88 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
+Z86 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
+Z87 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd
 l0
 L5
 V=i<fNcci6gazbNoz7Zo?B0
 !s100 `;YoNjg98=RO3KEUJb?JH2
 R7
 32
-R49
+R39
 !i10b 1
-R50
-Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
-Z90 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
+R40
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
+Z89 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd|
 !i113 1
 R12
 R13
@@ -691,32 +696,32 @@ Vl^zW<z;Pl8NkCT3h`m8f>3
 !s100 DdgXSJTenGYMFNYGk^j2^2
 R7
 32
-R49
+R39
 !i10b 1
-R50
+R40
+R88
 R89
-R90
 !i113 1
 R12
 R13
 Enand_gate_32
-R21
+R20
 R2
 R3
 R4
-Z91 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
-Z92 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
+Z90 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
+Z91 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd
 l0
 L5
 Vm1GdlgCSaKXEezc1oQ5A53
 !s100 d7`oU3cRhD_iz]OR?aJbM0
 R7
 32
-R49
+R39
 !i10b 1
-R50
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
-Z94 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
+R40
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
+Z93 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -730,32 +735,32 @@ V?=O5i19k>6?EO?fWFWmQ33
 !s100 5L7`cY6bRPYMYkmEYAg871
 R7
 32
-R49
+R39
 !i10b 1
-R50
+R40
+R92
 R93
-R94
 !i113 1
 R12
 R13
 Enand_gate_n
-R21
+R20
 R2
 R3
 R4
-Z95 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
-Z96 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
+Z94 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
+Z95 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd
 l0
 L5
 VR6;g^V_FPW0;nb=i<dJlI3
 !s100 LMidV?0i^0NCQXjDDfE0j1
 R7
 32
-R49
+R39
 !i10b 1
-R50
-Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd|
-Z98 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd|
+R40
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd|
+Z97 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nand_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -769,32 +774,32 @@ V`S7jEGJ6CA=AG<0ak5P6D1
 !s100 5mzmEVJ8`Ol]kLAA1ADTS0
 R7
 32
-R49
+R39
 !i10b 1
-R50
+R40
+R96
 R97
-R98
 !i113 1
 R12
 R13
 Enor_gate
-R21
+R20
 R2
 R3
 R4
-Z99 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd
-Z100 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd
+Z98 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd
+Z99 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd
 l0
 L5
 V0L7S;NMz9_M@NF0N3jjl53
 !s100 Uz[KW04m>JL2N=<Ae_26A3
 R7
 32
-R49
+Z100 !s110 1510529430
 !i10b 1
-R50
-Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd|
-Z102 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd|
+Z101 !s108 1510529430.000000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd|
+Z103 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd|
 !i113 1
 R12
 R13
@@ -808,30 +813,30 @@ Vg6WmIRLO`^]W8MOk44NQ02
 !s100 kE2E`N:jBl`5f7h@CAkLc3
 R7
 32
-R49
+R100
 !i10b 1
-R50
 R101
 R102
+R103
 !i113 1
 R12
 R13
 Enor_gate_32
-R21
+R20
 R2
 R3
 R4
-Z103 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd
-Z104 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd
+Z104 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd
+Z105 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd
 l0
 L5
 VJYT;XbbHkkG9;BF<8bSZ[2
 !s100 3mdJRKLJ_1Z1ih<o1WC>A3
 R7
 32
-Z105 !s110 1509832922
+R100
 !i10b 1
-R50
+R101
 Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd|
 Z107 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd|
 !i113 1
@@ -847,16 +852,16 @@ V[3NO3nGH3BHP0aAz4=<U;0
 !s100 4C[N[o;dbNU?^;JAFz8P@0
 R7
 32
-R105
+R100
 !i10b 1
-R50
+R101
 R106
 R107
 !i113 1
 R12
 R13
 Enor_gate_n
-R21
+R20
 R2
 R3
 R4
@@ -868,11 +873,11 @@ VjaFJH5UI;Xc1C=l<5c`S^1
 !s100 WOgXHNaOaa3V@ZQR9[dBF2
 R7
 32
-R105
+R100
 !i10b 1
-Z110 !s108 1509832922.000000
-Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_n.vhd|
-Z112 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_n.vhd|
+R101
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_n.vhd|
+Z111 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/nor_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -886,32 +891,32 @@ V9dCFzT;RnT>eMXZgOEFXh2
 !s100 LLY;[lESSHQFLXI0BM0Lk2
 R7
 32
-R105
+R100
 !i10b 1
+R101
 R110
 R111
-R112
 !i113 1
 R12
 R13
 Enot_gate
-R21
+R20
 R2
 R3
 R4
-Z113 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd
-Z114 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd
+Z112 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd
+Z113 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd
 l0
 L5
 V?REPgFkfC>l7me3_Cm;h]0
 !s100 ZFL^eh?^CT8f=9?@;fY^P1
 R7
 32
-R105
+R100
 !i10b 1
-R110
-Z115 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd|
-Z116 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd|
+R101
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd|
+Z115 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate.vhd|
 !i113 1
 R12
 R13
@@ -925,32 +930,32 @@ V^N]`_cihjlkgk@GD2ifne3
 !s100 0K4o_`::YhV<`CcAlY38V3
 R7
 32
-R105
+R100
 !i10b 1
-R110
+R101
+R114
 R115
-R116
 !i113 1
 R12
 R13
 Enot_gate_32
-R21
+R20
 R2
 R3
 R4
-Z117 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd
-Z118 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd
+Z116 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd
+Z117 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd
 l0
 L5
 V5z8ni8e9GEdi_1z[h3[YT3
 !s100 MlQa>L3D?j3YTME?WDA^I3
 R7
 32
-R105
+R100
 !i10b 1
-R110
-Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd|
-Z120 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd|
+R101
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd|
+Z119 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -964,32 +969,32 @@ VooYb<YVBcg]jka=E1Bz2U2
 !s100 SZ]KSd]7=<``cT7UO3c^32
 R7
 32
-R105
+R100
 !i10b 1
-R110
+R101
+R118
 R119
-R120
 !i113 1
 R12
 R13
 Enot_gate_n
-R21
+R20
 R2
 R3
 R4
-Z121 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd
-Z122 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd
+Z120 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd
+Z121 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd
 l0
 L5
 VL[_>1Hz4EFXGgW8O0lzPe0
 !s100 IMo29cac8Wo2jk<h1@>Y41
 R7
 32
-R105
+R100
 !i10b 1
-R110
-Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd|
-Z124 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd|
+R101
+Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd|
+Z123 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/not_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -1003,32 +1008,32 @@ V^?aa<E?_8@T0dJRWCLiMk2
 !s100 f1R?C4QOI1W16^[L00fF`1
 R7
 32
-R105
+R100
 !i10b 1
-R110
+R101
+R122
 R123
-R124
 !i113 1
 R12
 R13
 Eor_gate
-R21
+R20
 R2
 R3
 R4
-Z125 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd
-Z126 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd
+Z124 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd
+Z125 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd
 l0
 L5
 VO1l5BHjZPQ5?]IFn9;=UE2
 !s100 P4NBKo^c]hz<z`LINQA5?3
 R7
 32
-R105
+R100
 !i10b 1
-R110
-Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
-Z128 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
+R101
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
+Z127 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate.vhd|
 !i113 1
 R12
 R13
@@ -1042,32 +1047,32 @@ VU4niXK]Pm[B5X9KH>G;F:1
 !s100 imjaYVkITBGK@1]KZ;:O?1
 R7
 32
-R105
+R100
 !i10b 1
-R110
+R101
+R126
 R127
-R128
 !i113 1
 R12
 R13
 Eor_gate_32
-R21
+R20
 R2
 R3
 R4
-Z129 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd
-Z130 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd
+Z128 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd
+Z129 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd
 l0
 L5
 VR4T`[JT7zTSFAT?fEEf591
 !s100 XkkR6QF?Vl4ZJYEZjo;0l2
 R7
 32
-R105
+R100
 !i10b 1
-R110
-Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd|
-Z132 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd|
+R101
+Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd|
+Z131 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -1081,32 +1086,32 @@ Vm<XLcN8OGfnn6foi[Re=10
 !s100 K:BE?onG;^0[1Z5dkfcRR0
 R7
 32
-R105
+R100
 !i10b 1
-R110
+R101
+R130
 R131
-R132
 !i113 1
 R12
 R13
 Eor_gate_n
-R21
+R20
 R2
 R3
 R4
-Z133 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd
-Z134 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd
+Z132 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd
+Z133 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd
 l0
 L5
 VhcjC8YfR[BWVL];cJhOKi1
 !s100 Y[01iFT>714d^L[KJ4VM82
 R7
 32
-R105
+R100
 !i10b 1
-R110
-Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd|
-Z136 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd|
+R101
+Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd|
+Z135 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -1120,33 +1125,33 @@ VJC>ZhgR[jGRkBeQ>4LTHl1
 !s100 X0T0eOJ7Mi7@HZjHoZO6:3
 R7
 32
-R105
+R100
 !i10b 1
-R110
+R101
+R134
 R135
-R136
 !i113 1
 R12
 R13
 Epc_reg
-Z137 w1509833003
+Z136 w1509833003
 R1
 R2
 R3
 R4
-Z138 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd
-Z139 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd
+Z137 8D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd
+Z138 FD:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd
 l0
 L5
 VzdPJe=PYz6M;LUIM`m?BD2
 !s100 @mP`M@CN^5W5ZliUjLzzW1
 R7
 32
-R62
+R8
 !i10b 1
-R63
-Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
-Z141 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
+R9
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
+Z140 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd|
 !i113 1
 R12
 R13
@@ -1161,44 +1166,44 @@ VFQCfdXNj6@2=cn?5D0WOH3
 !s100 4ePTJ62eB[59h>cbVYSnk1
 R7
 32
-R62
+R8
 !i10b 1
-R63
+R9
+R139
 R140
-R141
 !i113 1
 R12
 R13
 Esram
-R21
+R20
 R15
-R54
-Z142 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z143 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R51
+Z141 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z142 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R4
-Z144 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd
-Z145 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd
+Z143 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd
+Z144 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd
 l0
 L13
 VFLG`C39Ab9GzQ=^bY]PbI0
 !s100 dFa2^0bCm0FVM`Q9B=_f60
 R7
 32
-R105
+R69
 !i10b 1
-R110
-Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd|
-Z147 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd|
+R70
+Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd|
+Z146 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/sram.vhd|
 !i113 1
 R12
 R13
 Abehavioral
 R15
-R54
+R51
+R141
 R142
-R143
 R2
 R3
 DEx4 work 4 sram 0 22 FLG`C39Ab9GzQ=^bY]PbI0
@@ -1208,44 +1213,44 @@ VLRD]SNjG8@LM@IX=zhb1z3
 !s100 ;NlLnEhi3^n7W2I^9UJ2d3
 R7
 32
-R105
+R69
 !i10b 1
-R110
+R70
+R145
 R146
-R147
 !i113 1
 R12
 R13
 Esyncram
-R21
+R20
 R15
-R54
+R51
+R141
 R142
-R143
 R2
 R3
 R4
-Z148 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd
-Z149 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd
+Z147 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd
+Z148 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd
 l0
 L12
 VD=e][Y8<;9NigS>`niT123
 !s100 aFnLlL1@m415d6em?MG^21
 R7
 32
-Z150 !s110 1509832923
+R69
 !i10b 1
-R110
-Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
-Z152 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
+R70
+Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
+Z150 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/syncram.vhd|
 !i113 1
 R12
 R13
 Abehavioral
 R15
-R54
+R51
+R141
 R142
-R143
 R2
 R3
 DEx4 work 7 syncram 0 22 D=e][Y8<;9NigS>`niT123
@@ -1255,32 +1260,32 @@ Vb4bLTLnQ<96RWXh<@96:U0
 !s100 W:<cVUTVPgIfz60fOOgQ20
 R7
 32
-R150
+R69
 !i10b 1
-R110
-R151
-R152
+R70
+R149
+R150
 !i113 1
 R12
 R13
 Exnor_gate
-R21
+R20
 R2
 R3
 R4
-Z153 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
-Z154 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
+Z151 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
+Z152 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd
 l0
 L5
 V0h2SEDJmYfE@NbVLih1891
 !s100 VMF9C>DP[5;VOiN5[aESd3
 R7
 32
-R150
+R69
 !i10b 1
-Z155 !s108 1509832923.000000
-Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
-Z157 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
+R70
+Z153 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
+Z154 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate.vhd|
 !i113 1
 R12
 R13
@@ -1294,32 +1299,32 @@ V7FVFb1NIF1?iJ4PQQ`S`<0
 !s100 ]_>oDFZN:PJ[HJie3IcK81
 R7
 32
-R150
+R69
 !i10b 1
-R155
-R156
-R157
+R70
+R153
+R154
 !i113 1
 R12
 R13
 Exnor_gate_32
-R21
+R20
 R2
 R3
 R4
-Z158 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
-Z159 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
+Z155 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
+Z156 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd
 l0
 L5
 VI^Fo_SJbE0W]UUm=ZlX691
 !s100 7TK64^z14nVXPK]cWgS3=0
 R7
 32
-R150
+R69
 !i10b 1
-R155
-Z160 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
-Z161 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
+R70
+Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
+Z158 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -1333,32 +1338,32 @@ VUZHHDf582f^BFOE?@V5cO3
 !s100 l]IKGhY:hL2aDUPV;>SB?0
 R7
 32
-R150
+R69
 !i10b 1
-R155
-R160
-R161
+R70
+R157
+R158
 !i113 1
 R12
 R13
 Exnor_gate_n
-R21
+R20
 R2
 R3
 R4
-Z162 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
-Z163 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
+Z159 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
+Z160 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd
 l0
 L5
 VR_LmOEJa:d>5N49>W0ZA?3
 !s100 UCY45ZALOU6@I^4jz3eW33
 R7
 32
-R150
+R69
 !i10b 1
-R155
-Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
-Z165 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
+R70
+Z161 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
+Z162 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xnor_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -1372,32 +1377,32 @@ VKnfTaCK^6h<JR^FmC<>0m1
 !s100 dDail5hL?0zna@N:=D@8b2
 R7
 32
-R150
+R69
 !i10b 1
-R155
-R164
-R165
+R70
+R161
+R162
 !i113 1
 R12
 R13
 Exor_gate
-R21
+R20
 R2
 R3
 R4
-Z166 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
-Z167 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
+Z163 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
+Z164 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd
 l0
 L5
 V[fBJY?oh1=l=lj];5ikcY1
 !s100 K_6H3f?zAK@4`dnkC2j[K2
 R7
 32
-R150
+R69
 !i10b 1
-R155
-Z168 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
-Z169 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
+R70
+Z165 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
+Z166 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd|
 !i113 1
 R12
 R13
@@ -1411,32 +1416,32 @@ VX2I>jC5Dl4K41ohhQ=lfz2
 !s100 e;mL^F4ENl;O2f_Ae@3MU2
 R7
 32
-R150
+R69
 !i10b 1
-R155
-R168
-R169
+R70
+R165
+R166
 !i113 1
 R12
 R13
 Exor_gate_32
-R21
+R20
 R2
 R3
 R4
-Z170 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
-Z171 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
+Z167 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
+Z168 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd
 l0
 L5
 V:TDC7[J^<4Z0hN7K<U@nz0
 !s100 IY:zIdH0EdL@PUV4ISe5M0
 R7
 32
-R150
+R69
 !i10b 1
-R155
-Z172 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
-Z173 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
+R70
+Z169 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
+Z170 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd|
 !i113 1
 R12
 R13
@@ -1450,32 +1455,32 @@ V3VRg<SB0Cd8ehW<H[PS>T1
 !s100 [@^nmEj?djZ;8jS41JD]@3
 R7
 32
-R150
+R69
 !i10b 1
-R155
-R172
-R173
+R70
+R169
+R170
 !i113 1
 R12
 R13
 Exor_gate_n
-R21
+R20
 R2
 R3
 R4
-Z174 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
-Z175 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
+Z171 8D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
+Z172 FD:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd
 l0
 L5
 VoXcGmO7Td517G9;DAlGa]0
 !s100 LPoPXbzH8=CBB]^6S5Unf1
 R7
 32
-R150
+R69
 !i10b 1
-R155
-Z176 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
-Z177 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
+R70
+Z173 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
+Z174 !s107 D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/xor_gate_n.vhd|
 !i113 1
 R12
 R13
@@ -1489,11 +1494,11 @@ Vh:7hVmgL6jc9L=6foTP0N1
 !s100 29oXRe`]fm02Bce^Do[3m2
 R7
 32
-R150
+R69
 !i10b 1
-R155
-R176
-R177
+R70
+R173
+R174
 !i113 1
 R12
 R13
