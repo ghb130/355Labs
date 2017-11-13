@@ -45,6 +45,8 @@ type invArr is array(0 to 8) of std_logic_vector(5 downto 0);
 type andInterArr is array(0 to 8) of std_logic_vector(2 downto 0);
 signal invBranch0in : std_logic_vector(5 downto 0);
 signal RegWrInter : std_logic;
+signal ALUsrcInter : std_logic;
+signal ExtOpInter : std_logic;
 signal invOut0 : invArr;
 signal invOut1 : invArr;
 signal invOut2 : invArr;
@@ -54,7 +56,7 @@ begin
   invRegDst0: pla_inverter
     port map (
       din  => opcode,
-      inv  => "011100",
+      inv  => "111111",
       dout => invOut0(0)
     );
 
@@ -68,7 +70,7 @@ begin
   invRegWr0: pla_inverter
     port map (
       din  => opcode,
-      inv  => "110111",
+      inv  => "111111",
       dout => invOut0(1)
     );
 
@@ -81,7 +83,7 @@ begin
   invRegWr1 : pla_inverter
     port map (
       din  => opcode,
-      inv  => "011100",
+      inv  => "110111",
       dout => invOut1(1)
     );
 
@@ -90,8 +92,21 @@ begin
       din => invOut1(1),
       z   => andIntermediate(1)(1)
     );
+  invRegWr2 : pla_inverter
+    port map (
+      din  => opcode,
+      inv  => "011100",
+      dout => invOut2(1)
+    );
 
-  orRegWr: or_gate port map(x=>andIntermediate(1)(0), y=>andIntermediate(1)(1), z=>RegWr);
+  andRegWr2 : and_6to1
+    port map (
+      din => invOut2(1),
+      z   => andIntermediate(1)(2)
+    );
+
+  orRegWr0: or_gate port map(x=>andIntermediate(1)(0), y=>andIntermediate(1)(1), z=>RegWrInter);
+  orRegWr1: or_gate port map(x=>andIntermediate(1)(2), y=>RegWrInter, z=>RegWr);
 
   ------------------Branch-------------------------------
   invBranch0in(5 downto 1) <= opcode(5 downto 1);
@@ -112,7 +127,7 @@ begin
   invBranch1 : pla_inverter
     port map (
       din  => opcode,
-      inv  => "011100",
+      inv  => "111100",
       dout => invOut1(2)
     );
 
@@ -122,13 +137,13 @@ begin
       z   => andIntermediate(2)(1)
     );
 
-  orBranch: or_gate port map(x=>andIntermediate(2)(0), y=>andIntermediate(2)(1), z=>RegWr);
+  orBranch: or_gate port map(x=>andIntermediate(2)(0), y=>andIntermediate(2)(1), z=>Branch);
 
   -----------------ExtOp---------------------------
   invExtOp0: pla_inverter
     port map (
       din  => opcode,
-      inv  => "110111",
+      inv  => "010100",
       dout => invOut0(3)
     );
 
@@ -141,7 +156,7 @@ begin
   invExtOp1 : pla_inverter
     port map (
       din  => opcode,
-      inv  => "010100",
+      inv  => "110111",
       dout => invOut1(3)
     );
 
@@ -151,13 +166,27 @@ begin
       z   => andIntermediate(3)(1)
     );
 
-  orExtOp: or_gate port map(x=>andIntermediate(3)(0), y=>andIntermediate(3)(1), z=>RegWr);
+  invExtOp2 : pla_inverter
+    port map (
+      din  => opcode,
+      inv  => "011100",
+      dout => invOut2(3)
+    );
+
+  andExtOp2 : and_6to1
+    port map (
+      din => invOut2(3),
+      z   => andIntermediate(3)(2)
+    );
+
+  orExtOp0: or_gate port map(x=>andIntermediate(3)(0), y=>andIntermediate(3)(1), z=>ExtOpInter);
+  orExtOp1: or_gate port map(x=>andIntermediate(3)(2), y=>ExtOpInter, z=>ExtOp);
 
   -------------------ALUsrc---------------------------
   invALUsrc0: pla_inverter
     port map (
       din  => opcode,
-      inv  => "110111",
+      inv  => "010100",
       dout => invOut0(4)
     );
 
@@ -169,7 +198,7 @@ begin
   invALUsrc1 : pla_inverter
     port map (
       din  => opcode,
-      inv  => "010100",
+      inv  => "110111",
       dout => invOut1(4)
     );
 
@@ -192,8 +221,8 @@ begin
       z   => andIntermediate(4)(2)
     );
 
-  orALUsrc0: or_gate port map(x=>andIntermediate(4)(0), y=>andIntermediate(4)(1), z=>RegWrInter);
-  orALUsrc0: or_gate port map(x=>andIntermediate(4)(2), y=>RegWrInter, z=>RegWr);
+  orALUsrc0: or_gate port map(x=>andIntermediate(4)(0), y=>andIntermediate(4)(1), z=>ALUsrcInter);
+  orALUsrc1: or_gate port map(x=>andIntermediate(4)(2), y=>ALUsrcInter, z=>ALUsrc);
 
   ----------------MemWr----------------------------
   invMemWr: pla_inverter
