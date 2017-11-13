@@ -52,7 +52,7 @@ begin
       opcode_tb <= "101011"; wait for 5 ns;
       opcode_tb <= "000100"; wait for 5 ns;
       opcode_tb <= "000101"; wait for 5 ns;
-      opcode_tb <= "000011"; wait for 5 ns;
+      opcode_tb <= "000111"; wait for 5 ns;
       opcode_tb <= "001000"; wait for 5 ns;
       wait;
     end process;
