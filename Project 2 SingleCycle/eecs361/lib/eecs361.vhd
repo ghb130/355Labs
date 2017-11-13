@@ -27,6 +27,31 @@ package eecs361 is
     );
   end component;
 
+-- ALU control
+  component alu_ctrl is
+    port (
+      opcode : in  std_logic_vector(5 downto 0);
+      funct  : in  std_logic_vector(5 downto 0);
+      ALUop  : out std_logic_vector(3 downto 0)
+    );
+  end component;
+
+-- Main control
+  component main_ctrl
+    port (
+    opcode   : in  std_logic_vector(5 downto 0);
+    RegDst   : out std_logic;
+    RegWr    : out std_logic;
+    Branch   : out std_logic;
+    ExtOp    : out std_logic;
+    ALUsrc   : out std_logic;
+    MemWr    : out std_logic;
+    MemtoReg : out std_logic;
+    BrSel    : out std_logic_vector(1 downto 0)
+    );
+  end component main_ctrl;
+
+
 -- Instruction Fetch Unit
   component ifu is
     port (

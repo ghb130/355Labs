@@ -1,13 +1,4 @@
-{D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/eecs361.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package eecs361_gates
--- Loading package std_logic_textio
--- Compiling package eecs361
-
-} {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd}
+{D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/dffr_a.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -41,6 +32,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity nor_gate_n
 -- Compiling architecture dataflow of nor_gate_n
+
+} {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/control/simulation/mainctrl/main_ctrl_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/control/simulation/mainctrl/main_ctrl_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Compiling entity main_ctrl_tb
+-- Compiling architecture behavioral of main_ctrl_tb
 
 } {} {}} {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
