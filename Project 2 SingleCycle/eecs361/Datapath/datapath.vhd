@@ -17,6 +17,7 @@ entity datapath is
     MemtoReg : in std_logic;
     BranchSel : in std_logic_vector (1 downto 0);
     pcInit : in std_logic;
+    currInstruction : out std_logic_vector (31 downto 0);
     clk : in std_logic
   );
 end entity;
@@ -30,6 +31,7 @@ architecture structural of datapath is
   constant zeroSrc : std_logic_vector(31 downto 0) := (others => '0');
 
 begin
+  currInstruction <= Instruction;
   ----------------------------------------------------------
   --Select RD or RT as RW
   RegDstMux : mux_n generic map (n => 5)
@@ -115,14 +117,6 @@ begin
                            addr_out    => IFUout);
 ------------------------------------------------------------
 --Data mem access
-  -- DataMem  : syncram generic map (mem_file => MEMORY_SOURCE)
-  --                    port map (clk  => clk,
-  --                             oe   => '1',
-  --                             cs   => '1',
-  --                             we   => MemWr,
-  --                             addr => ALUout,
-  --                             din  => busb,
-  --                             dout => dataMemOut);
  DataMem : sram generic map (mem_file => MEMORY_SOURCE)
                    port map (cs   => '1',
                              oe   => '1',

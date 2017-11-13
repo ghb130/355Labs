@@ -6,14 +6,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity nand_gate_n
 -- Compiling architecture dataflow of nand_gate_n
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity nor_gate
--- Compiling architecture dataflow of nor_gate
-
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/alu_32_bit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/alu_32_bit.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -22,6 +14,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package eecs361_gates
 -- Compiling entity alu_32_bit
 -- Compiling architecture structural of alu_32_bit
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nor_gate
+-- Compiling architecture dataflow of nor_gate
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_1b.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -32,22 +32,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity add_1b
 -- Compiling architecture structural of add_1b
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd}
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_ll32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_ll32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity or_gate_32
--- Compiling architecture dataflow of or_gate_32
-
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Loading package eecs361_gates
--- Compiling entity pc_reg
--- Compiling architecture structural of pc_reg
+-- Compiling entity shift_ll32
+-- Compiling architecture structural of shift_ll32
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/full_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/full_adder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -58,15 +51,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity full_adder
 -- Compiling architecture structural of full_adder
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_ll32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_ll32.vhd}
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/pc_reg.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
 -- Loading package eecs361_gates
--- Compiling entity shift_ll32
--- Compiling architecture structural of shift_ll32
+-- Compiling entity pc_reg
+-- Compiling architecture structural of pc_reg
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_32.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity or_gate_32
+-- Compiling architecture dataflow of or_gate_32
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/or_gate_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -94,6 +94,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity extender_n
 -- Compiling architecture structural of extender_n
 
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/or_6to1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/or_6to1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Compiling entity or_6to1
+-- Compiling architecture structural of or_6to1
+
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/Datapath/sim/datapath_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/Datapath/sim/datapath_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -105,6 +114,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package eecs361
 -- Compiling entity datapath_tb
 -- Compiling architecture behavioral of datapath_tb
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/pla_inverter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/pla_inverter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Compiling entity pla_inverter
+-- Compiling architecture structural of pla_inverter
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -138,15 +156,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity not_gate
 -- Compiling architecture dataflow of not_gate
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/eecs361.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package eecs361_gates
--- Loading package std_logic_textio
--- Compiling package eecs361
-
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/alu_one_bit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/alu_one_bit.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -155,6 +164,18 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package eecs361_gates
 -- Compiling entity alu_one_bit
 -- Compiling architecture structural of alu_one_bit
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ssp_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ssp_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Loading package eecs361_gates
+-- Loading package eecs361
+-- Compiling entity ssp_tb
+-- Compiling architecture behavioral of ssp_tb
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/mux_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -175,6 +196,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package eecs361_gates
 -- Compiling entity and_6to1
 -- Compiling architecture structural of and_6to1
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/Datapath/datapath.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/Datapath/datapath.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package eecs361_gates
+-- Loading package eecs361
+-- Compiling entity datapath
+-- Compiling architecture structural of datapath
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_rl32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/alu/shift_rl32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -233,6 +265,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity ifu
 -- Compiling architecture structural of ifu
 
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/main_ctrl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/main_ctrl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Loading package std_logic_textio
+-- Loading package eecs361
+-- Compiling entity main_ctrl
+-- Compiling architecture structural of main_ctrl
+
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nor_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -256,6 +299,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity not_gate_n
 -- Compiling architecture dataflow of not_gate_n
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/alu_ctrl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/control/alu_ctrl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Loading package std_logic_textio
+-- Loading package eecs361
+-- Compiling entity alu_ctrl
+-- Compiling architecture structural of alu_ctrl
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/nand_gate.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -373,6 +427,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity dff
 -- Compiling architecture behavioral of dff
 
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xor_gate
+-- Compiling architecture dataflow of xor_gate
+
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/mux_32to1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/regFile/mux_32to1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -384,14 +446,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity mux_32to1
 -- Compiling architecture structural of mux_32to1
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/xor_gate.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity xor_gate
--- Compiling architecture dataflow of xor_gate
-
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/lib/dffr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -399,6 +453,18 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package std_logic_1164
 -- Compiling entity dffr
 -- Compiling architecture behavioral of dffr
+
+} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/single_cycle_processor.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/single_cycle_processor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package eecs361_gates
+-- Loading package std_logic_textio
+-- Loading package eecs361
+-- Compiling entity single_cycle_processor
+-- Compiling architecture arch of single_cycle_processor
 
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 2 SingleCycle/eecs361/ifu/add_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

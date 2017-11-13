@@ -21,6 +21,7 @@ architecture behavioral of datapath_tb is
   signal MemtoReg_tb  : std_logic;
   signal BranchSel_tb : std_logic_vector (1 downto 0);
   signal pcInit_tb    : std_logic;
+  signal currInstruction_tb : std_logic_vector (31 downto 0);
   signal clk_tb       : std_logic;
   signal hold : std_logic;
 
@@ -37,6 +38,7 @@ begin
               MemtoReg  => MemtoReg_tb,
               BranchSel => BranchSel_tb,
               pcInit    => pcInit_tb,
+              currInstruction => currInstruction_tb,
               clk       => clk_tb
               );
 

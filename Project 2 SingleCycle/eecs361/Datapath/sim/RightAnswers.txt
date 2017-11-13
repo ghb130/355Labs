@@ -1,0 +1,60 @@
+add
+ADD $a1 $zero $zero            a1 = 0
+ADDI $a3 $zero 0x1000          a3 = 0x1000
+SLL $a3 $a3 0x10000            a3 = 0x10000000
+ADD $a2 $a3 $zero              a2 = a3
+ADDI $a2 $a2 0x0028            a2 = 0x10000028
+LW $a0 0x0000 $a3              a0 = 0000000f
+ADDU $a1 $a1 $a0	       a1 = 0000000f
+ADDI $a3 $a3 0x0004            a3 = 0x10000004
+BNE $a3 $a2 0xFFFC
+SW $a1 0x0000 $a3
+
+--Sums over elements 10000000 to 100000024 stores in 10000028
+--Output is correct if 10000028 constains ffffffff
+
+sort
+ADDI $v0 $zero 0x1000		v0 = 1000
+SLL $v0 $v0 10000		v0 = 10000000
+ADDI $a0 $v0 0x0024		a0 = 10000024
+ADDI $a1 $v0 0x0028		a1 = 10000028
+LW $a3 0x0000 $v0		a3 = 00000009
+ADDI $v1 $v0 0x0004		v1 = 10000004
+LW $at 0x0000 $v1		at = 0000000a	at = 00000008
+SLT $a2 $a3 $at			a2 = 1		a2 = 0
+BGTZ $a2 0x0003			branch taken    branch not taken
+SW $at 0x0000 $v0				10000000 <= 00000008
+SW $a3 0x0000 $v1				10000008 <= 00000009
+ADD $a3 $at $zero				a3 = 00000008
+ADDI $v1 $v1 0x0004		v1 = 10000008
+BNE $v1 $a1 0xFFF8		branch taken
+ADDI $v0 $v0 0x0004
+BNE $v0 $a0 0xFFF4
+
+--ITS BUBBLE SORT - ish
+--Loops through 10000000 to 10000024 swapping data when it finds a larger item
+--at a higher address. Completed process should have memory:
+-- 1,2,3,4,5,6,7,8,9,a
+
+
+bills branch
+ADDI $a1 $zero 0x0001		a1 = 0001
+ADDI $a2 $zero 0x0064		a2 = 0064
+ADDI $v0 $zero 0x1000		v0 = 1000
+SLL $v0 $v0 0x10000		v0 = 10000000
+ADDI $a3 $v0 0x0028		a3 = 10000028
+LW $v1 0x0000 $v0		v1 = 0000000a		v1 = 00000009
+SLT $a0 $a2 $v1			a0 = 0 (64 > a)		a0 = 0 (5a > 9)
+BEQ $a0 $a1 0x0002		branch not taken	branch not taken
+SUB $a2 $a2 $v1			a2 = 5a			a2 = 51
+SW $zero 0x0000 $v0		10000000 <= 0		10000004 <= 0
+ADDI $v0 $v0 0x0004		v0 = 10000004		v0 = 100000008
+BNE $v0 $a3 0xFFF9		branch taken		branch taken
+SW $a2 0x0000 $a3
+
+-- Iterates through 10000000 to 10000024 subtracting value found there from
+-- a running total starting at 100, afterwards it writes 0 to the mem location
+--If value is too large it skips it
+--aftwerwards it stores the amount leftover into 10000028
+-- Completed process should have memory:
+--0,0,0,2bc,0,0,190,0,0,0,2c

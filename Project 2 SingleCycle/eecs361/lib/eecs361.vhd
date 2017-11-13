@@ -9,23 +9,33 @@ use ieee.std_logic_textio.all;
 
 package eecs361 is
 --Constants
-  constant MEMORY_SOURCE : string := "sort_corrected_branch.dat";
--- Datapath component
-  component datapath is
+  constant MEMORY_SOURCE : string := "unsigned_sum.dat";
+--Processor component
+  component single_cycle_processor
     port (
-      RegDst    : in  std_logic;
-      Regwr     : in  std_logic;
-      Branch    : in  std_logic;
-      ExtOp     : in  std_logic;
-      ALUSrc    : in  std_logic;
-      ALUCtrl   : in  std_logic_vector (3 downto 0);
-      MemWr     : in  std_logic;
-      MemtoReg  : in  std_logic;
-      BranchSel : in  std_logic_vector (1 downto 0);
-      pcInit    : in  std_logic;
-      clk       : in  std_logic
+      clk    : in  std_logic;
+      pcInit : in  std_logic
     );
-  end component;
+  end component single_cycle_processor;
+
+-- Datapath component
+  component datapath
+    port (
+      RegDst          : in  std_logic;
+      Regwr           : in  std_logic;
+      Branch          : in  std_logic;
+      ExtOp           : in  std_logic;
+      ALUSrc          : in  std_logic;
+      ALUCtrl         : in  std_logic_vector (3 downto 0);
+      MemWr           : in  std_logic;
+      MemtoReg        : in  std_logic;
+      BranchSel       : in  std_logic_vector (1 downto 0);
+      pcInit          : in  std_logic;
+      currInstruction : out std_logic_vector (31 downto 0);
+      clk             : in  std_logic
+    );
+  end component datapath;
+
 
 -- ALU control
   component alu_ctrl is
