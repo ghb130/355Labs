@@ -10,7 +10,7 @@ architecture behavioral of ifu_tb is
 component ifu is
   port (
         init : in std_logic;
-        pc_init_val : in std_logic_vector(29 downto 0);
+        --pc_init_val : in std_logic_vector(29 downto 0);
         clk : in std_logic;
         imm16 : in std_logic_vector(15 downto 0);
         zero : in std_logic;
@@ -20,7 +20,7 @@ component ifu is
 end component;
 signal hold : std_logic := '0';
 signal init_tb : std_logic;
-signal pc_init_val_tb : std_logic_vector(29 downto 0);
+--signal pc_init_val_tb : std_logic_vector(29 downto 0);
 signal clk_tb : std_logic;
 signal branch_tb : std_logic;
 signal zero_tb : std_logic;
@@ -30,7 +30,7 @@ begin
   dut: ifu
     port map (
       init=>init_tb,
-      pc_init_val=>pc_init_val_tb,
+      --pc_init_val=>pc_init_val_tb,
       clk=>clk_tb,
       imm16=>imm16_tb,
       zero=>zero_tb,
@@ -51,7 +51,7 @@ begin
 
     initialize: process is
       begin
-        init_tb <= '1'; pc_init_val_tb <= "000000000100000000000000001000"; wait for 2 ns;
+        init_tb <= '1'; wait for 2 ns;
         init_tb <= '0';
         wait;
     end process initialize;
