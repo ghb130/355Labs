@@ -9,7 +9,7 @@ use ieee.std_logic_textio.all;
 
 package eecs361 is
 --Constants
-  constant MEMORY_SOURCE : string := "sort_corrected_branch.dat";
+  constant MEMORY_SOURCE : string := "bills_branch.dat";
 --Processor component
   component single_cycle_processor
     port (
