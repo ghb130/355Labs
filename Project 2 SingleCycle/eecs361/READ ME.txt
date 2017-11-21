@@ -1,0 +1,10 @@
+Changes were made to the eecs361.vhd file to simplify component imports.
+The eecs361.vhd file included must be used to overwrite the standard eecs361.vhd.
+
+The program files included: bills_branch, sort_corrected_branch and unsigned_sum
+are modified to display memory values in register t0 - t9.
+
+The input files for reg32_tb and datapath_tb are included. The datapath_tb in file 
+must be changed in accordance to the program being run. u = unsigned, s = sort. 
+The output is only valid up until a taken branch at whichpoint the input file 
+produces incorrect results

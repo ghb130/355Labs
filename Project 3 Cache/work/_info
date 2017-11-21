@@ -1,0 +1,1512 @@
+m255
+K3
+13
+cModel Technology
+d/home/kza199/tmp1
+Eand_gate
+Z0 w1447912680
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 d/home/kza199/projects/eecs361/cachelab/eecs361
+Z4 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate.vhd
+Z5 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate.vhd
+l0
+L5
+V<60414kYz8bAemU]KX]MW2
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1447912714.783031
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate.vhd|
+Z9 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 h3YbNHhh4f`DDbO:Xoe^N1
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 8 and_gate 0 22 <60414kYz8bAemU]KX]MW2
+l14
+L13
+Vce3b7^?Md^@zPHA?FC=?P1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 kW:o?mXigjGRcOfLnFVOU3
+!i10b 1
+Eand_gate_32
+Z12 w1447912680
+R1
+R2
+R3
+Z13 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_32.vhd
+Z14 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_32.vhd
+l0
+L5
+V60kC3D92l5@a3<MVi;7Q61
+R6
+32
+Z15 !s108 1447912714.854130
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_32.vhd|
+Z17 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_32.vhd|
+R10
+R11
+!s100 @3Mf0XVX3b5G3DP^1DC990
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 11 and_gate_32 0 22 60kC3D92l5@a3<MVi;7Q61
+l14
+L13
+VlY]O1Mk2Ef9<<lhGR`LOH2
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 GPgZTTjYO33078M<L^VdN0
+!i10b 1
+Eand_gate_n
+R12
+R1
+R2
+R3
+Z18 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_n.vhd
+Z19 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_n.vhd
+l0
+L5
+V7BN^Mj]UcZK[K_ZB4?g9R2
+R6
+32
+Z20 !s108 1447912714.908906
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_n.vhd|
+Z22 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/and_gate_n.vhd|
+R10
+R11
+!s100 WfNmc=c_JTkeimeDeP0kH1
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 10 and_gate_n 0 22 7BN^Mj]UcZK[K_ZB4?g9R2
+l17
+L16
+VG_Gj=8;Ia6?UZVS@Gbgb31
+R6
+32
+R20
+R21
+R22
+R10
+R11
+!s100 Z:KhAHQnRAbWMSf7khUXk3
+!i10b 1
+Ecache_test
+R12
+Z23 DPx4 work 13 eecs361_gates 0 22 d17R;iKL_eKPg[]^TG1?e0
+Z24 DPx4 work 7 eecs361 0 22 f^=9Red8jebUD]?d@6a<Q1
+Z25 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z26 8/home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_test.vhd
+Z27 F/home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_test.vhd
+l0
+L6
+VPOiholQGCV<0b3J62i`ch2
+R6
+32
+Z28 !s108 1447912714.535983
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_test.vhd|
+Z30 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_test.vhd|
+R10
+R11
+!s100 GERi?3R:?48h]lSk2g[j13
+!i10b 1
+Amix
+R23
+R24
+R25
+R1
+R2
+DEx4 work 10 cache_test 0 22 POiholQGCV<0b3J62i`ch2
+l84
+L9
+V>MFfDEU5FKLk]=R^G`jIl0
+R6
+32
+R28
+R29
+R30
+R10
+R11
+!s100 Q;]iCLd4H?;@KflVU]Q`n1
+!i10b 1
+Ecache_tester
+R12
+R23
+R24
+R25
+R1
+R2
+R3
+Z31 8/home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_tester.vhd
+Z32 F/home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_tester.vhd
+l0
+L7
+VYa6nU6b??_lNfNYFD`AR[3
+R6
+32
+Z33 !s108 1447912714.604315
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_tester.vhd|
+Z35 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/grader/cache_tester.vhd|
+R10
+R11
+!s100 <FB?8X]o^_Ljd1oDfShIh2
+!i10b 1
+Amix
+R23
+R24
+R25
+R1
+R2
+DEx4 work 12 cache_tester 0 22 Ya6nU6b??_lNfNYFD`AR[3
+l30
+L25
+VNj;mkfXZhPcdGMf43^FLC3
+R6
+32
+R33
+R34
+R35
+R10
+R11
+!s100 <M[NGER[JEITUMA70o^i52
+!i10b 1
+Ecmp_n
+R12
+R25
+R1
+R2
+R3
+Z36 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/cmp_n.vhd
+Z37 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/cmp_n.vhd
+l0
+L5
+VK;_O6YHdKmIWN:gR3^7H61
+R6
+32
+Z38 !s108 1447912714.963377
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/cmp_n.vhd|
+Z40 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/cmp_n.vhd|
+R10
+R11
+!s100 Pm5L[Qj6f^C<=?FiF=bR40
+!i10b 1
+Abehavioral
+R25
+R1
+R2
+DEx4 work 5 cmp_n 0 22 K;_O6YHdKmIWN:gR3^7H61
+l23
+L22
+VMCHF0F9?ERDjN_VoMa7653
+R6
+32
+R38
+R39
+R40
+R10
+R11
+!s100 OiPj9=URYnkScTz[8W9cS0
+!i10b 1
+Ecsram
+R12
+R25
+Z41 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+Z42 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z43 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R1
+R2
+R3
+Z44 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/csram.vhd
+Z45 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/csram.vhd
+l0
+L12
+VinE=f`?:88fX@L5=TcE6h1
+R6
+32
+Z46 !s108 1447912715.024042
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/csram.vhd|
+Z48 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/csram.vhd|
+R10
+R11
+!s100 DPVJe0Rg0Cz1UX[Zkh>kd1
+!i10b 1
+Abehavioral
+R25
+R41
+R42
+R43
+R1
+R2
+DEx4 work 5 csram 0 22 inE=f`?:88fX@L5=TcE6h1
+l28
+L27
+V8b4VnkME7eCLSFHh`<ZLH1
+R6
+32
+R46
+R47
+R48
+R10
+R11
+!s100 T4R7b<0@SDlFZf9O2CQG:1
+!i10b 1
+Edec_n
+R12
+R25
+R1
+R2
+R3
+Z49 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/dec_n.vhd
+Z50 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/dec_n.vhd
+l0
+L5
+Vk8Z`RaeeiT2004LekGP_j2
+R6
+32
+Z51 !s108 1447912715.096362
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/dec_n.vhd|
+Z53 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/dec_n.vhd|
+R10
+R11
+!s100 iQE2QF?CkEgU^jP7PXzd>2
+!i10b 1
+Abehavioral
+R25
+R1
+R2
+DEx4 work 5 dec_n 0 22 k8Z`RaeeiT2004LekGP_j2
+l16
+L15
+Vdd>SPjzl2_GMJbncO;SHA3
+R6
+32
+R51
+R52
+R53
+R10
+R11
+!s100 =HCG<>dE@OB<UjI1hCU<N1
+!i10b 1
+Edff
+R12
+R1
+R2
+R3
+Z54 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/dff.vhd
+Z55 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/dff.vhd
+l0
+L4
+Vjc8CP=joco=:m:oNM4Lo=0
+R6
+32
+Z56 !s108 1447912715.193859
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/dff.vhd|
+Z58 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/dff.vhd|
+R10
+R11
+!s100 bd[5POPTOh1ERHcFY[Haj1
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 3 dff 0 22 jc8CP=joco=:m:oNM4Lo=0
+l13
+L12
+VRmQUjk`AJl6cV3Yblk:mo2
+R6
+32
+R56
+R57
+R58
+R10
+R11
+!s100 YRCZNI2;bB9zXCK5VTiVK1
+!i10b 1
+Edffr
+R12
+R1
+R2
+R3
+Z59 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr.vhd
+Z60 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr.vhd
+l0
+L4
+VT3P1ceAATi5FmNXGGFXW01
+R6
+32
+Z61 !s108 1447912715.248947
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr.vhd|
+Z63 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr.vhd|
+R10
+R11
+!s100 69EDFD_7`9o1Zn<zzL>`A1
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 4 dffr 0 22 T3P1ceAATi5FmNXGGFXW01
+l13
+L12
+VL?dghHJIc34L9zb65A9>;3
+R6
+32
+R61
+R62
+R63
+R10
+R11
+!s100 W`oCkJ=<SKR4oDAF?jDT[2
+!i10b 1
+Edffr_a
+R12
+R1
+R2
+R3
+Z64 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr_a.vhd
+Z65 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr_a.vhd
+l0
+L4
+VndhbcIWR@o4]T@HZh1c6X3
+R6
+32
+Z66 !s108 1447912715.303188
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr_a.vhd|
+Z68 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/dffr_a.vhd|
+R10
+R11
+!s100 @8?^>]ClXhXiE0MUi:K;;2
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 6 dffr_a 0 22 ndhbcIWR@o4]T@HZh1c6X3
+l17
+L16
+VXFJUM?7zfmORnc`51OUA`0
+R6
+32
+R66
+R67
+R68
+R10
+R11
+!s100 m[V^Oij4=A=5D3Kb2diF?2
+!i10b 1
+Peecs361
+R23
+R1
+R2
+R12
+R3
+8/home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361.vhd
+F/home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361.vhd
+l0
+L8
+Vf^=9Red8jebUD]?d@6a<Q1
+R6
+32
+R10
+R11
+!s100 ]hZR:NAeOg9Y@43_[QFfF1
+!i10b 1
+!s108 1447912715.354716
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361.vhd|
+!s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361.vhd|
+Peecs361_gates
+R1
+R2
+R12
+R3
+8/home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361_gates.vhd
+F/home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361_gates.vhd
+l0
+L4
+Vd17R;iKL_eKPg[]^TG1?e0
+R6
+32
+R10
+R11
+!s100 Y6I5zG>@aMjRiDM^aD@lT2
+!i10b 1
+!s108 1447912715.422294
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361_gates.vhd|
+!s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/eecs361_gates.vhd|
+Efulladder_32
+R12
+R1
+R2
+R3
+Z69 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_32.vhd
+Z70 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_32.vhd
+l0
+L4
+VIo5<__D9=okKkmI2nDlm^2
+R6
+32
+Z71 !s108 1447912715.475958
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_32.vhd|
+Z73 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_32.vhd|
+R10
+R11
+!s100 ?LzPHmiLbFNcj<C[bc1Rj0
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 12 fulladder_32 0 22 Io5<__D9=okKkmI2nDlm^2
+l27
+L14
+VCTmj2MmC9Y=^VM<CoX5SF2
+R6
+32
+R71
+R72
+R73
+R10
+R11
+!s100 ?MBT2;ePI>`6cJ?^McXKh1
+!i10b 1
+Efulladder_n
+R12
+R25
+R1
+R2
+R3
+Z74 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_n.vhd
+Z75 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_n.vhd
+l0
+L5
+V]T:Rd?94C<Baha6ek]z;M1
+R6
+32
+Z76 !s108 1447912715.528706
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_n.vhd|
+Z78 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/fulladder_n.vhd|
+R10
+R11
+!s100 8Y_oAf5gHKP@4`HNGA8ZV2
+!i10b 1
+Abehavioral
+R25
+R1
+R2
+DEx4 work 11 fulladder_n 0 22 ]T:Rd?94C<Baha6ek]z;M1
+l20
+L18
+VzKIWg2ACTa5EA;d:iPJYD0
+R6
+32
+R76
+R77
+R78
+R10
+R11
+!s100 DV[TQLkFd5UaMVmT?hB]W3
+!i10b 1
+El1_test
+R12
+R23
+R24
+R25
+R1
+R2
+R3
+Z79 8/home/kza199/projects/eecs361/cachelab/eecs361/grader/l1_test.vhd
+Z80 F/home/kza199/projects/eecs361/cachelab/eecs361/grader/l1_test.vhd
+l0
+L6
+VS[nTUJmEZ[AgXJ<KzM;XP3
+R6
+32
+Z81 !s108 1447912714.685530
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/grader/l1_test.vhd|
+Z83 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/grader/l1_test.vhd|
+R10
+R11
+!s100 iijQKD0o=gagRP;Zc`dnO0
+!i10b 1
+Amix
+R23
+R24
+R25
+R1
+R2
+DEx4 work 7 l1_test 0 22 S[nTUJmEZ[AgXJ<KzM;XP3
+l59
+L9
+V_8S>9kO9PgN<i@F>58G0N2
+R6
+32
+R81
+R82
+R83
+R10
+R11
+!s100 8A?bMEiW`XgHzR?dlHaE00
+!i10b 1
+El1cache
+Z84 w1447913032
+R23
+R24
+R1
+R2
+R3
+Z85 8/home/kza199/projects/eecs361/cachelab/eecs361/demo/l1_dummy.vhd
+Z86 F/home/kza199/projects/eecs361/cachelab/eecs361/demo/l1_dummy.vhd
+l0
+L6
+V5AM_64cH:WLeDbG<C3VdE3
+!s100 li:[:f_aoD>jGV;<ZEcQH3
+R6
+32
+!i10b 1
+Z87 !s108 1447913052.251129
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/demo/l1_dummy.vhd|
+Z89 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/demo/l1_dummy.vhd|
+R10
+R11
+Astruct
+R23
+R24
+R1
+R2
+Z90 DEx4 work 7 l1cache 0 22 5AM_64cH:WLeDbG<C3VdE3
+l46
+L32
+Vf5Y[3m^S<4cX[Blh[88hk0
+!s100 O>V`[e@nnEZ<jQ6RgHUni1
+R6
+32
+!i10b 1
+R87
+R88
+R89
+R10
+R11
+El2cache
+R12
+R1
+R2
+R3
+Z91 8/home/kza199/projects/eecs361/cachelab/eecs361/demo/l2_dummy.vhd
+Z92 F/home/kza199/projects/eecs361/cachelab/eecs361/demo/l2_dummy.vhd
+l0
+L5
+VVj8Kldz_J9E5HmnMSDJbM0
+R6
+32
+Z93 !s108 1447912714.480879
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/demo/l2_dummy.vhd|
+Z95 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/demo/l2_dummy.vhd|
+R10
+R11
+!s100 ^U_`MVk^QKKm;@GBBGV2e2
+!i10b 1
+Astruct
+R1
+R2
+DEx4 work 7 l2cache 0 22 Vj8Kldz_J9E5HmnMSDJbM0
+l32
+L31
+VhhX<DmiF]oODEnCj1c2;n3
+R6
+32
+R93
+R94
+R95
+R10
+R11
+!s100 8oV`GgET@VaRB7Jm:mamV2
+!i10b 1
+Emux
+R12
+R23
+R24
+R1
+R2
+R3
+Z96 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux.vhd
+Z97 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux.vhd
+l0
+L5
+VnUF5k_lRVzBJJ4C<Z2D9<3
+R6
+32
+Z98 !s108 1447912715.590564
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux.vhd|
+Z100 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/mux.vhd|
+R10
+R11
+!s100 RdV@fgjGZm0e7@Z3SBQb=0
+!i10b 1
+Astructural
+R23
+R24
+R1
+R2
+DEx4 work 3 mux 0 22 nUF5k_lRVzBJJ4C<Z2D9<3
+l15
+L14
+Vnd0S=IPW:@X:h]Lm@9RWT0
+R6
+32
+R98
+R99
+R100
+R10
+R11
+!s100 ELB6QMl2kn`m=CMVRlf?31
+!i10b 1
+Emux_32
+R12
+R23
+R24
+R1
+R2
+R3
+Z101 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_32.vhd
+Z102 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_32.vhd
+l0
+L5
+VXFeUdbPoalHm:@Q=dG7Cj2
+R6
+32
+Z103 !s108 1447912715.652477
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_32.vhd|
+Z105 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_32.vhd|
+R10
+R11
+!s100 Edz74h^Q2gb;oIMo3o4BT1
+!i10b 1
+Astructural
+R23
+R24
+R1
+R2
+DEx4 work 6 mux_32 0 22 XFeUdbPoalHm:@Q=dG7Cj2
+l15
+L14
+VIFI^Q>_fjJ^@zhGaRn6Ek2
+R6
+32
+R103
+R104
+R105
+R10
+R11
+!s100 Zd[D4geCKfXoE]JnWXiBK0
+!i10b 1
+Emux_n
+R12
+R1
+R2
+R3
+Z106 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_n.vhd
+Z107 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_n.vhd
+l0
+L4
+Vg2XMA]Y7DldfgmM:f^F]n1
+R6
+32
+Z108 !s108 1447912715.715768
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_n.vhd|
+Z110 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/mux_n.vhd|
+R10
+R11
+!s100 72Ocn^61E=F=Q@fMd70jC0
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 5 mux_n 0 22 g2XMA]Y7DldfgmM:f^F]n1
+l17
+L16
+Vo0VIX3DVf<UDTZUMEQ7^i0
+R6
+32
+R108
+R109
+R110
+R10
+R11
+!s100 >1FfCMGYSE3_9X`BLig192
+!i10b 1
+Enand_gate
+R12
+R1
+R2
+R3
+Z111 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate.vhd
+Z112 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate.vhd
+l0
+L5
+VOb3aXkKGo:Ez8f0TnM>j<1
+R6
+32
+Z113 !s108 1447912715.777716
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate.vhd|
+Z115 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate.vhd|
+R10
+R11
+!s100 cgS8R0?=c0_UQKH?Gn7[o3
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 9 nand_gate 0 22 Ob3aXkKGo:Ez8f0TnM>j<1
+l14
+L13
+VCzXm>CV9>TH@WGa1kfQO12
+R6
+32
+R113
+R114
+R115
+R10
+R11
+!s100 6X;2]DSURnNVc?[FGETfd2
+!i10b 1
+Enand_gate_32
+R12
+R1
+R2
+R3
+Z116 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_32.vhd
+Z117 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_32.vhd
+l0
+L5
+V<fAoXGSnG@AcBR?dQW^jT3
+R6
+32
+Z118 !s108 1447912715.834423
+Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_32.vhd|
+Z120 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_32.vhd|
+R10
+R11
+!s100 edaDbGJKahjS`ba;?F4@H3
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 12 nand_gate_32 0 22 <fAoXGSnG@AcBR?dQW^jT3
+l14
+L13
+VB83XSKRBaVEI^YNO?P[OQ0
+R6
+32
+R118
+R119
+R120
+R10
+R11
+!s100 >faH6YKeX;MX489T`giGB2
+!i10b 1
+Enand_gate_n
+R12
+R1
+R2
+R3
+Z121 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_n.vhd
+Z122 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_n.vhd
+l0
+L5
+VMmQfUTHhhi=SeU@@HBED[1
+R6
+32
+Z123 !s108 1447912715.892725
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_n.vhd|
+Z125 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/nand_gate_n.vhd|
+R10
+R11
+!s100 bdh[B=WYo3V@ajd`ifo8@2
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 11 nand_gate_n 0 22 MmQfUTHhhi=SeU@@HBED[1
+l17
+L16
+VD>;GLib_mE80V23ZFV3_@3
+R6
+32
+R123
+R124
+R125
+R10
+R11
+!s100 g=F;m>I3[OY7>lO_:;L6b2
+!i10b 1
+Enor_gate
+R12
+R1
+R2
+R3
+Z126 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate.vhd
+Z127 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate.vhd
+l0
+L5
+V?=o:OgamS250SL;f3d[1<2
+R6
+32
+Z128 !s108 1447912715.947357
+Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate.vhd|
+Z130 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate.vhd|
+R10
+R11
+!s100 6Y_bJ51SJB]IO_mGg>_m`2
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 8 nor_gate 0 22 ?=o:OgamS250SL;f3d[1<2
+l14
+L13
+VBWgHj7_aoDif]R[<zV6EX3
+R6
+32
+R128
+R129
+R130
+R10
+R11
+!s100 `kS>=V;[<l9CMV2Ig;G<O0
+!i10b 1
+Enor_gate_32
+R12
+R1
+R2
+R3
+Z131 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_32.vhd
+Z132 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_32.vhd
+l0
+L5
+VBWg3LNk1Y1liz:Yi?YJ<12
+R6
+32
+Z133 !s108 1447912716.002038
+Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_32.vhd|
+Z135 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_32.vhd|
+R10
+R11
+!s100 CHICSf8DRm>A[6;ib_;8h1
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 11 nor_gate_32 0 22 BWg3LNk1Y1liz:Yi?YJ<12
+l14
+L13
+V2kPEgk7I_Bj1IV:89bfzP2
+R6
+32
+R133
+R134
+R135
+R10
+R11
+!s100 AXki>QW^Ae:3i<IJ=_cCz3
+!i10b 1
+Enor_gate_n
+R12
+R1
+R2
+R3
+Z136 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_n.vhd
+Z137 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_n.vhd
+l0
+L5
+V5@znz4fm:b1Ma8aGG@NC50
+R6
+32
+Z138 !s108 1447912716.056461
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_n.vhd|
+Z140 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/nor_gate_n.vhd|
+R10
+R11
+!s100 BHMEgJJzUOUDJiEX[[P9D0
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 10 nor_gate_n 0 22 5@znz4fm:b1Ma8aGG@NC50
+l17
+L16
+Vml7joaIK[mf70D]DjiNn90
+R6
+32
+R138
+R139
+R140
+R10
+R11
+!s100 >DOPeHl?2eiP]LlgoPVEU3
+!i10b 1
+Enot_gate
+R12
+R1
+R2
+R3
+Z141 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate.vhd
+Z142 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate.vhd
+l0
+L5
+VK16bWCTJeSV5m>NhK1U8O2
+R6
+32
+Z143 !s108 1447912716.111258
+Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate.vhd|
+Z145 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate.vhd|
+R10
+R11
+!s100 ]]H0N<O`kDYJ[L2CLGAe21
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 8 not_gate 0 22 K16bWCTJeSV5m>NhK1U8O2
+l13
+L12
+Vh_eXfPgIDJ=2[GJNRA3Hh3
+R6
+32
+R143
+R144
+R145
+R10
+R11
+!s100 zPGcXa54KBaUUZL;0i@;H0
+!i10b 1
+Enot_gate_32
+R12
+R1
+R2
+R3
+Z146 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_32.vhd
+Z147 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_32.vhd
+l0
+L5
+VSlkcM=^1HkX1a<066EOMm0
+R6
+32
+Z148 !s108 1447912716.166250
+Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_32.vhd|
+Z150 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_32.vhd|
+R10
+R11
+!s100 1IcOToN3BS?;_TBCK2Do63
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 11 not_gate_32 0 22 SlkcM=^1HkX1a<066EOMm0
+l13
+L12
+VUfYEelzI8J`zSeB>QNKbg2
+R6
+32
+R148
+R149
+R150
+R10
+R11
+!s100 H0V]g_M5;ID5L9_1<zca72
+!i10b 1
+Enot_gate_n
+R12
+R1
+R2
+R3
+Z151 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_n.vhd
+Z152 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_n.vhd
+l0
+L5
+VlBK6GjENacbicWV9fHN_[2
+R6
+32
+Z153 !s108 1447912716.220518
+Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_n.vhd|
+Z155 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/not_gate_n.vhd|
+R10
+R11
+!s100 D<bTJ[^Ie5f<5:E>I=RRn1
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 10 not_gate_n 0 22 lBK6GjENacbicWV9fHN_[2
+l16
+L15
+VBOC0j>ol`8O50o3kdzDM[1
+R6
+32
+R153
+R154
+R155
+R10
+R11
+!s100 3B3eDj27783^HDOW`j=Ud1
+!i10b 1
+Eor_gate
+R12
+R1
+R2
+R3
+Z156 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate.vhd
+Z157 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate.vhd
+l0
+L5
+VGG;=EADEXFjRPLQi`GYgl2
+R6
+32
+Z158 !s108 1447912716.275345
+Z159 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate.vhd|
+Z160 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate.vhd|
+R10
+R11
+!s100 =mQSPnAKWoWc<oLeFLgWo2
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 7 or_gate 0 22 GG;=EADEXFjRPLQi`GYgl2
+l14
+L13
+VS4C55gBB@Y^XKL>NAe@7^0
+R6
+32
+R158
+R159
+R160
+R10
+R11
+!s100 I1adU3iXC60c`@M@ed6Da2
+!i10b 1
+Eor_gate_32
+R12
+R1
+R2
+R3
+Z161 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_32.vhd
+Z162 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_32.vhd
+l0
+L5
+V[=zi?8Z3loGCUh7F`kDBP0
+R6
+32
+Z163 !s108 1447912716.329731
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_32.vhd|
+Z165 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_32.vhd|
+R10
+R11
+!s100 aGEfO2<6f37RH:GanUjR?1
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 10 or_gate_32 0 22 [=zi?8Z3loGCUh7F`kDBP0
+l14
+L13
+VYJ8M5WMb?OZd_0_iaW2g=0
+R6
+32
+R163
+R164
+R165
+R10
+R11
+!s100 1Q^zoP]QC7bO]Dn@5U[eb3
+!i10b 1
+Eor_gate_n
+R12
+R1
+R2
+R3
+Z166 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_n.vhd
+Z167 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_n.vhd
+l0
+L5
+VFdCW<^bAoYUK2TiY;H=bc0
+R6
+32
+Z168 !s108 1447912716.386672
+Z169 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_n.vhd|
+Z170 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/or_gate_n.vhd|
+R10
+R11
+!s100 jUG?<k5^F:_JieE9eNAG60
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 9 or_gate_n 0 22 FdCW<^bAoYUK2TiY;H=bc0
+l17
+L16
+VC1=Fg=2_DbGJl=9nJnbAN0
+R6
+32
+R168
+R169
+R170
+R10
+R11
+!s100 R;TMJPI7LRHoU4gi4liii2
+!i10b 1
+Esram
+R12
+R25
+R41
+R42
+R43
+R1
+R2
+R3
+Z171 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/sram.vhd
+Z172 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/sram.vhd
+l0
+L13
+V276W[<d8><W[@i8fHI7NU1
+R6
+32
+Z173 !s108 1447912716.441054
+Z174 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/sram.vhd|
+Z175 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/sram.vhd|
+R10
+R11
+!s100 Ti=m<f7T^7^:XVAda44dJ2
+!i10b 1
+Abehavioral
+R25
+R41
+R42
+R43
+R1
+R2
+DEx4 work 4 sram 0 22 276W[<d8><W[@i8fHI7NU1
+l28
+L27
+V:VMToV<VgoQ8<UDE[cFRm0
+R6
+32
+R173
+R174
+R175
+R10
+R11
+!s100 k6:CVa86lf?@68U[JP[:G1
+!i10b 1
+Esyncram
+R12
+R25
+R41
+R42
+R43
+R1
+R2
+R3
+Z176 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram.vhd
+Z177 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram.vhd
+l0
+L12
+V60L>U:0EYilgXmYR_KPHE3
+R6
+32
+Z178 !s108 1447912716.514117
+Z179 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram.vhd|
+Z180 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram.vhd|
+R10
+R11
+!s100 bZHKF^V=nkQ96S]JO>F@61
+!i10b 1
+Abehavioral
+R25
+R41
+R42
+R43
+R1
+R2
+DEx4 work 7 syncram 0 22 60L>U:0EYilgXmYR_KPHE3
+l28
+L27
+V;oefX`?mKZF5Hg4DlF9?B2
+R6
+32
+R178
+R179
+R180
+R10
+R11
+!s100 n9lCOMeegC;D84e14boZ]0
+!i10b 1
+Esyncram_n
+R12
+R25
+R41
+R42
+R43
+R1
+R2
+R3
+Z181 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram_n.vhd
+Z182 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram_n.vhd
+l0
+L12
+VS;NS38Y:n[lK3H>aN?CJ[0
+R6
+32
+Z183 !s108 1447912716.587425
+Z184 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram_n.vhd|
+Z185 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/syncram_n.vhd|
+R10
+R11
+!s100 ARHVlZL`5XWCAik56m@FF1
+!i10b 1
+Abehavioral
+R25
+R41
+R42
+R43
+R1
+R2
+DEx4 work 9 syncram_n 0 22 S;NS38Y:n[lK3H>aN?CJ[0
+l32
+L31
+V>LfYSZkm;jL=9hPTO8DzT3
+R6
+32
+R183
+R184
+R185
+R10
+R11
+!s100 Y7oeHSe4Xb3dd8OG7E?l51
+!i10b 1
+Exnor_gate
+R12
+R1
+R2
+R3
+Z186 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate.vhd
+Z187 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate.vhd
+l0
+L5
+VI0F_B78ADQlIL4Im7EAoI1
+R6
+32
+Z188 !s108 1447912716.661372
+Z189 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate.vhd|
+Z190 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate.vhd|
+R10
+R11
+!s100 VPUPjPfEbandSfQT?_95B0
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 9 xnor_gate 0 22 I0F_B78ADQlIL4Im7EAoI1
+l14
+L13
+V:o=L<cfe9XHZ``;S`4eYf1
+R6
+32
+R188
+R189
+R190
+R10
+R11
+!s100 _ZC:hnkFC2o9P4HKdfk7>1
+!i10b 1
+Exnor_gate_32
+R12
+R1
+R2
+R3
+Z191 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_32.vhd
+Z192 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_32.vhd
+l0
+L5
+VF=8B=D3Z_hFFbSd@kbcMl1
+R6
+32
+Z193 !s108 1447912716.718605
+Z194 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_32.vhd|
+Z195 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_32.vhd|
+R10
+R11
+!s100 Och@`@4T?f9hZlQMbV9KV3
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 12 xnor_gate_32 0 22 F=8B=D3Z_hFFbSd@kbcMl1
+l14
+L13
+VnYbaTe7:N:[c`bcE5iZX<0
+R6
+32
+R193
+R194
+R195
+R10
+R11
+!s100 71EJbdh?cKgE4QVTDVUc]2
+!i10b 1
+Exnor_gate_n
+R12
+R1
+R2
+R3
+Z196 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_n.vhd
+Z197 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_n.vhd
+l0
+L5
+VGL?T4d>>fLdMA3gF_b77k3
+R6
+32
+Z198 !s108 1447912716.773269
+Z199 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_n.vhd|
+Z200 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/xnor_gate_n.vhd|
+R10
+R11
+!s100 <gU13dnPj7P:FmGiIN<GG0
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 11 xnor_gate_n 0 22 GL?T4d>>fLdMA3gF_b77k3
+l17
+L16
+V<aCRe7C_gXg`ZTJg`8:fo2
+R6
+32
+R198
+R199
+R200
+R10
+R11
+!s100 V:_d`U2mLkhjLi`i3i>T81
+!i10b 1
+Exor_gate
+R12
+R1
+R2
+R3
+Z201 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate.vhd
+Z202 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate.vhd
+l0
+L5
+VQmk`dYFJGD5R1lK6V6JGI1
+R6
+32
+Z203 !s108 1447912716.835991
+Z204 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate.vhd|
+Z205 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate.vhd|
+R10
+R11
+!s100 PE0@VZVY2cjj78zRj[BkO0
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 8 xor_gate 0 22 Qmk`dYFJGD5R1lK6V6JGI1
+l14
+L13
+VKE8kH79^Gd42P<FzkC;Jc3
+R6
+32
+R203
+R204
+R205
+R10
+R11
+!s100 FE@a4b4eoCE58ANXL33`W2
+!i10b 1
+Exor_gate_32
+R12
+R1
+R2
+R3
+Z206 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_32.vhd
+Z207 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_32.vhd
+l0
+L5
+VOX1^iBO>g6@I7C[;fP@S[1
+R6
+32
+Z208 !s108 1447912716.890044
+Z209 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_32.vhd|
+Z210 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_32.vhd|
+R10
+R11
+!s100 l2ceUOHV=nUzk<ISL6D_^1
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 11 xor_gate_32 0 22 OX1^iBO>g6@I7C[;fP@S[1
+l14
+L13
+VaMFAkkXN>?f<k9QFMW0[D2
+R6
+32
+R208
+R209
+R210
+R10
+R11
+!s100 M0ETgC[iDdGd3C2H@CQCk0
+!i10b 1
+Exor_gate_n
+R12
+R1
+R2
+R3
+Z211 8/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_n.vhd
+Z212 F/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_n.vhd
+l0
+L5
+VGfX4`DHXb4@JGJin?K9Eo3
+R6
+32
+Z213 !s108 1447912716.942590
+Z214 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_n.vhd|
+Z215 !s107 /home/kza199/projects/eecs361/cachelab/eecs361/lib/xor_gate_n.vhd|
+R10
+R11
+!s100 [J;S2B;FBQMJ>^UEGC40C3
+!i10b 1
+Adataflow
+R1
+R2
+DEx4 work 10 xor_gate_n 0 22 GfX4`DHXb4@JGJin?K9Eo3
+l17
+L16
+Vk[<SzH7cLi00O_YiG9N9X0
+!s100 b9B3Go4P<kb0TUKGSi_g[1
+R6
+32
+R213
+R214
+R215
+R10
+R11
+!i10b 1
