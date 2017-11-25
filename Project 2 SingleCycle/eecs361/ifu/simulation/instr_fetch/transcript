@@ -1,0 +1,78 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile {D:/github/355Labs/Project 2 SingleCycle/eecs361/ifu/simulation/instr_fetch/ifu_sim.mpf}
+# Loading project ifu_sim
+# Compile of eecs361_gates.vhd was successful.
+# Compile of eecs361.vhd was successful.
+# Compile of add_1b.vhd was successful.
+# Compile of add_n.vhd was successful.
+# Compile of extender_n.vhd was successful.
+# Compile of pc_reg.vhd was successful.
+# Compile of and_gate.vhd was successful.
+# Compile of and_gate_32.vhd was successful.
+# Compile of and_gate_n.vhd was successful.
+# Compile of dec_n.vhd was successful.
+# Compile of dff.vhd was successful.
+# Compile of dffr.vhd was successful.
+# Compile of dffr_a.vhd was successful.
+# Compile of mux.vhd was successful.
+# Compile of mux_32.vhd was successful.
+# Compile of mux_n.vhd was successful.
+# Compile of nand_gate.vhd was successful.
+# Compile of nand_gate_32.vhd was successful.
+# Compile of nand_gate_n.vhd was successful.
+# Compile of nor_gate.vhd was successful.
+# Compile of nor_gate_32.vhd was successful.
+# Compile of nor_gate_n.vhd was successful.
+# Compile of not_gate.vhd was successful.
+# Compile of not_gate_32.vhd was successful.
+# Compile of not_gate_n.vhd was successful.
+# Compile of or_gate.vhd was successful.
+# Compile of or_gate_32.vhd was successful.
+# Compile of or_gate_n.vhd was successful.
+# Compile of sram.vhd was successful.
+# Compile of syncram.vhd was successful.
+# Compile of xnor_gate.vhd was successful.
+# Compile of xnor_gate_32.vhd was successful.
+# Compile of xnor_gate_n.vhd was successful.
+# Compile of xor_gate.vhd was successful.
+# Compile of xor_gate_32.vhd was successful.
+# Compile of xor_gate_n.vhd was successful.
+# Compile of ifu_tb.vhd was successful.
+# Compile of ifu.vhd was successful.
+# 38 compiles, 0 failed with no errors.
+vsim -gui work.ifu_tb
+# vsim -gui work.ifu_tb 
+# Start time: 21:03:50 on Nov 13,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.eecs361_gates
+# Loading ieee.numeric_std(body)
+# Loading work.ifu_tb(behavioral)
+# Loading work.ifu(structural)
+# Loading ieee.std_logic_textio(body)
+# Loading work.extender_n(structural)
+# Loading work.eecs361
+# Loading work.mux(structural)
+# Loading work.mux_n(behavioral)
+# Loading work.pc_reg(structural)
+# Loading work.dffr(behavioral)
+# Loading work.add_n(structural)
+# Loading work.add_1b(structural)
+# Loading work.xor_gate(dataflow)
+# Loading work.and_gate(dataflow)
+# Loading work.or_gate(dataflow)
+add wave -r sim:/ifu_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 21:09:56 on Nov 13,2017, Elapsed time: 0:06:06
+# Errors: 0, Warnings: 0

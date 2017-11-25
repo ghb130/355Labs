@@ -6,6 +6,16 @@ use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
 
 package eecs361 is
+
+-- 2 to 1 PLA with inverters
+  component pla2
+    port (
+      din : in  std_logic_vector(1 downto 0);
+      inv : in  std_logic_vector(1 downto 0);
+      z   : out std_logic
+    );
+end component pla2;
+
   -- Decoders
   component dec_n
     generic (
