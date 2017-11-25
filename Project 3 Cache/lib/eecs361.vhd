@@ -7,6 +7,23 @@ use work.eecs361_gates.all;
 
 package eecs361 is
 
+--- 5 to 1 or gate
+  component or5to1
+    port (
+      a,b,c,d,e : in  std_logic;
+      z : out std_logic
+    );
+  end component or5to1;
+
+-- 5 to 1 PLA
+  component pla5
+    port (
+      din : in  std_logic_vector(4 downto 0);
+      inv : in  std_logic_vector(4 downto 0);
+      z   : out std_logic
+    );
+  end component pla5;
+
 -- 2 to 1 PLA with inverters
   component pla2
     port (
@@ -14,7 +31,7 @@ package eecs361 is
       inv : in  std_logic_vector(1 downto 0);
       z   : out std_logic
     );
-end component pla2;
+  end component pla2;
 
   -- Decoders
   component dec_n

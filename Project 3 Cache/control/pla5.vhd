@@ -3,18 +3,18 @@ use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
 use ieee.numeric_std.all;
 
-entity pla2 is
+entity pla5 is
   port (
-        din : in std_logic_vector(1 downto 0);
-        inv : in std_logic_vector(1 downto 0);
+        din : in std_logic_vector(4 downto 0);
+        inv : in std_logic_vector(4 downto 0);
         z : out std_logic
   );
 end entity;
 
-architecture structural of pla2 is
+architecture structural of pla5 is
   component plaInverter_n
     generic (
-      n : integer := 2
+      n : integer
     );
     port (
       din  : in  std_logic_vector(n-1 downto 0);
@@ -22,10 +22,18 @@ architecture structural of pla2 is
       dout : out std_logic_vector(n-1 downto 0)
     );
   end component plaInverter_n;
-  signal plaInvOut : std_logic_vector(1 downto 0);
+
+  component and5to1
+    port (
+      din : in  std_logic_vector(4 downto 0);
+      z   : out std_logic
+    );
+  end component and5to1;
+
+  signal plaInvOut : std_logic_vector(4 downto 0);
 begin
-  plainv: plaInverter_n generic map(n => 2)
+  plainv: plaInverter_n generic map(n => 5)
                         port map(din => din, inv=>inv, dout=>plaInvOut);
-  and_g: and_gate port map(x => plaInvOut(0), y => plaInvOut(1), z => z);
+  and_g: and5to1 port map(din=>plaInvOut, z=>z);
 
 end architecture;

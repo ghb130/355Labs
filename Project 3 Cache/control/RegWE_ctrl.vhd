@@ -24,7 +24,7 @@ end entity;
 
 architecture structural of RegWE_ctrl is
   signal idle_state, comptag_state, writeback_state, allocate_state : std_logic;
-  signal cpuWAD, cpuDR, Rep, L2A, L2D, not_miss : std_logic;
+  signal cpuWAD, cpuDR, Rep, not_miss : std_logic;
   begin
     pla2_idle : pla2
       port map (
@@ -54,7 +54,7 @@ architecture structural of RegWE_ctrl is
     cpuWAD_and: and_gate port map(x=>cpuReq, y=>idle_state, z=>cpuWAD);
     cpuWr_we <= cpuWAD;
     cpuAddr_we <= cpuWAD;
-    cpuDout_we <= cpuWAD;
+    cpuDin_we <= cpuWAD;
 -------------------------------------------------------------------------------
     miss_not_g: not_gate port map(x=>miss, z=>not_miss);
     cpuDR_and: and_gate port map(x=>not_miss, y=>comptag_state, z=>cpuDR);

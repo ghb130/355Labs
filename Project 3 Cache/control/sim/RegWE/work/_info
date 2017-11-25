@@ -1,0 +1,1636 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/17.0
+Eand_gate
+Z0 w1511226687
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/github/355Labs/Project 3 Cache/control/sim
+Z4 8D:/github/355Labs/Project 3 Cache/lib/and_gate.vhd
+Z5 FD:/github/355Labs/Project 3 Cache/lib/and_gate.vhd
+l0
+L5
+VhE_e_Rgm[N3PdZh[V=Az?1
+!s100 9zM?`;meNomBE;big9UG12
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1511634809
+!i10b 1
+Z8 !s108 1511634809.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/and_gate.vhd|
+Z10 !s107 D:/github/355Labs/Project 3 Cache/lib/and_gate.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R1
+R2
+DEx4 work 8 and_gate 0 22 hE_e_Rgm[N3PdZh[V=Az?1
+l14
+L13
+VC@ldnBQ6jEzl^]@212YPz1
+!s100 Wc2cnMoUL`Rn2T[ECHYDg0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand_gate_32
+R0
+R1
+R2
+R3
+Z13 8D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd
+Z14 FD:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd
+l0
+L5
+V;K@lPb^fUn5NRPE9^YUWn1
+!s100 KSRcRaLU>DVF[looI[MAB1
+R6
+32
+R7
+!i10b 1
+R8
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd|
+Z16 !s107 D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 and_gate_32 0 22 ;K@lPb^fUn5NRPE9^YUWn1
+l14
+L13
+V_L`Mb12In>DaA6S>F3dR_2
+!s100 7eGi4aE3j0c6RNWj8;hYn2
+R6
+32
+R7
+!i10b 1
+R8
+R15
+R16
+!i113 1
+R11
+R12
+Eand_gate_n
+R0
+R1
+R2
+R3
+Z17 8D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd
+Z18 FD:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd
+l0
+L5
+V9MR1C1[7b:z414JH]o[Q72
+!s100 BgW1<b848=U4b0Fm5IB4V0
+R6
+32
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd|
+Z20 !s107 D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 10 and_gate_n 0 22 9MR1C1[7b:z414JH]o[Q72
+l17
+L16
+VNZceK8zIhSAfFLMf;8WfJ0
+!s100 TlhKh<Ln2>7=AINQTiM_c3
+R6
+32
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12
+Ecmp_n
+R0
+Z21 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z22 8D:/github/355Labs/Project 3 Cache/lib/cmp_n.vhd
+Z23 FD:/github/355Labs/Project 3 Cache/lib/cmp_n.vhd
+l0
+L5
+V<??z;U=m:fjL6GBah2AmM2
+!s100 Q@FG57Y^f`a49FFnA^8XA3
+R6
+32
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/cmp_n.vhd|
+Z25 !s107 D:/github/355Labs/Project 3 Cache/lib/cmp_n.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R1
+R2
+DEx4 work 5 cmp_n 0 22 <??z;U=m:fjL6GBah2AmM2
+l23
+L22
+VAHgFY<GVeWE?L7TI=VkzF1
+!s100 k3J96n;G0?;fYl<Wkbnk=1
+R6
+32
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R11
+R12
+Ecsram
+R0
+R21
+Z26 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z27 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z28 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R1
+R2
+R3
+Z29 8D:/github/355Labs/Project 3 Cache/lib/csram.vhd
+Z30 FD:/github/355Labs/Project 3 Cache/lib/csram.vhd
+l0
+L12
+VnJGESlR:fTWHBUVMae>1;1
+!s100 G3Pibi36FAWWliCKjYRFl3
+R6
+32
+Z31 !s110 1511634810
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/csram.vhd|
+Z33 !s107 D:/github/355Labs/Project 3 Cache/lib/csram.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R26
+R27
+R28
+R1
+R2
+DEx4 work 5 csram 0 22 nJGESlR:fTWHBUVMae>1;1
+l28
+L27
+V8BGMz]<=;NB[NHT?R[IUR0
+!s100 aoYaK[ZXc48Po>nc>25c>0
+R6
+32
+R31
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Edec_n
+R0
+R21
+R1
+R2
+R3
+Z34 8D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd
+Z35 FD:/github/355Labs/Project 3 Cache/lib/dec_n.vhd
+l0
+L5
+V0a>XSXG3^zhkzX^i4@9Ea1
+!s100 TFYiE@E?[zcS;UYZJZ]e]0
+R6
+32
+R31
+!i10b 1
+Z36 !s108 1511634810.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd|
+Z38 !s107 D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R1
+R2
+DEx4 work 5 dec_n 0 22 0a>XSXG3^zhkzX^i4@9Ea1
+l16
+L15
+VaL_C;f4Cnzb@MDAjLf1Ed3
+!s100 55g?PRCWKJcmYh6jzUGZ80
+R6
+32
+R31
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R11
+R12
+Edff
+R0
+R1
+R2
+R3
+Z39 8D:/github/355Labs/Project 3 Cache/lib/dff.vhd
+Z40 FD:/github/355Labs/Project 3 Cache/lib/dff.vhd
+l0
+L4
+V?Dl0]I?oihzd6e58lnTeT3
+!s100 6RF6aKO;bLUdc^Uo1TlJA1
+R6
+32
+R31
+!i10b 1
+R36
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/dff.vhd|
+Z42 !s107 D:/github/355Labs/Project 3 Cache/lib/dff.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 3 dff 0 22 ?Dl0]I?oihzd6e58lnTeT3
+l13
+L12
+Ve^^=95d6ZUNM<z0RP@Q=G0
+!s100 YQ?Mf61<mPk;FAfQWmbPe2
+R6
+32
+R31
+!i10b 1
+R36
+R41
+R42
+!i113 1
+R11
+R12
+Edffr
+R0
+R1
+R2
+R3
+Z43 8D:/github/355Labs/Project 3 Cache/lib/dffr.vhd
+Z44 FD:/github/355Labs/Project 3 Cache/lib/dffr.vhd
+l0
+L4
+V]V0nCm<P[hMQe1HJ>dK>m2
+!s100 8^h72ccPiicFMoll6;?B^1
+R6
+32
+R31
+!i10b 1
+R36
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/dffr.vhd|
+Z46 !s107 D:/github/355Labs/Project 3 Cache/lib/dffr.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 4 dffr 0 22 ]V0nCm<P[hMQe1HJ>dK>m2
+l13
+L12
+VeUY?8[LZleUS82iiKEe5Y0
+!s100 [jSDjV[;ooEXI1fbj<kQH2
+R6
+32
+R31
+!i10b 1
+R36
+R45
+R46
+!i113 1
+R11
+R12
+Edffr_a
+R0
+R1
+R2
+R3
+Z47 8D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd
+Z48 FD:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd
+l0
+L4
+V4[b^00[Ug:gIIbna]26832
+!s100 Ae06@YlEN>^ZBC[J]R^j?2
+R6
+32
+R31
+!i10b 1
+R36
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd|
+Z50 !s107 D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 6 dffr_a 0 22 4[b^00[Ug:gIIbna]26832
+l17
+L16
+V2e``[JLG1V9mIKaN=UMS62
+!s100 18jIoW:5CWgj6bjeXK^2W3
+R6
+32
+R31
+!i10b 1
+R36
+R49
+R50
+!i113 1
+R11
+R12
+Peecs361
+Z51 DPx4 work 13 eecs361_gates 0 22 G@G3>3naH[gM9iCRR86lk0
+R1
+R2
+w1511629274
+R3
+8D:/github/355Labs/Project 3 Cache/lib/eecs361.vhd
+FD:/github/355Labs/Project 3 Cache/lib/eecs361.vhd
+l0
+L8
+V>bFPTDzE[S8??@VJM2=CL2
+!s100 I=F=n1mTF63Td7XTS:`=X0
+R6
+32
+Z52 !s110 1511634808
+!i10b 1
+Z53 !s108 1511634808.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/eecs361.vhd|
+!s107 D:/github/355Labs/Project 3 Cache/lib/eecs361.vhd|
+!i113 1
+R11
+R12
+Peecs361_gates
+R1
+R2
+R0
+R3
+8D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd
+FD:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd
+l0
+L4
+VG@G3>3naH[gM9iCRR86lk0
+!s100 EFJF``Kkcd:<4LI@jVAPI3
+R6
+32
+R52
+!i10b 1
+R53
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd|
+!s107 D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd|
+!i113 1
+R11
+R12
+Efulladder_32
+R0
+R1
+R2
+R3
+Z54 8D:/github/355Labs/Project 3 Cache/lib/fulladder_32.vhd
+Z55 FD:/github/355Labs/Project 3 Cache/lib/fulladder_32.vhd
+l0
+L4
+Vo_?igEKk4U_IB=:fed5?^3
+!s100 VUBWe9FBJWK;X=mWOQneA3
+R6
+32
+R31
+!i10b 1
+R36
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/fulladder_32.vhd|
+Z57 !s107 D:/github/355Labs/Project 3 Cache/lib/fulladder_32.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 12 fulladder_32 0 22 o_?igEKk4U_IB=:fed5?^3
+l27
+L14
+V8ZIWTN8J4g2881=3K8Fz81
+!s100 2_@4>b7=<lh>L?l_cAQk80
+R6
+32
+R31
+!i10b 1
+R36
+R56
+R57
+!i113 1
+R11
+R12
+Efulladder_n
+R0
+R21
+R1
+R2
+R3
+Z58 8D:/github/355Labs/Project 3 Cache/lib/fulladder_n.vhd
+Z59 FD:/github/355Labs/Project 3 Cache/lib/fulladder_n.vhd
+l0
+L5
+VmUOj8TPDZDPhCFV]^>JF30
+!s100 V6IE>^`E7L]cZ]31OjmKO0
+R6
+32
+Z60 !s110 1511634811
+!i10b 1
+R36
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/fulladder_n.vhd|
+Z62 !s107 D:/github/355Labs/Project 3 Cache/lib/fulladder_n.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R1
+R2
+DEx4 work 11 fulladder_n 0 22 mUOj8TPDZDPhCFV]^>JF30
+l20
+L18
+VVaCcgG15RaW3lI=?CWC1K1
+!s100 dO2Y]L5HUgBaSB^@IH`Tz1
+R6
+32
+R60
+!i10b 1
+R36
+R61
+R62
+!i113 1
+R11
+R12
+Emux
+R0
+R51
+Z63 DPx4 work 7 eecs361 0 22 >bFPTDzE[S8??@VJM2=CL2
+R1
+R2
+R3
+Z64 8D:/github/355Labs/Project 3 Cache/lib/mux.vhd
+Z65 FD:/github/355Labs/Project 3 Cache/lib/mux.vhd
+l0
+L5
+V>oJ5U=BnI^`ag0=K]WZKO0
+!s100 R7SGh1UNzgRXkDgUzi0Dn0
+R6
+32
+R60
+!i10b 1
+Z66 !s108 1511634811.000000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/mux.vhd|
+Z68 !s107 D:/github/355Labs/Project 3 Cache/lib/mux.vhd|
+!i113 1
+R11
+R12
+Astructural
+R51
+R63
+R1
+R2
+DEx4 work 3 mux 0 22 >oJ5U=BnI^`ag0=K]WZKO0
+l15
+L14
+V9e3_f``Qg4GhTA>ag5:8o0
+!s100 TMbaX=C3aUF9Pl?TK_bl20
+R6
+32
+R60
+!i10b 1
+R66
+R67
+R68
+!i113 1
+R11
+R12
+Emux_32
+R0
+R51
+R63
+R1
+R2
+R3
+Z69 8D:/github/355Labs/Project 3 Cache/lib/mux_32.vhd
+Z70 FD:/github/355Labs/Project 3 Cache/lib/mux_32.vhd
+l0
+L5
+V;ZJB3@XFiFdGS?g@RF1Vc3
+!s100 ciE_BzZP_7gaALUfNcf3V2
+R6
+32
+R60
+!i10b 1
+R66
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/mux_32.vhd|
+Z72 !s107 D:/github/355Labs/Project 3 Cache/lib/mux_32.vhd|
+!i113 1
+R11
+R12
+Astructural
+R51
+R63
+R1
+R2
+DEx4 work 6 mux_32 0 22 ;ZJB3@XFiFdGS?g@RF1Vc3
+l15
+L14
+V;ZASSMASd=3o_Ld=:eJLS1
+!s100 iiT]gRaJ0BGA@1c7lKGZ;1
+R6
+32
+R60
+!i10b 1
+R66
+R71
+R72
+!i113 1
+R11
+R12
+Emux_n
+R0
+R1
+R2
+R3
+Z73 8D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd
+Z74 FD:/github/355Labs/Project 3 Cache/lib/mux_n.vhd
+l0
+L4
+V;Rg1MaANM2BcjIoIGiMR>3
+!s100 DhH_dWUkhZScmPX0PShL>1
+R6
+32
+R60
+!i10b 1
+R66
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd|
+Z76 !s107 D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 5 mux_n 0 22 ;Rg1MaANM2BcjIoIGiMR>3
+l17
+L16
+Vdbi;>X`Mj01bMajZB2?643
+!s100 VOPJAGmKhfQ>L9L:P_FXf0
+R6
+32
+R60
+!i10b 1
+R66
+R75
+R76
+!i113 1
+R11
+R12
+Enand_gate
+R0
+R1
+R2
+R3
+Z77 8D:/github/355Labs/Project 3 Cache/lib/nand_gate.vhd
+Z78 FD:/github/355Labs/Project 3 Cache/lib/nand_gate.vhd
+l0
+L5
+V=i<fNcci6gazbNoz7Zo?B0
+!s100 `;YoNjg98=RO3KEUJb?JH2
+R6
+32
+R60
+!i10b 1
+R66
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/nand_gate.vhd|
+Z80 !s107 D:/github/355Labs/Project 3 Cache/lib/nand_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 9 nand_gate 0 22 =i<fNcci6gazbNoz7Zo?B0
+l14
+L13
+Vl^zW<z;Pl8NkCT3h`m8f>3
+!s100 DdgXSJTenGYMFNYGk^j2^2
+R6
+32
+R60
+!i10b 1
+R66
+R79
+R80
+!i113 1
+R11
+R12
+Enand_gate_32
+R0
+R1
+R2
+R3
+Z81 8D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd
+Z82 FD:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd
+l0
+L5
+Vm1GdlgCSaKXEezc1oQ5A53
+!s100 d7`oU3cRhD_iz]OR?aJbM0
+R6
+32
+R60
+!i10b 1
+R66
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd|
+Z84 !s107 D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 12 nand_gate_32 0 22 m1GdlgCSaKXEezc1oQ5A53
+l14
+L13
+V?=O5i19k>6?EO?fWFWmQ33
+!s100 5L7`cY6bRPYMYkmEYAg871
+R6
+32
+R60
+!i10b 1
+R66
+R83
+R84
+!i113 1
+R11
+R12
+Enand_gate_n
+R0
+R1
+R2
+R3
+Z85 8D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd
+Z86 FD:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd
+l0
+L5
+VR6;g^V_FPW0;nb=i<dJlI3
+!s100 LMidV?0i^0NCQXjDDfE0j1
+R6
+32
+Z87 !s110 1511634812
+!i10b 1
+Z88 !s108 1511634812.000000
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd|
+Z90 !s107 D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 nand_gate_n 0 22 R6;g^V_FPW0;nb=i<dJlI3
+l17
+L16
+V`S7jEGJ6CA=AG<0ak5P6D1
+!s100 5mzmEVJ8`Ol]kLAA1ADTS0
+R6
+32
+R87
+!i10b 1
+R88
+R89
+R90
+!i113 1
+R11
+R12
+Enor_gate
+R0
+R1
+R2
+R3
+Z91 8D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd
+Z92 FD:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd
+l0
+L5
+V0L7S;NMz9_M@NF0N3jjl53
+!s100 Uz[KW04m>JL2N=<Ae_26A3
+R6
+32
+R87
+!i10b 1
+R88
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd|
+Z94 !s107 D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 8 nor_gate 0 22 0L7S;NMz9_M@NF0N3jjl53
+l14
+L13
+Vg6WmIRLO`^]W8MOk44NQ02
+!s100 kE2E`N:jBl`5f7h@CAkLc3
+R6
+32
+R87
+!i10b 1
+R88
+R93
+R94
+!i113 1
+R11
+R12
+Enor_gate_32
+R0
+R1
+R2
+R3
+Z95 8D:/github/355Labs/Project 3 Cache/lib/nor_gate_32.vhd
+Z96 FD:/github/355Labs/Project 3 Cache/lib/nor_gate_32.vhd
+l0
+L5
+VJYT;XbbHkkG9;BF<8bSZ[2
+!s100 3mdJRKLJ_1Z1ih<o1WC>A3
+R6
+32
+R87
+!i10b 1
+R88
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/nor_gate_32.vhd|
+Z98 !s107 D:/github/355Labs/Project 3 Cache/lib/nor_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 nor_gate_32 0 22 JYT;XbbHkkG9;BF<8bSZ[2
+l14
+L13
+V[3NO3nGH3BHP0aAz4=<U;0
+!s100 4C[N[o;dbNU?^;JAFz8P@0
+R6
+32
+R87
+!i10b 1
+R88
+R97
+R98
+!i113 1
+R11
+R12
+Enor_gate_n
+R0
+R1
+R2
+R3
+Z99 8D:/github/355Labs/Project 3 Cache/lib/nor_gate_n.vhd
+Z100 FD:/github/355Labs/Project 3 Cache/lib/nor_gate_n.vhd
+l0
+L5
+VjaFJH5UI;Xc1C=l<5c`S^1
+!s100 WOgXHNaOaa3V@ZQR9[dBF2
+R6
+32
+R87
+!i10b 1
+R88
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/nor_gate_n.vhd|
+Z102 !s107 D:/github/355Labs/Project 3 Cache/lib/nor_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 10 nor_gate_n 0 22 jaFJH5UI;Xc1C=l<5c`S^1
+l17
+L16
+V9dCFzT;RnT>eMXZgOEFXh2
+!s100 LLY;[lESSHQFLXI0BM0Lk2
+R6
+32
+R87
+!i10b 1
+R88
+R101
+R102
+!i113 1
+R11
+R12
+Enot_gate
+R0
+R1
+R2
+R3
+Z103 8D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd
+Z104 FD:/github/355Labs/Project 3 Cache/lib/not_gate.vhd
+l0
+L5
+V?REPgFkfC>l7me3_Cm;h]0
+!s100 ZFL^eh?^CT8f=9?@;fY^P1
+R6
+32
+R87
+!i10b 1
+R88
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd|
+Z106 !s107 D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 8 not_gate 0 22 ?REPgFkfC>l7me3_Cm;h]0
+l13
+L12
+V^N]`_cihjlkgk@GD2ifne3
+!s100 0K4o_`::YhV<`CcAlY38V3
+R6
+32
+R87
+!i10b 1
+R88
+R105
+R106
+!i113 1
+R11
+R12
+Enot_gate_32
+R0
+R1
+R2
+R3
+Z107 8D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd
+Z108 FD:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd
+l0
+L5
+V5z8ni8e9GEdi_1z[h3[YT3
+!s100 MlQa>L3D?j3YTME?WDA^I3
+R6
+32
+Z109 !s110 1511634813
+!i10b 1
+R88
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd|
+Z111 !s107 D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 not_gate_32 0 22 5z8ni8e9GEdi_1z[h3[YT3
+l13
+L12
+VooYb<YVBcg]jka=E1Bz2U2
+!s100 SZ]KSd]7=<``cT7UO3c^32
+R6
+32
+R109
+!i10b 1
+R88
+R110
+R111
+!i113 1
+R11
+R12
+Enot_gate_n
+R0
+R1
+R2
+R3
+Z112 8D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd
+Z113 FD:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd
+l0
+L5
+VL[_>1Hz4EFXGgW8O0lzPe0
+!s100 IMo29cac8Wo2jk<h1@>Y41
+R6
+32
+R109
+!i10b 1
+Z114 !s108 1511634813.000000
+Z115 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd|
+Z116 !s107 D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 10 not_gate_n 0 22 L[_>1Hz4EFXGgW8O0lzPe0
+l16
+L15
+V^?aa<E?_8@T0dJRWCLiMk2
+!s100 f1R?C4QOI1W16^[L00fF`1
+R6
+32
+R109
+!i10b 1
+R114
+R115
+R116
+!i113 1
+R11
+R12
+Eor_gate
+R0
+R1
+R2
+R3
+Z117 8D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd
+Z118 FD:/github/355Labs/Project 3 Cache/lib/or_gate.vhd
+l0
+L5
+VO1l5BHjZPQ5?]IFn9;=UE2
+!s100 P4NBKo^c]hz<z`LINQA5?3
+R6
+32
+R109
+!i10b 1
+R114
+Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd|
+Z120 !s107 D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 7 or_gate 0 22 O1l5BHjZPQ5?]IFn9;=UE2
+l14
+L13
+VU4niXK]Pm[B5X9KH>G;F:1
+!s100 imjaYVkITBGK@1]KZ;:O?1
+R6
+32
+R109
+!i10b 1
+R114
+R119
+R120
+!i113 1
+R11
+R12
+Eor_gate_32
+R0
+R1
+R2
+R3
+Z121 8D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd
+Z122 FD:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd
+l0
+L5
+VR4T`[JT7zTSFAT?fEEf591
+!s100 XkkR6QF?Vl4ZJYEZjo;0l2
+R6
+32
+R109
+!i10b 1
+R114
+Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd|
+Z124 !s107 D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 10 or_gate_32 0 22 R4T`[JT7zTSFAT?fEEf591
+l14
+L13
+Vm<XLcN8OGfnn6foi[Re=10
+!s100 K:BE?onG;^0[1Z5dkfcRR0
+R6
+32
+R109
+!i10b 1
+R114
+R123
+R124
+!i113 1
+R11
+R12
+Eor_gate_n
+R0
+R1
+R2
+R3
+Z125 8D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd
+Z126 FD:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd
+l0
+L5
+VhcjC8YfR[BWVL];cJhOKi1
+!s100 Y[01iFT>714d^L[KJ4VM82
+R6
+32
+R109
+!i10b 1
+R114
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd|
+Z128 !s107 D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 9 or_gate_n 0 22 hcjC8YfR[BWVL];cJhOKi1
+l17
+L16
+VJC>ZhgR[jGRkBeQ>4LTHl1
+!s100 X0T0eOJ7Mi7@HZjHoZO6:3
+R6
+32
+R109
+!i10b 1
+R114
+R127
+R128
+!i113 1
+R11
+R12
+Epla2
+Z129 w1511633958
+R21
+R51
+R1
+R2
+R3
+Z130 8D:/github/355Labs/Project 3 Cache/control/pla2.vhd
+Z131 FD:/github/355Labs/Project 3 Cache/control/pla2.vhd
+l0
+L6
+VeHId9c0J[jL<nFo@5gL^;2
+!s100 GNLYDEOj0]MfP:TKY[D1a2
+R6
+32
+R52
+!i10b 1
+R53
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/control/pla2.vhd|
+Z133 !s107 D:/github/355Labs/Project 3 Cache/control/pla2.vhd|
+!i113 1
+R11
+R12
+Astructural
+R21
+R51
+R1
+R2
+DEx4 work 4 pla2 0 22 eHId9c0J[jL<nFo@5gL^;2
+l26
+L14
+VXKjLO<[BFSz[@f>ZS4hYY1
+!s100 U7z3S5[gKK@Q0NPkenXG;1
+R6
+32
+R52
+!i10b 1
+R53
+R132
+R133
+!i113 1
+R11
+R12
+Eplainverter_n
+Z134 w1511633861
+R21
+R51
+R1
+R2
+R3
+Z135 8D:/github/355Labs/Project 3 Cache/control/plaInverter_n.vhd
+Z136 FD:/github/355Labs/Project 3 Cache/control/plaInverter_n.vhd
+l0
+L6
+VZ2bNkojEEZYTX:6K;EhA50
+!s100 `Gh=9zcKi]lg>edT6j^V`0
+R6
+32
+R7
+!i10b 1
+R53
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/control/plaInverter_n.vhd|
+Z138 !s107 D:/github/355Labs/Project 3 Cache/control/plaInverter_n.vhd|
+!i113 1
+R11
+R12
+Astructural
+R21
+R51
+R1
+R2
+DEx4 work 13 plainverter_n 0 22 Z2bNkojEEZYTX:6K;EhA50
+l25
+L15
+Vo<]Zm1>2`<;XFg;IEXj802
+!s100 ^?JQ0?BOAPI:DGhz]Azf63
+R6
+32
+R7
+!i10b 1
+R53
+R137
+R138
+!i113 1
+R11
+R12
+Eregwe_ctrl
+Z139 w1511634274
+R51
+R63
+R1
+R2
+R3
+Z140 8D:/github/355Labs/Project 3 Cache/control/RegWE_ctrl.vhd
+Z141 FD:/github/355Labs/Project 3 Cache/control/RegWE_ctrl.vhd
+l0
+L6
+VgQ5QOeiRe;6cHD;lOlk]j0
+!s100 k]dWORYIVo[00?hj2hiKB0
+R6
+32
+R7
+!i10b 1
+R8
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/control/RegWE_ctrl.vhd|
+Z143 !s107 D:/github/355Labs/Project 3 Cache/control/RegWE_ctrl.vhd|
+!i113 1
+R11
+R12
+Astructural
+R51
+R63
+R1
+R2
+DEx4 work 10 regwe_ctrl 0 22 gQ5QOeiRe;6cHD;lOlk]j0
+l28
+L25
+V=bVJlUJdkH54UC0TQY[cS2
+!s100 _dU]RCoGR6^1mLN`H[ALT0
+R6
+32
+R7
+!i10b 1
+R8
+R142
+R143
+!i113 1
+R11
+R12
+Eregwe_ctrl_tb
+Z144 w1511634627
+R51
+R63
+R1
+R2
+R3
+Z145 8D:/github/355Labs/Project 3 Cache/control/sim/RegWE_ctrl_tb.vhd
+Z146 FD:/github/355Labs/Project 3 Cache/control/sim/RegWE_ctrl_tb.vhd
+l0
+L6
+V0:1WSzQ^zX9ATSB_f^o0o0
+!s100 ?SeAa29=BlNAW[IVhTRWJ0
+R6
+32
+R52
+!i10b 1
+R53
+Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/control/sim/RegWE_ctrl_tb.vhd|
+Z148 !s107 D:/github/355Labs/Project 3 Cache/control/sim/RegWE_ctrl_tb.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R51
+R63
+R1
+R2
+DEx4 work 13 regwe_ctrl_tb 0 22 0:1WSzQ^zX9ATSB_f^o0o0
+l43
+L9
+V:lo@IN6L`NFG2Nh5=>ePT3
+!s100 Q;Nke01`EXPmkcLaj[8jB0
+R6
+32
+R52
+!i10b 1
+R53
+R147
+R148
+!i113 1
+R11
+R12
+Esram
+R0
+R21
+R26
+R27
+R28
+R1
+R2
+R3
+Z149 8D:/github/355Labs/Project 3 Cache/lib/sram.vhd
+Z150 FD:/github/355Labs/Project 3 Cache/lib/sram.vhd
+l0
+L13
+VFLG`C39Ab9GzQ=^bY]PbI0
+!s100 dFa2^0bCm0FVM`Q9B=_f60
+R6
+32
+R109
+!i10b 1
+R114
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/sram.vhd|
+Z152 !s107 D:/github/355Labs/Project 3 Cache/lib/sram.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R26
+R27
+R28
+R1
+R2
+DEx4 work 4 sram 0 22 FLG`C39Ab9GzQ=^bY]PbI0
+l28
+L27
+VLRD]SNjG8@LM@IX=zhb1z3
+!s100 ;NlLnEhi3^n7W2I^9UJ2d3
+R6
+32
+R109
+!i10b 1
+R114
+R151
+R152
+!i113 1
+R11
+R12
+Esyncram
+R0
+R21
+R26
+R27
+R28
+R1
+R2
+R3
+Z153 8D:/github/355Labs/Project 3 Cache/lib/syncram.vhd
+Z154 FD:/github/355Labs/Project 3 Cache/lib/syncram.vhd
+l0
+L12
+VD=e][Y8<;9NigS>`niT123
+!s100 aFnLlL1@m415d6em?MG^21
+R6
+32
+Z155 !s110 1511634814
+!i10b 1
+Z156 !s108 1511634814.000000
+Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/syncram.vhd|
+Z158 !s107 D:/github/355Labs/Project 3 Cache/lib/syncram.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R26
+R27
+R28
+R1
+R2
+DEx4 work 7 syncram 0 22 D=e][Y8<;9NigS>`niT123
+l28
+L27
+Vb4bLTLnQ<96RWXh<@96:U0
+!s100 W:<cVUTVPgIfz60fOOgQ20
+R6
+32
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 1
+R11
+R12
+Esyncram_n
+R0
+R21
+R26
+R27
+R28
+R1
+R2
+R3
+Z159 8D:/github/355Labs/Project 3 Cache/lib/syncram_n.vhd
+Z160 FD:/github/355Labs/Project 3 Cache/lib/syncram_n.vhd
+l0
+L12
+V3ShEB2JdK1c_i;V6]VkKe3
+!s100 ?NAYdR:EZQZZ>0mHTP_`F0
+R6
+32
+R155
+!i10b 1
+R156
+Z161 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/syncram_n.vhd|
+Z162 !s107 D:/github/355Labs/Project 3 Cache/lib/syncram_n.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R26
+R27
+R28
+R1
+R2
+DEx4 work 9 syncram_n 0 22 3ShEB2JdK1c_i;V6]VkKe3
+l32
+L31
+V3<kOUJb8CiZbMWQ[T`m4U3
+!s100 i^@Da3EKBiBLBBOZRRmbB1
+R6
+32
+R155
+!i10b 1
+R156
+R161
+R162
+!i113 1
+R11
+R12
+Exnor_gate
+R0
+R1
+R2
+R3
+Z163 8D:/github/355Labs/Project 3 Cache/lib/xnor_gate.vhd
+Z164 FD:/github/355Labs/Project 3 Cache/lib/xnor_gate.vhd
+l0
+L5
+V0h2SEDJmYfE@NbVLih1891
+!s100 VMF9C>DP[5;VOiN5[aESd3
+R6
+32
+R155
+!i10b 1
+R156
+Z165 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/xnor_gate.vhd|
+Z166 !s107 D:/github/355Labs/Project 3 Cache/lib/xnor_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 9 xnor_gate 0 22 0h2SEDJmYfE@NbVLih1891
+l14
+L13
+V7FVFb1NIF1?iJ4PQQ`S`<0
+!s100 ]_>oDFZN:PJ[HJie3IcK81
+R6
+32
+R155
+!i10b 1
+R156
+R165
+R166
+!i113 1
+R11
+R12
+Exnor_gate_32
+R0
+R1
+R2
+R3
+Z167 8D:/github/355Labs/Project 3 Cache/lib/xnor_gate_32.vhd
+Z168 FD:/github/355Labs/Project 3 Cache/lib/xnor_gate_32.vhd
+l0
+L5
+VI^Fo_SJbE0W]UUm=ZlX691
+!s100 7TK64^z14nVXPK]cWgS3=0
+R6
+32
+R155
+!i10b 1
+R156
+Z169 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/xnor_gate_32.vhd|
+Z170 !s107 D:/github/355Labs/Project 3 Cache/lib/xnor_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 12 xnor_gate_32 0 22 I^Fo_SJbE0W]UUm=ZlX691
+l14
+L13
+VUZHHDf582f^BFOE?@V5cO3
+!s100 l]IKGhY:hL2aDUPV;>SB?0
+R6
+32
+R155
+!i10b 1
+R156
+R169
+R170
+!i113 1
+R11
+R12
+Exnor_gate_n
+R0
+R1
+R2
+R3
+Z171 8D:/github/355Labs/Project 3 Cache/lib/xnor_gate_n.vhd
+Z172 FD:/github/355Labs/Project 3 Cache/lib/xnor_gate_n.vhd
+l0
+L5
+VR_LmOEJa:d>5N49>W0ZA?3
+!s100 UCY45ZALOU6@I^4jz3eW33
+R6
+32
+R155
+!i10b 1
+R156
+Z173 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/xnor_gate_n.vhd|
+Z174 !s107 D:/github/355Labs/Project 3 Cache/lib/xnor_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 xnor_gate_n 0 22 R_LmOEJa:d>5N49>W0ZA?3
+l17
+L16
+VKnfTaCK^6h<JR^FmC<>0m1
+!s100 dDail5hL?0zna@N:=D@8b2
+R6
+32
+R155
+!i10b 1
+R156
+R173
+R174
+!i113 1
+R11
+R12
+Exor_gate
+R0
+R1
+R2
+R3
+Z175 8D:/github/355Labs/Project 3 Cache/lib/xor_gate.vhd
+Z176 FD:/github/355Labs/Project 3 Cache/lib/xor_gate.vhd
+l0
+L5
+V[fBJY?oh1=l=lj];5ikcY1
+!s100 K_6H3f?zAK@4`dnkC2j[K2
+R6
+32
+Z177 !s110 1511634815
+!i10b 1
+Z178 !s108 1511634815.000000
+Z179 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/xor_gate.vhd|
+Z180 !s107 D:/github/355Labs/Project 3 Cache/lib/xor_gate.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 8 xor_gate 0 22 [fBJY?oh1=l=lj];5ikcY1
+l14
+L13
+VX2I>jC5Dl4K41ohhQ=lfz2
+!s100 e;mL^F4ENl;O2f_Ae@3MU2
+R6
+32
+R177
+!i10b 1
+R178
+R179
+R180
+!i113 1
+R11
+R12
+Exor_gate_32
+R0
+R1
+R2
+R3
+Z181 8D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd
+Z182 FD:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd
+l0
+L5
+V:TDC7[J^<4Z0hN7K<U@nz0
+!s100 IY:zIdH0EdL@PUV4ISe5M0
+R6
+32
+R177
+!i10b 1
+R178
+Z183 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd|
+Z184 !s107 D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 xor_gate_32 0 22 :TDC7[J^<4Z0hN7K<U@nz0
+l14
+L13
+V3VRg<SB0Cd8ehW<H[PS>T1
+!s100 [@^nmEj?djZ;8jS41JD]@3
+R6
+32
+R177
+!i10b 1
+R178
+R183
+R184
+!i113 1
+R11
+R12
+Exor_gate_n
+R0
+R1
+R2
+R3
+Z185 8D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd
+Z186 FD:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd
+l0
+L5
+VoXcGmO7Td517G9;DAlGa]0
+!s100 LPoPXbzH8=CBB]^6S5Unf1
+R6
+32
+R177
+!i10b 1
+R178
+Z187 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd|
+Z188 !s107 D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+Z189 DEx4 work 10 xor_gate_n 0 22 oXcGmO7Td517G9;DAlGa]0
+l17
+L16
+Z190 Vh:7hVmgL6jc9L=6foTP0N1
+Z191 !s100 29oXRe`]fm02Bce^Do[3m2
+R6
+32
+R177
+!i10b 1
+R178
+R187
+R188
+!i113 1
+R11
+R12

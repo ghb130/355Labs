@@ -34,7 +34,7 @@ architecture behavioral of RegWE_ctrl_tb is
   signal cpuDout_we_tb    : std_logic;
   signal cpuReady_we_tb   : std_logic;
   signal L2Addr_we_tb     : std_logic;
-  signal L2Dout_w_tb     : std_logic;
+  signal L2Dout_we_tb     : std_logic;
   signal prevState_we_tb  : std_logic;
   signal repAddr_we_tb    : std_logic;
   signal repData_we_tb    : std_logic;
@@ -60,16 +60,25 @@ begin
 
     stim_Req: process is
       begin
-        cpuReq_tb <= '1'; wait for 10 ns;
+        cpuReq_tb <= '1'; wait for 5 ns;
+        cpuReq_tb <= '0'; wait for 5 ns;
+        wait;
       end process;
     stim_miss: process is
       begin
         miss_tb <= '0'; wait for 10 ns;
+        miss_tb <= '1'; wait for 5 ns;
+        miss_tb <= '0'; wait for 5 ns;
+        wait;
       end process;
 
     stim_state: process is
       begin
         current_state_tb <= "00"; wait for 10 ns;
+        current_state_tb <= "01"; wait for 10 ns;
+        current_state_tb <= "10"; wait for 10 ns;
+        current_state_tb <= "11"; wait for 10 ns;
+        wait;
       end process;
 
 end architecture;
