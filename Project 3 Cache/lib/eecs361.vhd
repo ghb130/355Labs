@@ -6,6 +6,20 @@ use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
 
 package eecs361 is
+-- reg_n
+component reg_n
+  generic (
+    n : integer
+  );
+  port (
+    clk  : in  std_logic;
+    rst  : in  std_logic;
+    din  : in  std_logic_vector((n-1) downto 0);
+    we   : in  std_logic;
+    dout : out std_logic_vector((n-1) downto 0)
+  );
+end component reg_n;
+
 
 --- 5 to 1 or gate
   component or5to1
