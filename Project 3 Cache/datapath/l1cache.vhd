@@ -51,10 +51,22 @@ signal repAddr : std_logic_vector(31 downto 0);
 signal repData : std_logic_vector((64*8-1) downto 0);
 signal dirty : std_logic;
 signal miss : std_logic;
-signal LRUAddr : std_logic_vector(4 downto 0);
-signal LRUData_i : std_logic_vector(31 downto 0);
-signal LRUData : std_logic_vector(31 downto 0);
+signal LRUwe_i : std_logic_vector(31 downto 0);
+signal LRUwe : std_logic_vector(31 downto 0);
+signal LRUDataOut : std_logic_vector(31 downto 0);
 
+signal ovrwr   : std_logic;
+signal cache_addr    : std_logic_vector(25 downto 0);
+signal cache_LRU     : std_logic;
+signal cache_new_LRU : std_logic;
+signal cache_din     : std_logic_vector(511 downto 0);
+signal cache_we      : std_logic;
+signal cache_dout    : std_logic_vector(534 downto 0);
+signal miss    : std_logic;
+signal dirty   : std_logic;
+signal L2Addr_sel : std_logic;
+
+--------Write Enables---
 signal cpuWr_we      : std_logic;
 signal cpuAddr_we    : std_logic;
 signal cpuDin_we     : std_logic;
@@ -66,8 +78,6 @@ signal prevState_we  : std_logic;
 signal repAddr_we    : std_logic;
 signal repData_we    : std_logic;
 signal LRUData_we    : std_logic;
-
--------Componenets------
 
 ------------------IMPLEMENTATION----------------------------------------------
 --Registers have been set up. Logic needs to be implemented to drive:
@@ -94,19 +104,41 @@ port map (
 
 RegWE_ctrl_i : RegWE_ctrl
 port map (
+--Input
   miss          => miss,
   cpuReq        => cpuReq,
+  dirty         => dirty,
   current_state => current_state,
-  cpuWr_we      => cpuWr_we,
-  cpuAddr_we    => cpuAddr_we,
-  cpuDin_we     => cpuDin_we,
-  cpuDout_we    => cpuDout_we,
-  cpuReady_we   => cpuReady_we,
-  L2Addr_we     => L2Addr_we,
-  L2Dout_we     => L2Dout_we,
-  prevState_we  => prevState_we,
-  repAddr_we    => repAddr_we,
-  repData_we    => repData_we
+  last_state    => last_state,
+--Output
+  cpuWr_we     => cpuWr_we,
+  cpuAddr_we   => cpuAddr_we,
+  cpuDin_we    => cpuDin_we,
+  cpuDout_we   => cpuDout_we,
+  cpuReady_we  => cpuReady_we,
+  L2Addr_we    => L2Addr_we,
+  L2Dout_we    => L2Dout_we,
+  LRU_we       => LRU_we,
+  prevState_we => prevState_we,
+  repAddr_we   => repAddr_we,
+  repData_we   => repData_we,
+  hit_we       => hit_we,
+  miss_we      => miss_we
+);
+
+
+cache_i : cache
+port map (
+  clk     => clk,
+  ovrwr   => ovrwr,
+  addr    => cache_addr,
+  LRU     => cache_LRU,
+  new_LRU => cache_new_LRU,
+  din     => cache_din,
+  we      => cache_we,
+  dout    => cache_dout,
+  miss    => miss,
+  dirty   => dirty
 );
 ------------------STATE REGISTERS---------------------------------------------
 current_s : reg_n
@@ -163,7 +195,8 @@ port map (
 ------------------STATE: COMPTAG----------------------------------------------
 --------Registers--------
 reg_cpuReady : dffr_a port map (clk => clk, arst => rst, aload => '0', adata => '0',
-        d => cpuReady_i, enable => cpuReady_we, q => cpuReady);
+        d => cpuReady_we, enable => '1', q => cpuReady);
+
 
 reg_cpuDout : reg_n
 generic map (
@@ -177,6 +210,8 @@ port map (
   dout => cpuDout
 );
 
+cpuDout_i <= cache_dout(511 downto 0);
+
 reg_repAddr : reg_n
 generic map (
   n => 32
@@ -188,6 +223,9 @@ port map (
   we   => repAddr_we,
   dout => repAddr
 );
+
+repAddr_i(25 downto 5) <= cache_dout(532 downto 512);
+repAddr_i(4 downto 0) <= cpuAddr_i(10 downto 6);
 
 reg_repDin: reg_n
 generic map (
@@ -201,6 +239,8 @@ port map (
   dout => repData
 );
 
+repData_i <= cache_dout(511 downto 0);
+
 reg_LRU: reg_n
 generic map (
   n => 32
@@ -212,6 +252,16 @@ port map (
   we   => LRUData_we,
   dout => LRUData
 );
+
+wrLocDecoder : dec_n generic map(n => 5)
+                    port map(cpuAddr_i(10 downto 6), LRUwe);
+
+reg_LRU : for i in 0 to 31 generate
+    reg_LRU_bit : dffr_a port map (clk => clk, arst => rst, aload => '0', adata => '0',
+        d => cache_new_LRU, enable => LRUwe(i), q => LRUDataOut);
+end generate;
+lruSelect : mux_32to1 port map (LRUDataOut, cpuAddr_i(10 downto 6), cache_LRU);
+
 ------------------STATE: WRITEBACK--------------------------------------------
 --------Registers--------
 reg_l2Addr : reg_n
@@ -225,6 +275,9 @@ port map (
   we   => L2Addr_we,
   dout => l2Addr
 );
+
+sel_and: and_gate port map(x=>current_state(0), y=>current_state(1), z=> L2Addr_sel);
+L2Addr_mux: mux port map(sel=>L2Addr_sel, src0=>repAddr, src1=>cpuAddr_i, z=>L2Addr_i);
 
 reg_l2Dout : reg_n
 generic map (

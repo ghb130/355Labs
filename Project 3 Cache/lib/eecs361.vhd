@@ -6,6 +6,14 @@ use ieee.std_logic_1164.all;
 use work.eecs361_gates.all;
 
 package eecs361 is
+--32 bit mux
+  component mux_32to1
+  port (
+    a   : in  std_logic_vector(31 downto 0);
+    sel : in  std_logic_vector(4 downto 0);
+    z   : out std_logic
+  );
+  end component mux_32to1;
 --Control
 component NextState_ctrl
 port (
