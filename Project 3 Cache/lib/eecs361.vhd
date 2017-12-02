@@ -23,7 +23,9 @@ component RegWE_ctrl
 port (
   miss          : in  std_logic;
   cpuReq        : in  std_logic;
+  dirty         : in  std_logic;
   current_state : in  std_logic_vector(1 downto 0);
+  last_state    : in  std_logic(1 downto 0);
   cpuWr_we      : out std_logic;
   cpuAddr_we    : out std_logic;
   cpuDin_we     : out std_logic;
@@ -31,11 +33,15 @@ port (
   cpuReady_we   : out std_logic;
   L2Addr_we     : out std_logic;
   L2Dout_we     : out std_logic;
+  LRU_we        : out std_logic;
   prevState_we  : out std_logic;
   repAddr_we    : out std_logic;
-  repData_we    : out std_logic
+  repData_we    : out std_logic;
+  hit_we        : out std_logic;
+  miss_we       : out std_logic
 );
 end component RegWE_ctrl;
+
 --Cache Data component
   component cache
   port (

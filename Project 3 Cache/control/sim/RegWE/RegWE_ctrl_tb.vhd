@@ -14,7 +14,7 @@ architecture behavioral of RegWE_ctrl_tb is
       dirty         : in std_logic;
       current_state : in  std_logic_vector(1 downto 0);
       last_state    : in  std_logic_vector(1 downto 0);
-      
+
       cpuWr_we      : out std_logic;
       cpuAddr_we    : out std_logic;
       cpuDin_we     : out std_logic;
@@ -25,7 +25,7 @@ architecture behavioral of RegWE_ctrl_tb is
       LRU_we        : out std_logic;
       prevState_we  : out std_logic;
       repAddr_we    : out std_logic;
-      repData_we    : out std_logic
+      repData_we    : out std_logic;
       hit_we        : out std_logic;
       miss_we       : out std_logic
     );
