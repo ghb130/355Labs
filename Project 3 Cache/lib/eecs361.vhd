@@ -34,6 +34,7 @@ port (
   dirty         : in  std_logic;
   current_state : in  std_logic_vector(1 downto 0);
   last_state    : in  std_logic_vector(1 downto 0);
+  valid         : in std_logic;
   cpuWr_we      : out std_logic;
   cpuAddr_we    : out std_logic;
   cpuDin_we     : out std_logic;
@@ -46,7 +47,8 @@ port (
   repAddr_we    : out std_logic;
   repData_we    : out std_logic;
   hit_we        : out std_logic;
-  miss_we       : out std_logic
+  miss_we       : out std_logic;
+  evict_cnt     : out std_logic
 );
 end component RegWE_ctrl;
 --Cache Data component
