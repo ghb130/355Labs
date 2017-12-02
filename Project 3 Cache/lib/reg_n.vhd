@@ -14,7 +14,7 @@ entity reg_n is
   );
 end entity;
 
-architecture structural of reg32 is
+architecture structural of reg_n is
   begin
     dff_gen: for i in 0 to (n-1) generate
       dffRE : dffr_a port map(clk => clk,
