@@ -86,23 +86,20 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity xnor_gate_n
 -- Compiling architecture dataflow of xnor_gate_n
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/control/sim/RegWE_ctrl_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/control/sim/RegWE_ctrl_tb.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package eecs361_gates
--- Loading package eecs361
--- Compiling entity RegWE_ctrl_tb
--- Compiling architecture behavioral of RegWE_ctrl_tb
+-- Compiling package eecs361_gates
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity xor_gate_32
--- Compiling architecture dataflow of xor_gate_32
+-- Compiling entity nand_gate_32
+-- Compiling architecture dataflow of nand_gate_32
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/syncram.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/syncram.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -116,36 +113,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity syncram
 -- Compiling architecture behavioral of syncram
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nand_gate_32.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/xor_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity nand_gate_32
--- Compiling architecture dataflow of nand_gate_32
+-- Compiling entity xor_gate_32
+-- Compiling architecture dataflow of xor_gate_32
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/eecs361_gates.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/control/sim/RegWE/RegWE_ctrl_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/control/sim/RegWE/RegWE_ctrl_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package eecs361_gates
-
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity xor_gate_n
--- Compiling architecture dataflow of xor_gate_n
-
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity nand_gate_n
--- Compiling architecture dataflow of nand_gate_n
+-- Loading package eecs361_gates
+-- Loading package eecs361
+-- Compiling entity RegWE_ctrl_tb
+-- Compiling architecture behavioral of RegWE_ctrl_tb
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/csram.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/csram.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -159,21 +143,29 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity csram
 -- Compiling architecture behavioral of csram
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nand_gate_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity nor_gate
--- Compiling architecture dataflow of nor_gate
+-- Compiling entity nand_gate_n
+-- Compiling architecture dataflow of nand_gate_n
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/xor_gate_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity mux_n
--- Compiling architecture behavioral of mux_n
+-- Compiling entity xor_gate_n
+-- Compiling architecture dataflow of xor_gate_n
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity and_gate_32
+-- Compiling architecture dataflow of and_gate_32
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/fulladder_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/fulladder_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -183,13 +175,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity fulladder_32
 -- Compiling architecture behavioral of fulladder_32
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/and_gate_32.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/mux_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity and_gate_32
--- Compiling architecture dataflow of and_gate_32
+-- Compiling entity mux_n
+-- Compiling architecture behavioral of mux_n
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nor_gate.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nor_gate
+-- Compiling architecture dataflow of nor_gate
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/control/RegWE_ctrl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/control/RegWE_ctrl.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -201,6 +201,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity RegWE_ctrl
 -- Compiling architecture structural of RegWE_ctrl
 
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity and_gate_n
+-- Compiling architecture dataflow of and_gate_n
+
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/fulladder_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/fulladder_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -210,29 +218,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity fulladder_n
 -- Compiling architecture behavioral of fulladder_n
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/and_gate_n.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity and_gate_n
--- Compiling architecture dataflow of and_gate_n
-
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity or_gate
--- Compiling architecture dataflow of or_gate
-
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity not_gate
--- Compiling architecture dataflow of not_gate
+-- Loading package NUMERIC_STD
+-- Compiling entity dec_n
+-- Compiling architecture behavioral of dec_n
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/control/pla2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/control/pla2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -244,14 +237,37 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity pla2
 -- Compiling architecture structural of pla2
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/dec_n.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/not_gate.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity dec_n
--- Compiling architecture behavioral of dec_n
+-- Compiling entity not_gate
+-- Compiling architecture dataflow of not_gate
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/or_gate.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity or_gate
+-- Compiling architecture dataflow of or_gate
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/eecs361.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package eecs361_gates
+-- Compiling package eecs361
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffr_a
+-- Compiling architecture behavioral of dffr_a
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/syncram_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/syncram_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -264,14 +280,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity syncram_n
 -- Compiling architecture behavioral of syncram_n
-
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/dffr_a.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity dffr_a
--- Compiling architecture behavioral of dffr_a
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/nor_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/nor_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -289,22 +297,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity nor_gate_n
 -- Compiling architecture dataflow of nor_gate_n
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity or_gate_32
--- Compiling architecture dataflow of or_gate_32
-
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity not_gate_32
--- Compiling architecture dataflow of not_gate_32
-
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/cmp_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/cmp_n.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -314,21 +306,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity cmp_n
 -- Compiling architecture behavioral of cmp_n
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/not_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity or_gate_n
--- Compiling architecture dataflow of or_gate_n
+-- Compiling entity not_gate_32
+-- Compiling architecture dataflow of not_gate_32
 
-} {} {}} {D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd}
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/or_gate_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity not_gate_n
--- Compiling architecture dataflow of not_gate_n
+-- Compiling entity or_gate_32
+-- Compiling architecture dataflow of or_gate_32
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/mux_32.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/mux_32.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -339,6 +331,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package eecs361
 -- Compiling entity mux_32
 -- Compiling architecture structural of mux_32
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/not_gate_n.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity not_gate_n
+-- Compiling architecture dataflow of not_gate_n
+
+} {} {}} {D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/or_gate_n.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity or_gate_n
+-- Compiling architecture dataflow of or_gate_n
 
 } {} {}} {D:/github/355Labs/Project 3 Cache/lib/xnor_gate.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/github/355Labs/Project 3 Cache/lib/xnor_gate.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
