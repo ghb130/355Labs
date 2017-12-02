@@ -33,7 +33,7 @@ port (
   cpuReq        : in  std_logic;
   dirty         : in  std_logic;
   current_state : in  std_logic_vector(1 downto 0);
-  last_state    : in  std_logic(1 downto 0);
+  last_state    : in  std_logic_vector(1 downto 0);
   cpuWr_we      : out std_logic;
   cpuAddr_we    : out std_logic;
   cpuDin_we     : out std_logic;

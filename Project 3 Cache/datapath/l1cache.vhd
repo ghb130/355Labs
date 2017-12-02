@@ -32,6 +32,7 @@ end entity;
 
 architecture arch of l1cache is
 ------------------Output Signals for all Registers----------------------------
+constant zeroSrc : std_logic_vector(31 downto 0) := (others => '0');
 --------IN--------------
 signal cpuWr_i : std_logic;
 signal cpuAddr_i : std_logic_vector(31 downto 0);
@@ -54,6 +55,15 @@ signal miss : std_logic;
 signal LRUwe_i : std_logic_vector(31 downto 0);
 signal LRUwe : std_logic_vector(31 downto 0);
 signal LRUDataOut : std_logic_vector(31 downto 0);
+signal cache_din_i : std_logic_vector(511 downto 0);
+
+signal hitcnt : std_logic_vector(31 downto 0);
+signal misscnt : std_logic_vector(31 downto 0);
+signal evictcnt : std_logic_vector(31 downto 0);
+signal hitcnt_i : std_logic_vector(31 downto 0);
+signal misscnt_i : std_logic_vector(31 downto 0);
+signal evictcnt_i : std_logic_vector(31 downto 0);
+
 
 signal ovrwr   : std_logic;
 signal cache_addr    : std_logic_vector(25 downto 0);
@@ -62,9 +72,14 @@ signal cache_new_LRU : std_logic;
 signal cache_din     : std_logic_vector(511 downto 0);
 signal cache_we      : std_logic;
 signal cache_dout    : std_logic_vector(534 downto 0);
+signal dec_offset    : std_logic_vector(15 downto 0);
 signal miss    : std_logic;
 signal dirty   : std_logic;
 signal L2Addr_sel : std_logic;
+
+signal is_writeback_state : std_logic;
+signal is_allocate_state : std_logic;
+signal is_comptag_state : std_logic;
 
 --------Write Enables---
 signal cpuWr_we      : std_logic;
@@ -90,6 +105,7 @@ signal LRUData_we    : std_logic;
 
 --A cach data storage component needs to be implemented
 begin
+
 ------------------Top level components----------------------------------------
 NextState_ctrl_i : NextState_ctrl
 port map (
@@ -254,8 +270,10 @@ port map (
 );
 
 wrLocDecoder : dec_n generic map(n => 5)
-                    port map(cpuAddr_i(10 downto 6), LRUwe);
-
+                    port map(cpuAddr_i(10 downto 6), LRUwe_i);
+and_control : for i in 0 to 31 generate
+    and_with_bit : and_gate port map (LRUwe_i(i), LRU_we, LRUwe(i));
+end generate;
 reg_LRU : for i in 0 to 31 generate
     reg_LRU_bit : dffr_a port map (clk => clk, arst => rst, aload => '0', adata => '0',
         d => cache_new_LRU, enable => LRUwe(i), q => LRUDataOut);
@@ -290,7 +308,109 @@ port map (
   we   => L2Dout_we,
   dout => l2Dout
 );
+
+l2Dout_i <= repData;
 ------------------STATE: ALLOC------------------------------------------------
 --------Registers--------
 --Uses reg_l2Addr
+pla2_wb : pla2
+  port map (
+    din => current_state,
+    inv => "01",
+    z   => is_writeback_state
+  );
+pla2_alloc : pla2
+  port map (
+    din => current_state,
+    inv => "00",
+    z   => is_allocate_state
+  );
+  wb_alloc: or_gate port map(x=>is_writeback_state, y=>is_allocate_state, z=>l2Req);
+  l2wr <= is_writeback_state;
+
+----------------MISC CONTROL-----------------------
+  ovrwr <= is_allocate_state;
+  sel_mem_loop : mux_n generic map(n => 512)
+                       port map(sel => is_allocate_state,
+                                src0 => cache_din_i,
+                                src1 => l2din,
+                                z => cache_din);
+
+  off_decoder : dec_n generic map (n => 4)
+                      port map (src => cpuAddr(5 downto 2),
+                                z => dec_offset);
+  mux_cpuDin : for i in 0 to 15 generate
+      cpuDin_cachDout : mux_n generic map (n => 32)
+                                 port map (sel => dec_offset(i),
+                                           src0 => cache_dout((32*(i+1)-1) downto (32*i)),
+                                           src1 => cpuDin,
+                                           z => cache_din_i((32*(i+1)-1) downto (32*i)));
+  end generate;
+
+
+  pla2_ctag : pla2
+    port map (
+      din => current_state,
+      inv => "00",
+      z   => is_comptag_state
+    );
+  cache_we_and: and_gate port map(x=>is_comptag_state, y=>cpuWr_i, z=>cache_we);
+
+
+
+----------------DATA COLLECTION REGISTERS------------------------
+reg_hit : reg_n
+generic map (
+  n => 32
+)
+port map (
+  clk  => clk,
+  rst  => rst,
+  din  => hitcnt_i,
+  we   => hit_we,
+  dout => hitcnt
+);
+hit_cnt <= hitcnt;
+add1_hit : fulladder_n generic map (n => 32)
+                        port map (cin=> '1',
+                                  x => zeroSrc,
+                                  y => hitcnt,
+                                  z => hitcnt_i);
+
+
+reg_miss : reg_n
+generic map (
+  n => 32
+)
+port map (
+  clk  => clk,
+  rst  => rst,
+  din  => miss_cnt_i,
+  we   => miss_we,
+  dout => misscnt
+);
+miss_cnt <= misscnt;
+add1_miss : fulladder_n generic map (n => 32)
+                        port map (cin=> '1',
+                                  x => zeroSrc,
+                                  y => misscnt,
+                                  z => misscnt_i);
+
+reg_evict : reg_n
+generic map (
+  n => 32
+)
+port map (
+  clk  => clk,
+  rst  => rst,
+  din  => evictcnt_i,
+  we   => evict_we,
+  dout => evictcnt
+);
+evict_cnt <= evictcnt;
+add1_evict : fulladder_n generic map (n => 32)
+                        port map (cin=> '1',
+                                  x => zeroSrc,
+                                  y => evictcnt,
+                                  z => evictcnt_i);
 end architecture;

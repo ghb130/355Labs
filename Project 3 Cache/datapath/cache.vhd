@@ -30,12 +30,6 @@ architecture arch of cache is
   signal bottomLineDin_mux : std_logic_vector(534 downto 0);
   signal topLineDout : std_logic_vector(534 downto 0);
   signal bottomLineDout : std_logic_vector(534 downto 0);
-  -- signal weTopLine : std_logic;
-  -- signal weBottomLine : std_logic;
-  -- signal weTopLine_i : std_logic;
-  -- signal weBottomLine_i : std_logic;
-  -- signal weTopLine_i2 : std_logic;
-  -- signal weBottomLine_i2 : std_logic;
   signal tag_eq_toptag : std_logic;
   signal tag_eq_bottomtag : std_logic;
   signal not_clk : std_logic;
@@ -43,8 +37,6 @@ architecture arch of cache is
   signal hit : std_logic;
   signal valid_hit : std_logic;
   signal valid_hit_i : std_logic;
-  -- signal not_dirty_top : std_logic;
-  -- signal not_dirty_bottom : std_logic;
   signal notclk_we : std_logic;
   signal notclk_we_not_miss : std_logic;
   signal selectWriteLocTop :std_logic;
@@ -53,23 +45,13 @@ architecture arch of cache is
   signal dout_i : std_logic_vector(534 downto 0);
   signal dout_lru_i : std_logic_vector(534 downto 0);
   signal dout_data_i : std_logic_vector(534 downto 0);
-  -- signal mux_lru_data_inter : std_logic_vector(534 downto 0);
 begin
-  --Chould we Write?
+  --should we Write?
   notLRU : not_gate port map(LRU, not_LRU);
   orTagMatchTop : or_gate port map(not_LRU, tag_eq_toptag, selectWriteLocTop);
   orTagMatchBottom : or_gate port map(LRU, tag_eq_bottomtag, selectWriteLocBottom);
-  -- notDirtyTop : not_gate port map(topLineDout(533),not_dirty_top);
-  -- andWeTopLRUDirty : and_gate port map(not_dirty_top, not_LRU, weTopLine_i);
-  -- andWeTopLine : and_gate port map(we, weTopLine_i, weTopLine_i2);
-  --
-  -- notDirtybottom : not_gate port map(bottomLineDout(533),not_dirty_bottom);
-  -- andWeBottomLRUDirty : and_gate port map(not_dirty_bottom, LRU, weBottomLine_i);
-  -- andWeBottomLine : and_gate port map(we, weBottomLine_i, weBottomLine_i2);
-  --
+
   notclk : not_gate port map(clk, not_clk);
-  -- andWeWeTopLine : and_gate port map(not_clk, weTopLine_i2, weTopLine);
-  -- andWeWeBottomLine : and_gate port map(not_clk, weBottomLine_i2, weBottomLine);
 
   andNotClkWe : and_gate port map (not_clk, we, notclk_we);
   andNotMiss : and_gate port map (notclk_we, valid_hit, notclk_we_not_miss);
