@@ -51,6 +51,9 @@ signal repAddr : std_logic_vector(31 downto 0);
 signal repData : std_logic_vector((64*8-1) downto 0);
 signal dirty : std_logic;
 signal miss : std_logic;
+signal LRUAddr : std_logic_vector(4 downto 0);
+signal LRUData_i : std_logic_vector(31 downto 0);
+signal LRUData : std_logic_vector(31 downto 0);
 
 signal cpuWr_we      : std_logic;
 signal cpuAddr_we    : std_logic;
@@ -62,6 +65,7 @@ signal L2Dout_we     : std_logic;
 signal prevState_we  : std_logic;
 signal repAddr_we    : std_logic;
 signal repData_we    : std_logic;
+signal LRUData_we    : std_logic;
 
 -------Componenets------
 component NextState_ctrl
@@ -223,6 +227,18 @@ port map (
   din  => repData_i,
   we   => repData_we,
   dout => repData
+);
+
+reg_LRU: reg_n
+generic map (
+  n => 32
+)
+port map (
+  clk  => clk,
+  rst  => rst,
+  din  => LRUData_i,
+  we   => LRUData_we,
+  dout => LRUData
 );
 ------------------STATE: WRITEBACK--------------------------------------------
 --------Registers--------

@@ -5,67 +5,85 @@ library ieee;
   use work.eecs361_gates.all;
 entity cache is
   port (
-  addr : in std_logic_vector(28 downto 0);
+  clk : in std_logic;
+  addr : in std_logic_vector(25 downto 0);
+  LRU : in std_logic;
+  new_LRU : out std_logic;
   din : in std_logic_vector(511 downto 0);
   we : in std_logic;
-  dout : out std_logic_vector(511 downto 0);
-  lruAddr : out std_logic_vector(28 downto 0);
+  dout : out std_logic_vector(534 downto 0);
   miss : out std_logic;
   dirty : out std_logic
   );
 end entity;
 --Want cache
 architecture arch of cache is
-  constant zeroSrc : std_logic_vector(535 downto 0) := (others => '0');
-  signal topLineDin : std_logic_vector(535 downto 0);
-  signal bottomLineDin : std_logic_vector(535 downto 0);
-  signal topLineDin_loop : std_logic_vector(535 downto 0);
-  signal bottomLineDin_loop : std_logic_vector(535 downto 0);
-  signal topLineDin_mux : std_logic_vector(535 downto 0);
-  signal bottomLineDin_mux : std_logic_vector(535 downto 0);
-  signal topLineDout : std_logic_vector(535 downto 0);
-  signal bottomLineDout : std_logic_vector(535 downto 0);
-  signal index : std_logic_vector(4 downto 0);
+  constant zeroSrc : std_logic_vector(534 downto 0) := (others => '0');
+  signal topLineDin : std_logic_vector(534 downto 0);
+  signal bottomLineDin : std_logic_vector(534 downto 0);
+  signal topLineDin_loop : std_logic_vector(534 downto 0);
+  signal bottomLineDin_loop : std_logic_vector(534 downto 0);
+  signal topLineDin_mux : std_logic_vector(534 downto 0);
+  signal bottomLineDin_mux : std_logic_vector(534 downto 0);
+  signal topLineDout : std_logic_vector(534 downto 0);
+  signal bottomLineDout : std_logic_vector(534 downto 0);
   signal weTopLine : std_logic;
   signal weBottomLine : std_logic;
+  signal weTopLine_i : std_logic;
+  signal weBottomLine_i : std_logic;
+  signal weTopLine_i2 : std_logic;
+  signal weBottomLine_i2 : std_logic;
   signal tag_eq_toptag : std_logic;
   signal tag_eq_bottomtag : std_logic;
+  signal not_clk : std_logic;
   signal not_miss : std_logic;
-  signal not_pos : std_logic;
-  signal mux_inter : std_logic_vector(535 downto 0);
-  signal mux_lru_inter : std_logic_vector(535 downto 0);
-  signal dout_i : std_logic_vector(535 downto 0);
-  signal dout_lru_i : std_logic_vector(535 downto 0);
-  signal dout_data_i : std_logic_vector(535 downto 0);
-  signal mux_lru_data_inter : std_logic_vector(535 downto 0);
-  signal topLineAddress : (25 downto 0);
-  signal bottomLineAddress : (25 downto 0);
+  signal not_LRU_top : std_logic;
+  signal not_LRU_bottom : std_logic;
+  signal not_dirty_top : std_logic;
+  signal not_dirty_bottom : std_logic;
+  signal notclk_we : std_logic;
+  signal notclk_we_not_miss : std_logic;
+  signal mux_inter : std_logic_vector(534 downto 0);
+  signal dout_i : std_logic_vector(534 downto 0);
+  signal dout_lru_i : std_logic_vector(534 downto 0);
+  signal dout_data_i : std_logic_vector(534 downto 0);
+  signal mux_lru_data_inter : std_logic_vector(534 downto 0);
 begin
-  andWeTopLine : and_gate port map(we, topLineDout(534), weTopLine);
-  andWeBottomLine : and_gate port map(x=>we, y=>bottomLineDout(534), z=>weBottomLine);
+  --Chould we Write?
+  notLRUtop : not_gate port map(LRU, not_LRU);
+  notDirtyTop : not_gate port map(topLineDout(533),not_dirty_top);
+  andWeTopLRUDirty : and_gate port map(not_dirty_top, not_LRU, weTopLine_i);
+  andWeTopLine : and_gate port map(we, weTopLine_i, weTopLine_i2);
 
-  topLineDin(535 downto 533) <= "001";
+  notDirtybottom : not_gate port map(bottomLineDout(533),not_dirty_bottom);
+  andWeBottomLRUDirty : and_gate port map(not_dirty_bottom, LRU, weBottomLine_i);
+  andWeBottomLine : and_gate port map(we, weBottomLine_i, weBottomLine_i2);
+
+  notclk : not_gate port map(clk, not_clk);
+  andWeWeTopLine : and_gate port map(not_clk, weTopLine_i2, weTopLine);
+  andWeWeBottomLine : and_gate port map(not_clk, weBottomLine_i2, weBottomLine);
+
+  andNotClkWe : and_gate port map (not_clk, we, notclk_we);
+  andNotMiss : and_gate port map (notclk_we, not_miss, notclk_we_not_miss);
+
+  topLineDin(534 downto 533) <= "11";
   topLineDin(532 downto 512) <= addr(25 downto 5);
   topLineDin(511 downto 0) <= din;
-  bottomLineDin(535 downto 533) <= "101";
+  bottomLineDin(535 downto 533) <= "11";
   bottomLineDin(532 downto 512) <= addr(25 downto 5);
   bottomLineDin(511 downto 0) <= din;
 
-  topLineDin_loop(535 downto 534) <= "01";
-  topLineDin_loop(533 downto 0) <= topLineDout(533 downto 0);
-  bottomLineDin_loop(535 downto 534) <= "11";
-  bottomLineDin_loop(533 downto 0) <= bottomLineDout(533 downto 0);
+  topLineDin_loop(534 downto 0) <= topLineDout(534 downto 0);
+  bottomLineDin_loop(534 downto 0) <= bottomLineDout(534 downto 0);
 
-  not_pos_gate : not_gate port map(addr(28),not_pos);
-
-  sel_topLoop : mux_n generic map(n =>536);
-                      port map(sel => not_pos,
+  sel_topLoop : mux_n generic map(n =>535);
+                      port map(sel => weTopLine_i2,
                                src0 => topLineDin_loop,
                                src1 => topLineDin,
                                z => topLineDin_mux);
 
-  sel_bottomLoop : mux_n generic map(n =>536);
-                         port map(sel => pos,
+  sel_bottomLoop : mux_n generic map(n =>535);
+                         port map(sel => weBottomLine_i2,
                                   src0 => bottomLineDin_loop,
                                   src1 => botomLineDin,
                                   z => bottomLineDin_mux);
@@ -78,8 +96,8 @@ begin
   port map (
     cs    => '1',
     oe    => '1',
-    we    => we,
-    index => addr(5 downto 0),
+    we    => notclk_we_not_miss,
+    index => addr(4 downto 0),
     din   => topLineDin_mux,
     dout  => topLineDout
   );
@@ -92,8 +110,8 @@ begin
   port map (
     cs    => '1',
     oe    => '1',
-    we    => we,
-    index => addr(5 downto 0),
+    we    => notclk_we_not_miss,
+    index => addr(4 downto 0),
     din   => bottomLineDin_mux,
     dout  => bottomLineDout
   );
@@ -126,57 +144,34 @@ begin
     signed_a_lt_b =>
   );
 
-  cmpTags : or_gate port map(tag_eq_toptag, tag_eq_bottomtag, not_miss);
-  miss : not_gate port map(x=>not_miss, z=>miss);
+  notTagTop : not_gate port map(tag_eq_toptag, new_LRU);
 
-  muxtop : mux_n generic map (n => 536);
+  cmpTags : or_gate port map(tag_eq_toptag, tag_eq_bottomtag, not_miss);
+  miss : not_gate port map(not_miss, miss);
+
+  muxtop : mux_n generic map (n => 535);
                port map (sel => tag_eq_toptag,
                          src0 => zeroSrc,
                          src1 => topLineDout,
                          z => mux_inter);
 
-  muxbottom : mux_n generic map (n => 536);
+  muxbottom : mux_n generic map (n => 535);
                port map (sel => tag_eq_bottomtag,
                          src0 => mux_inter,
                          src1 => bottomLineDout,
                          z => dout_data_i);
 
-  muxtop_LRU_data : mux_n generic map (n => 536);
-               port map (sel => topLineDout(534),
-                         src0 => zeroSrc,
-                         src1 => topLineDout,
-                         z => mux_lru_data_inter);
-
-  muxbottom_LRU_data : mux_n generic map (n => 536);
-               port map (sel => bottomLineDout(534),
-                         src0 => mux_lru_data_inter,
+  mux_LRU_data : mux_n generic map (n => 535);
+               port map (sel => LRU,
+                         src0 => topLineDout,
                          src1 => bottomLineDout,
                          z => dout_lru_i);
 
-  sel_lru_or_data : mux_n generic map (n => 536);
+  sel_lru_or_data : mux_n generic map (n => 535);
                         port map (sel => not_miss,
                                   src0 => dout_lru_i,
                                   src1 => dout_data_i,
                                   z => dout_i);
-
-  topLineAddress(4 downto 0) <= addr(4 downto 0);
-  topLineAddress(27 downto 5) <= topLineDout(535 downto 512);
-  topLineAddress(28) <= '0';
-  bottomLineAddress(4 downto 0) <= addr(4 downto 0);
-  bottomLineAddress(27 downto 5) <= bottomLineDout(535 downto 512);
-  bottomLineAddress(28) <= '1';
-
-  muxtop_LRU : mux_n generic map (n => 29);
-              port map (sel => topLineDout(534),
-                        src0 => zeroSrc,
-                        src1 => topLineAddress,
-                        z => mux_lru_inter);
-
-  muxbottom_LRU : mux_n generic map (n => 29);
-              port map (sel => bottomLineDout(534),
-                        src0 => mux_lru_inter,
-                        src1 => bottomLineAddress,
-                        z => lruAddr);
 
    dirty <= dout_i(533);
    dout <= dout_i(511 downto 0);
