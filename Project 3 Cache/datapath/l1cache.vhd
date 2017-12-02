@@ -68,35 +68,7 @@ signal repData_we    : std_logic;
 signal LRUData_we    : std_logic;
 
 -------Componenets------
-component NextState_ctrl
-port (
-  current_state : in  std_logic_vector(1 downto 0);
-  miss          : in  std_logic;
-  cpuReq        : in  std_logic;
-  L2Ready       : in  std_logic;
-  dirty         : in  std_logic;
-  prev_state    : in  std_logic_vector(1 downto 0);
-  next_state    : out std_logic_vector(1 downto 0)
-);
-end component NextState_ctrl;
 
-component RegWE_ctrl
-port (
-  miss          : in  std_logic;
-  cpuReq        : in  std_logic;
-  current_state : in  std_logic_vector(1 downto 0);
-  cpuWr_we      : out std_logic;
-  cpuAddr_we    : out std_logic;
-  cpuDin_we     : out std_logic;
-  cpuDout_we    : out std_logic;
-  cpuReady_we   : out std_logic;
-  L2Addr_we     : out std_logic;
-  L2Dout_we     : out std_logic;
-  prevState_we  : out std_logic;
-  repAddr_we    : out std_logic;
-  repData_we    : out std_logic
-);
-end component RegWE_ctrl;
 ------------------IMPLEMENTATION----------------------------------------------
 --Registers have been set up. Logic needs to be implemented to drive:
 --cpuDout_i

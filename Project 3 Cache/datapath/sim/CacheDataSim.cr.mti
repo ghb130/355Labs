@@ -304,14 +304,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity syncram_n
 -- Compiling architecture behavioral of syncram_n
 
-} {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 3 Cache/lib/eecs361.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 3 Cache/lib/eecs361.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package eecs361_gates
--- Compiling package eecs361
-
 } {} {}} {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 3 Cache/lib/dffr_a.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Graehme/Documents/College/EECS 355/gitProjects/Project 3 Cache/lib/dffr_a.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
