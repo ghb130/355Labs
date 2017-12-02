@@ -50,6 +50,15 @@ port (
 );
 end component RegWE_ctrl;
 
+-- PLA 2 way component
+component pla2
+port (
+  din : in  std_logic_vector(1 downto 0);
+  inv : in  std_logic_vector(1 downto 0);
+  z   : out std_logic
+);
+end component pla2;
+
 --Cache Data component
   component cache
   port (
