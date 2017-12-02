@@ -48,8 +48,8 @@ architecture arch of cache is
 begin
   --should we Write?
   notLRU : not_gate port map(LRU, not_LRU);
-  orTagMatchTop : or_gate port map(not_LRU, tag_eq_toptag, selectWriteLocTop);
-  orTagMatchBottom : or_gate port map(LRU, tag_eq_bottomtag, selectWriteLocBottom);
+  orTagMatchTop : or_gate port map('0', tag_eq_toptag, selectWriteLocTop);
+  orTagMatchBottom : or_gate port map('0', tag_eq_bottomtag, selectWriteLocBottom);
 
   notclk : not_gate port map(clk, not_clk);
 

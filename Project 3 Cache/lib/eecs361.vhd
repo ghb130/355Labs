@@ -14,6 +14,15 @@ package eecs361 is
     z   : out std_logic
   );
   end component mux_32to1;
+--16 bit mux
+  component mux_16to1
+  port (
+    a   : in  std_logic_vector(15 downto 0);
+    sel : in  std_logic_vector(3 downto 0);
+    z   : out std_logic
+  );
+  end component mux_16to1;
+
 --Control
 component NextState_ctrl
 port (
@@ -48,7 +57,7 @@ port (
   repData_we    : out std_logic;
   hit_we        : out std_logic;
   miss_we       : out std_logic;
-  evict_cnt     : out std_logic
+  evict_we     : out std_logic
 );
 end component RegWE_ctrl;
 --Cache Data component

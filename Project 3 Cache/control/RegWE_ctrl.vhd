@@ -9,7 +9,7 @@ entity RegWE_ctrl is
         cpuReq : in std_logic;
         dirty : in std_logic;
         current_state : in std_logic_vector(1 downto 0);
-        last_state : in std_logic(1 downto 0);
+        last_state : in std_logic_vector(1 downto 0);
         valid : in std_logic;
 
         cpuWr_we : out std_logic;
@@ -22,7 +22,7 @@ entity RegWE_ctrl is
         LRU_we : out std_logic;
         prevState_we : out std_logic;
         repAddr_we : out std_logic;
-        repData_we : out std_logic
+        repData_we : out std_logic;
 
         hit_we : out std_logic;
         miss_we : out std_logic;
@@ -33,7 +33,7 @@ end entity;
 
 architecture structural of RegWE_ctrl is
   signal idle_state, comptag_state, writeback_state, allocate_state, idle_state_last, comptag_state_last : std_logic;
-  signal cpuWAD, cpuDR, Rep, not_miss, not_dirty, LRU_inter, h, m, miss0_i, miss1_i, hit_i, not_valid : std_logic;
+  signal cpuWAD, cpuDR, Rep, not_miss, not_dirty, LRU_inter, h, m, miss0_i, miss1_i, hit_i, not_valid, evict_we_i : std_logic;
   begin
     pla2_idle : pla2
       port map (
@@ -104,7 +104,7 @@ architecture structural of RegWE_ctrl is
     miss_or: or_gate port map(x=>miss0_i, y=>miss1_i, z=>m);
     hit_and0: and_gate port map(x=>idle_state_last, y=>comptag_state, z=>hit_i);
     hit_and: and_gate port map(x=>hit_i, y=>not_miss, z=>h);
-    evict_and: and_gate port map(x=>idle_state_last, comptag_state_last, evict_we_i);
+    evict_and: and_gate port map(x=>idle_state_last, y=>comptag_state_last, z=>evict_we_i);
     evict_and2: and_gate port map(x=>evict_we_i, y=>not_valid, z=>evict_we);
     hit_we <= h;
     miss_we <= m;
