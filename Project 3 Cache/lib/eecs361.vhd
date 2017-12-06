@@ -63,16 +63,16 @@ end component RegWE_ctrl;
 --Cache Data component
   component cache
   port (
-    clk     : in  std_logic;
-    ovrwr   : in  std_logic;
-    addr    : in  std_logic_vector(25 downto 0);
-    LRU     : in  std_logic;
+    clk : in std_logic;
+    ovrwr : in std_logic;
+    addr : in std_logic_vector(25 downto 0);
+    LRU : in std_logic;
     new_LRU : out std_logic;
-    din     : in  std_logic_vector(511 downto 0);
-    we      : in  std_logic;
-    dout    : out std_logic_vector(534 downto 0);
-    miss    : out std_logic;
-    dirty   : out std_logic
+    din : in std_logic_vector(511 downto 0);
+    we : in std_logic;
+    dout : out std_logic_vector(534 downto 0);
+    miss : out std_logic;
+    dirty : out std_logic
   );
   end component cache;
 -- reg_n

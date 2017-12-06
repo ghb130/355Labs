@@ -55,7 +55,7 @@ signal LRUwe : std_logic_vector(31 downto 0);
 signal LRU_we : std_logic;
 signal LRUDataOut : std_logic_vector(31 downto 0);
 signal cache_din_i : std_logic_vector(511 downto 0);
-type array32_16 is array (31 downto 0) of std_logic_vector(15 downto 0);
+type array32_16 is array (0 to 31) of std_logic_vector(15 downto 0);
 signal selCpuDout : array32_16;
 
 signal hitcnt : std_logic_vector(31 downto 0);
@@ -64,7 +64,7 @@ signal evictcnt : std_logic_vector(31 downto 0);
 signal hitcnt_i : std_logic_vector(31 downto 0);
 signal misscnt_i : std_logic_vector(31 downto 0);
 signal evictcnt_i : std_logic_vector(31 downto 0);
-
+signal cache_we_i : std_logic;
 
 signal ovrwr   : std_logic;
 signal cache_addr    : std_logic_vector(25 downto 0);
@@ -82,6 +82,7 @@ signal is_writeback_state : std_logic;
 signal is_allocate_state : std_logic;
 signal is_comptag_state : std_logic;
 
+signal ready_i : std_logic;
 --------Write Enables---
 signal cpuWr_we     : std_logic;
 signal cpuAddr_we   : std_logic;
@@ -93,11 +94,10 @@ signal L2Dout_we    : std_logic;
 signal prevState_we : std_logic;
 signal repAddr_we   : std_logic;
 signal repData_we   : std_logic;
-signal LRUData_we   : std_logic;
 signal hit_we       : std_logic;
 signal miss_we      : std_logic;
 signal evict_we     : std_logic;
-signal evictwe_i   : std_logic;
+--signal evictwe_i   : std_logic;
 
 ------------------IMPLEMENTATION----------------------------------------------
 --Registers have been set up. Logic needs to be implemented to drive:
@@ -163,6 +163,7 @@ port map (
   miss    => miss,
   dirty   => dirty
 );
+cache_addr <= cpuAddr_i(31 downto 6);
 ------------------STATE REGISTERS---------------------------------------------
 current_s : reg_n
 generic map (
@@ -217,8 +218,10 @@ port map (
 );
 ------------------STATE: COMPTAG----------------------------------------------
 --------Registers--------
-reg_cpuReady : dffr_a port map (clk => clk, arst => rst, aload => '0', adata => '0',
+
+reg_cpuReady : dffr_a port map (clk => clk, arst => '0', aload => rst, adata => '1',
         d => cpuReady_we, enable => '1', q => cpuReady);
+cpuReady_i <= cpuReady_we;
 
 
 reg_cpuDout : reg_n
@@ -240,7 +243,7 @@ mix: for i in 0 to 31 generate
     end generate;
 --32x16 to 32 mux
 sel_output : for i in 0 to 31 generate
-  bitline : mux_16to1 port map (selCpuDout(i), cpuAddr(5 downto 2), cpuDout_i(i));
+  bitline : mux_16to1 port map (selCpuDout(i), cpuAddr_i(5 downto 2), cpuDout_i(i));
 end generate;
 
 reg_repAddr : reg_n
@@ -255,8 +258,8 @@ port map (
   dout => repAddr
 );
 
-repAddr_i(25 downto 5) <= cache_dout(532 downto 512);
-repAddr_i(4 downto 0) <= cpuAddr_i(10 downto 6);
+repAddr_i(31 downto 11) <= cache_dout(532 downto 512);
+repAddr_i(10 downto 0) <= cpuAddr_i(10 downto 0);
 
 reg_repDin: reg_n
 generic map (
@@ -285,35 +288,36 @@ lruSelect : mux_32to1 port map (LRUDataOut, cpuAddr_i(10 downto 6), cache_LRU);
 
 ------------------STATE: WRITEBACK--------------------------------------------
 --------Registers--------
-reg_l2Addr : reg_n
-generic map (
-  n => 32
-)
-port map (
-  clk  => clk,
-  rst  => rst,
-  din  => l2Addr_i,
-  we   => L2Addr_we,
-  dout => l2Addr
-);
+-- reg_l2Addr : reg_n
+-- generic map (
+--   n => 32
+-- )
+-- port map (
+--   clk  => clk,
+--   rst  => rst,
+--   din  => l2Addr_i,
+--   we   => L2Addr_we,
+--   dout => l2Addr
+-- );
 
 sel_and: and_gate port map(x=>current_state(0), y=>current_state(1), z=> L2Addr_sel);
 L2Addr_mux: mux_n generic map (n => 32)
-                  port map(sel=>L2Addr_sel, src0=>repAddr, src1=>cpuAddr_i, z=>L2Addr_i);
-
-reg_l2Dout : reg_n
-generic map (
-  n => 512
-)
-port map (
-  clk  => clk,
-  rst  => rst,
-  din  => l2Dout_i,
-  we   => L2Dout_we,
-  dout => l2Dout
-);
-
-l2Dout_i <= repData;
+                  port map(sel=>L2Addr_sel, src0=>repAddr, src1=>cpuAddr_i, z=>l2Addr_i);
+l2Addr(31 downto 6) <= l2Addr_i(31 downto 6);
+l2Addr(5 downto 0) <= (others =>'0');
+-- reg_l2Dout : reg_n
+-- generic map (
+--   n => 512
+-- )
+-- port map (
+--   clk  => clk,
+--   rst  => rst,
+--   din  => l2Dout_i,
+--   we   => L2Dout_we,
+--   dout => l2Dout
+-- );
+l2Dout <= repData;
+--l2Dout_i <= repData;
 ------------------STATE: ALLOC------------------------------------------------
 --------Registers--------
 --Uses reg_l2Addr
@@ -341,13 +345,13 @@ pla2_alloc : pla2
                                 z => cache_din);
 
   off_decoder : dec_n generic map (n => 4)
-                      port map (src => cpuAddr(5 downto 2),
+                      port map (src => cpuAddr_i(5 downto 2),
                                 z => dec_offset);
   mux_cpuDin : for i in 0 to 15 generate
       cpuDin_cachDout : mux_n generic map (n => 32)
                                  port map (sel => dec_offset(i),
                                            src0 => cache_dout((32*(i+1)-1) downto (32*i)),
-                                           src1 => cpuDin,
+                                           src1 => cpuDin_i,
                                            z => cache_din_i((32*(i+1)-1) downto (32*i)));
   end generate;
 
@@ -355,10 +359,11 @@ pla2_alloc : pla2
   pla2_ctag : pla2
     port map (
       din => current_state,
-      inv => "00",
+      inv => "10",
       z   => is_comptag_state
     );
-  cache_we_and: and_gate port map(x=>is_comptag_state, y=>cpuWr_i, z=>cache_we);
+  cache_we_and: and_gate port map(x=>is_comptag_state, y=>cpuWr_i, z=>cache_we_i);
+  cache_we_or: or_gate port map(x=>cache_we_i, y=>is_allocate_state, z=>cache_we);
 
 
 
@@ -401,8 +406,8 @@ add1_miss : fulladder_n generic map (n => 32)
                                   y => misscnt,
                                   z => misscnt_i);
 
-wb_or_alloc: or_gate port map(x=>is_allocate_state, y=>is_writeback_state, z=>evictwe_i);
-evict_we_and: and_gate port map(x=>evictwe_i, y=>cache_dout(534), z=>evict_we);
+ -- wb_or_alloc: or_gate port map(x=>is_allocate_state, y=>is_writeback_state, z=>evictwe_i);
+ -- evict_we_and: and_gate port map(x=>evictwe_i, y=>cache_dout(534), z=>evict_we);
 
 reg_evict : reg_n
 generic map (

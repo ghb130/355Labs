@@ -12,14 +12,14 @@ component l1cache is
         clk       : in std_logic;
         rst       : in std_logic;
         en        : in std_logic;
-        
+
         cpuReq    : in  std_logic;
         cpuWr     : in  std_logic;
         cpuAddr   : in  std_logic_vector(31 downto 0);
         cpuDin    : in  std_logic_vector(31 downto 0);
         cpuDout   : out std_logic_vector(31 downto 0);
         cpuReady  : out std_logic;
-        
+
         l2Req     : out std_logic;
         l2Wr      : out std_logic;
         l2Addr    : out std_logic_vector(31 downto 0);
@@ -95,6 +95,6 @@ begin
         port map (
             DataIn => dataout0, clk => clk, Ready => ready0,
             rst => rst, Addr => addr0, Data => datain0,
-            WR => wr0, Req => req0
+            WR => wr0, Req => req0, Err => err
         );
 end architecture;

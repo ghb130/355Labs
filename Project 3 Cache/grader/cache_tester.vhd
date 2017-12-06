@@ -51,7 +51,7 @@ begin
       din   => (others => '0'),
       dout  => addr_trace
     );
-    
+
   data_trace_map : sram
     generic map ( mem_file => data_trace_file )
     port map (
@@ -64,6 +64,7 @@ begin
     );
 
   Req <= Ready;
+
   Addr <= '0' & addr_trace(30 downto 0);
   Data <= data_trace when (addr_trace(31) = '1')
      else (others => '0');

@@ -39,27 +39,45 @@ architecture arch of cache is
   signal valid_hit_i : std_logic;
   signal notclk_we : std_logic;
   signal notclk_we_not_miss : std_logic;
+  signal notOvrWr : std_logic;
   signal selectWriteLocTop :std_logic;
   signal selectWriteLocBottom :std_logic;
   signal mux_inter : std_logic_vector(534 downto 0);
   signal dout_i : std_logic_vector(534 downto 0);
   signal dout_lru_i : std_logic_vector(534 downto 0);
   signal dout_data_i : std_logic_vector(534 downto 0);
+  signal not_tag_eq_toptag : std_logic;
+  signal not_tag_eq_bottomtag : std_logic;
+  signal no_match : std_logic;
+  signal no_match_LRU : std_logic;
+  signal no_match_not_LRU : std_logic;
 begin
   --should we Write?
   notLRU : not_gate port map(LRU, not_LRU);
-  orTagMatchTop : or_gate port map('0', tag_eq_toptag, selectWriteLocTop);
-  orTagMatchBottom : or_gate port map('0', tag_eq_bottomtag, selectWriteLocBottom);
+  notTagMatchTop : not_gate port map(tag_eq_toptag, not_tag_eq_toptag);
+  notTagMatchBottom : not_gate port map(tag_eq_bottomtag, not_tag_eq_bottomtag);
+  neitherMatch : and_gate port map(not_tag_eq_toptag, not_tag_eq_bottomtag, no_match);
+
+  noMatchAndNotLRU : and_gate port map(not_LRU, no_match, no_match_not_LRU);
+  noMatchAndLRU : and_gate port map(LRU, no_match, no_match_LRU);
+
+  orTagMatchTop : or_gate port map(no_match_not_LRU, tag_eq_toptag, selectWriteLocTop);
+  orTagMatchBottom : or_gate port map(no_match_LRU, tag_eq_bottomtag, selectWriteLocBottom);
+
+  --select top if (not tag match top and not tag match bottom) and LRU | tag_eq_toptag
 
   notclk : not_gate port map(clk, not_clk);
 
   andNotClkWe : and_gate port map (not_clk, we, notclk_we);
   andNotMiss : and_gate port map (notclk_we, valid_hit, notclk_we_not_miss);
+  notOvrWr_gate : not_gate port map (ovrwr, notOvrWr);
 
-  topLineDin(534 downto 533) <= "11";
+  topLineDin(534) <= '1';
+  topLineDin(533) <= notOvrWr;
   topLineDin(532 downto 512) <= addr(25 downto 5);
   topLineDin(511 downto 0) <= din;
-  bottomLineDin(534 downto 533) <= "11";
+  bottomLineDin(534) <= '1';
+  bottomLineDin(533) <= notOvrWr;
   bottomLineDin(532 downto 512) <= addr(25 downto 5);
   bottomLineDin(511 downto 0) <= din;
 
@@ -134,7 +152,7 @@ begin
     -- signed_a_lt_b =>
   );
 
-  notTagTop : not_gate port map(tag_eq_toptag, new_LRU);
+  new_LRU <= tag_eq_toptag;
 
   cmpTags : or_gate port map(tag_eq_toptag, tag_eq_bottomtag, hit);
   andValid : and_gate port map(dout_data_i(534), hit, valid_hit_i);
